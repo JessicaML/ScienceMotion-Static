@@ -66,10 +66,10 @@ section#top {
 	width:				100%;
 	background:			#ffffff;
 	background-attachment:fixed;
-/*	opacity:            0.1;
-*/	height:				1100px;
-	overflow:			hidden;
-	margin-left: 20px;
+	height:				600px;
+	background-color:grey;
+
+
 }
 
 	background:			transparent url(bg1.gif) no-repeat top center;
@@ -206,7 +206,6 @@ section#top #conjunctiva_label {
 }
 
 .header-unit {
-  height: 450px;
   border: 2px solid #000;
   border-right:none;
   border-left: none;
