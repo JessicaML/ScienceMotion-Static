@@ -12,7 +12,7 @@ body
 	padding:			0;
 	font-family: 		arial;
 	font-size:			62.5%;
-} 
+}
 
 
 article,
@@ -80,7 +80,7 @@ section#top #pupil1 {
 	top:				-15px;
 	left:				-32px;
 	width:				100%;
-	background:			transparent url(eye/pupil.png) no-repeat center center;	
+	background:			transparent url(eye/pupil.png) no-repeat center center;
 	height:             100%;
 }
 
@@ -205,6 +205,32 @@ section#top #conjunctiva_label {
 
 }
 
+.header-unit {
+  height: 450px;
+  border: 2px solid #000;
+  border-right:none;
+  border-left: none;
+  position: relative;
+  padding: 20px;
+}
+#video-container {
+	position: absolute;
+}
+#video-container {
+	top:0%;
+	left:0%;
+	height:100%;
+	width:100%;
+	overflow: hidden;
+}
+video {
+	position:absolute;
+	z-index:0;
+}
+video.fillWidth {
+	width: 100%;
+}
+
 section#info {
 	position:			relative;
 	background:			grey;
@@ -267,11 +293,11 @@ section#info a {
 }
 
 
-section#info a:hover 
+section#info a:hover
 {
-     color:#fff; 
-     text-decoration:none; 
-     cursor:pointer;  
+     color:#fff;
+     text-decoration:none;
+     cursor:pointer;
 }
 
 
@@ -320,10 +346,9 @@ section#about a {
 }
 
 
-section#about a:hover 
+section#about a:hover
 {
-     color:#fff; 
-     text-decoration:none; 
-     cursor:pointer;  
+     color:#fff;
+     text-decoration:none;
+     cursor:pointer;
 }
-
