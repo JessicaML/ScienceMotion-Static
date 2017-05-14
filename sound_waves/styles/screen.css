@@ -63,84 +63,17 @@ audio:not([controls]) {
 
 section#top {
 	position:			relative;
-/*	    background-image: url('images/Miami_1.png')no-repeat;
-*/
 	width:				100%;
-	background:			#DCDCDC;
-	height:				140%;
+	background:			#ffffff;
+	height:				100%;
 	overflow:			hidden;
 
 }
 
-h1 {
-	color:              #DA70D7;
-    font-family:        courier;
-	font-weight:        bold;
-	font-style:         italic;
-	font-size:			5em;
-	text-transform:		uppercase;
-	width:				80%;
-	text-align:			justify;
-	line-height:		1.8em;
-	margin:				20px;
-	padding:			20px;
-	float: right;
-}
 
 
 
-.myButton {
-	background-color:#44c767;
-	-moz-border-radius:28px;
-	-webkit-border-radius:28px;
-	border-radius:28px;
-	border:1px solid #18ab29;
-	display:inline-block;
-	cursor:pointer;
-	color:#DA70D6;
-    font-family:courier;
-	font-weight:bold;
-	font-style:italic;
-	font-size:28px;
-	padding:16px 31px;
-	text-decoration:none;
-/*	text-shadow: 2px 0 0 #2f6627, -2px 0 0 #2f6627, 0 2px 0 #2f6627, 0 -2px 0 #2f6627, 1px 1px #2f6627, -1px -1px 0 #2f6627, 1px -1px 0 #2f6627, -1px 1px 0 #2f6627;
-*/
-	text-shadow:2px 2px 2px #2f6627;
-	margin-left:		40px;
-	margin-bottom:      50px;
-	padding-left:		20px;
-/*	top:				150px;
-*/
-}
-.myButton:hover {
-	background-color:#5cbf2a;
-}
-.myButton:active {
-	position:relative;
-	top:1px;
-}
 
-
-#trump {
-	position:			absolute;
-	top:				150px;
-	left:				25px;
-	width:				45%;
-	height:             45%;
-	background:			transparent url(images/trump.png) no-repeat center center;	
-	
-}
-
-#fella {
-	position:			absolute;
-	top:				170px;
-	left:				392px;
-	width:				30%;
-	height:				50%;
-	background:			transparent url(images/fella.png) no-repeat center center;
-
-}
 
 section#info {
 	position:			relative;
@@ -153,6 +86,36 @@ section#info {
 	margin:				-20px;
 	font-size:			1.4em;
 
+}
+section#top h1 {
+	font-size:			5em;
+	color:              #444444;
+	text-transform:		uppercase;
+	width:				80%;
+	text-align:			justify;
+	line-height:		1.8em;
+	margin:				20px;
+	padding:			20px;
+}
+
+#homebutton{
+
+    background-image: url('images/Miami_1.png')no-repeat;
+    height: 100%;
+    width: 100%;
+   vertical-align:center;
+
+}
+s
+#homebutton:hover{
+
+    cursor:normal;
+    background-image: url('images/Miami_1.gif')no-repeat;
+    height: 100%;
+    width: 100%;
+    margin-left:20px;
+    padding-left:20px;
+       vertical-align:center;
 }
 
 
