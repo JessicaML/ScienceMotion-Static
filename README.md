@@ -11,6 +11,9 @@ See the live site [here:](https://jessicaml.github.io/ScienceMotion-Static)
 
 View the list of scientific concepts [here:](https://docs.google.com/spreadsheets/d/1s-CqehOYRcrJmvR3d7WqAs7j7dDJLHuJlcRCXMLvwok/edit#gid=0)
 
+There is also a list of [cool web design examples](https://docs.google.com/spreadsheets/d/1s-CqehOYRcrJmvR3d7WqAs7j7dDJLHuJlcRCXMLvwok/edit#gid=88152588), which you can contribute to by commenting
+ScienceMotion-static
+
 Choose one to illustrate and create a pull request!
 
 ## Other ideas for the project?
