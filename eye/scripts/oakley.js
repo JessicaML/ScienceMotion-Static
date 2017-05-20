@@ -7,15 +7,15 @@ jQuery(document).ready(function($){
 	$(window).scroll(function(){
 		currentoffset = $(this).scrollTop();
 		if (currentoffset<601) {
-		
+
 			thisoffset = currentoffset - 50*(currentoffset/600);
 			scaleclouds = (currentoffset/700)+1;
 			$("#cillary_muscle").css({top:thisoffset,transform:"scale("+scaleclouds+")"});
-			
+
 			/* BOOM TEXT */
 // rotate lens other direction to fovea
 
-		
+
 
 			thisoffset = currentoffset - 100*(currentoffset/300);
 			thisrotation = -200*((currentoffset/1000));
@@ -26,7 +26,7 @@ jQuery(document).ready(function($){
 			thisoffset = currentoffset - 1000*(currentoffset/500);
 			$("#cornea").css({top:thisoffset});
 
-			
+
 			/* BITS 1 */
 			thisoffset = currentoffset - 100*(currentoffset/300);
 			thisrotation = 250*((currentoffset/1000));
@@ -39,7 +39,7 @@ jQuery(document).ready(function($){
 			/* BITS 3 */
 			thisoffset = currentoffset - 100*(currentoffset/700);
 			scalebit3 = (currentoffset/300)+1;
-	
+
 			$("#conjunctiva").css({top:thisoffset,transform:"scale("+scalebit3+")"});
 
 		}
@@ -58,5 +58,3 @@ jQuery(document).ready(function($){
     });
 
 });
-
-

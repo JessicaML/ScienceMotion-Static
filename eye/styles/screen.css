@@ -95,7 +95,7 @@ section#top #pupil2 {
 section#top #cornea {
 	position:			absolute;
 	top:				0;
-	left:				0;
+	left:				-75px;
 	width:				100%;
 	background:			transparent url(eye/cornea.png) no-repeat center center;
 	height:				100%;
