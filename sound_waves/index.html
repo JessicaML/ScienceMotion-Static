@@ -4,19 +4,19 @@
         <!--[if lt IE 7]>
         <![endif]-->
 
-					
+
 
 <html>
         <title>Sound waves</title>
 
-  <head>	
-   
+  <head>
+
         <meta charset="utf-8">
         <link rel="stylesheet" href="styles/screen.css">
                <meta charset="utf-8">
         <link href='http://fonts.googleapis.com/css?family=Nova+Round' rel='stylesheet' type='text/css'>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-   
+
 
 
   </head>
@@ -26,27 +26,27 @@
   <h1>Sound waves</h1>
 
 <!-- slower diffusion
- -->  
+ -->
 
 
 
- 
+
 
 
   <div id="nav-one" class="nav">
-    
+
         <audio id="beep-one">
         <source src="wouldnt_say.mp3" controls></source>
         <source src="wouldnt_say.ogg" controls></source>
         Your browser isn't invited for super fun time.
       </audio>
 
-        
-<a href="#" id="miami_1"><img src="images/Miami_1.png" onmouseover="this.src='images/Miami_1.gif'" onmouseout="this.src='images/Miami_1.png'"/></a>
+
+<a href="#" id="miami_1"><img src="images/miami_1.png" onmouseover="this.src='images/miami_1.gif'" onmouseout="this.src='images/miami_1.png'"/></a>
 </div>
 
 
-				
+
 		</section>
 		<section id="info">
 			<div>
@@ -66,26 +66,26 @@
 		</section>
 		<section id="about">
 <div><h1>More info</h1>
-				
 
-				</div>				
 
-		
-		</section>	
+				</div>
+
+
+		</section>
 		<!-- End Site Content -->
     <script>$("#nav-one a")
   .each(function(i) {
-    if (i != 0) { 
+    if (i != 0) {
       $("#beep-one")
         .clone()
         .attr("id", "beep-one" + i)
-        .appendTo($(this).parent()); 
+        .appendTo($(this).parent());
     }
     $(this).data("beeper", i);
   })
   .mouseenter(function() {
     $("#beep-one" + $(this).data("beeper"))[0].play();
   });
-$("#beep-one").attr("id", "beep-one0");</script>    
+$("#beep-one").attr("id", "beep-one0");</script>
 </body>
 </html>
