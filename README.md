@@ -18,7 +18,7 @@ Choose one to illustrate and create a pull request!
 
 ## Goals
 
-- To create something as fun as MTV or Sesame Street to look at, that teaches the concepts of high-school level science concepts.
+- To create something as fun as MTV or Sesame Street to look at, that teaches the concepts of high-school level science.
 
 - To get users to view and enjoy our animations - from high-school students, to retired dads to freelance bird-watching experts.
 
