@@ -1,0 +1,39 @@
+body {
+	font-family: Helvetica;
+	font-size: 64px;
+  font-weight: 700;
+	line-height: 1.2;
+  text-align:  center;
+
+	background-color: yellow;
+	color: grey;
+}
+
+h1 {
+	font-size: 18px;
+}
+
+div#header {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 28px;
+
+}
+
+div.phrase {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 28px;
+
+}
+
+input {
+  position: absolute;
+  bottom: 50px;
+  left: 40%;
+  width: 20%;
+}
