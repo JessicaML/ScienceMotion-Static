@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Fugaz+One');
+@import url('https://fonts.googleapis.com/css?family=Bitter');
+@import url('https://fonts.googleapis.com/css?family=Space+Mono');
+
+
+body {
+	background: #E55D87; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #E55D87 , #5FC3E4); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to bottom, #E55D87 , #5FC3E4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /*font-family: 'Fugaz One', monospace, sans-serif;*/
+  font-family: 'Space mono', sans-serif;
+
+
+}
+.heading {
+  font-family: 'Fugaz One', monospace, sans-serif;
+  font-size: 30px;
+
+}
+
+.heading2 {
+  font-weight:bolder;
+  text-decoration: underline;
+  padding: 5px 5px 5px 5px;
+}
+
+.heading3 {
+  background-color: #00ff00;
+}
