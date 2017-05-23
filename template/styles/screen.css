@@ -78,6 +78,16 @@ section#top {
 
 
 
+section#top p {
+		font-size:		2em;
+		font-family: 'Josefin Sans', sans-serif;
+
+		width:				80%;
+		text-align:		justify;
+		margin-left: :				20px;
+		padding-left:			20px;
+}
+
 
 section#info {
 	position:			relative;
@@ -149,8 +159,48 @@ section#info a {
 
 
 section#info a:hover
+
 {
      color:#fff;
      text-decoration:none;
      cursor:pointer;
 }
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+    float: left;
+		font-family: "Courier New";
+		font-size: 6.2em;
+		font-style: oblique;
+		font-weight: 900;
+
+}
+
+nav li:last-child {
+		float:right;
+}
+
+
+
+nav li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover{
+	color:#ff6796;
+}
+
+/*nav .active {
+	color:#ff6796;
+
+}*/
