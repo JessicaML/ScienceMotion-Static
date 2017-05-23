@@ -27,3 +27,7 @@ body {
 .heading3 {
   background-color: #00ff00;
 }
+
+li {
+  list-style-type: none;
+}
