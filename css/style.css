@@ -1,7 +1,9 @@
 @charset 'UTF-8';
 @import url('http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900');
 @import url('font-awesome.min.css');
-
+@import url('https://fonts.googleapis.com/css?family=Fugaz+One');
+@import url('https://fonts.googleapis.com/css?family=Bitter');
+@import url('https://fonts.googleapis.com/css?family=Space+Mono');
 /*
 	Big Picture by HTML5 UP
 	html5up.net | @n33co
@@ -37,7 +39,7 @@
 		}
 
 	body,input,textarea,select {
-		font-family: 'Source Sans Pro', sans-serif;
+		font-family: 'Space Mono', sans-serif;
 		font-weight: 300;
 		font-size: 18pt;
 		line-height: 1.75em;
@@ -48,6 +50,7 @@
 	h1,h2,h3,h4,h5,h6 {
 		font-weight: 900;
 		color: inherit;
+		font-family: "Fugaz One";
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
