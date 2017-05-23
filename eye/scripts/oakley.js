@@ -33,8 +33,8 @@ jQuery(document).ready(function($){
 			$("#fovea").css({top:thisoffset,transform:"rotate("+thisrotation+"deg)"});
 
 			/* BITS 2 */
-			thisoffset = currentoffset - 100*(currentoffset/700);
-			$("#pupil2").css({top:thisoffset});
+			// thisoffset = currentoffset - 100*(currentoffset/700);
+			// $("#pupil2").css({top:thisoffset});
 
 			/* BITS 3 */
 			thisoffset = currentoffset - 100*(currentoffset/700);
