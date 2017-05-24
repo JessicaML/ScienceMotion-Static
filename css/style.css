@@ -14,13 +14,20 @@
 /* Basic                                                                         */
 /*********************************************************************************/
 
+
+
 	html {
 		height: 100%;
 	}
 
 	body {
-		background: #fff;
 		height: 100%;
+		padding-top: 70px; 
+		background: hsl(318, 68%, 68%); /* fallback for old browsers */
+		background: -webkit-linear-gradient(to left, hsl(318, 68%, 68%); , hsl(172, 100%, 50%)); /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to bottom, hsl(318, 68%, 68%); , hsl(172, 100%, 50%)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
 	}
 
 		body.is-loading *,
@@ -57,7 +64,20 @@
 			color: inherit;
 			text-decoration: none;
 		}
+	h1 {
 
+		text-align: center;
+		color: #fff;
+		font-size: 75px;
+	}
+
+	 #second h1 {
+		font-size: 40px;
+	 }
+
+	 #second  {
+		background: hsl(318, 68%, 68%);	 }
+	 
 	h2 {
 		font-size: 2.25em;
 		letter-spacing: -2px;
@@ -118,7 +138,13 @@
 			display: block;
 			margin: 1em 0 0 0;
 			padding: 0 0 0.5em 0;
+
 		}
+
+	.header p {
+		text-align: center;
+
+	}
 
 	footer {
 		margin-top: 2em;
@@ -126,6 +152,14 @@
 
 	br.clear {
 		clear: both;
+	}
+
+		.portfolio-item {
+	    margin-bottom: 25px;
+	}
+
+	footer {
+	    margin: 50px 0;
 	}
 
 	/* Sections/Article */
