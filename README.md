@@ -4,7 +4,17 @@
 
 *This is an application to learn the concepts of high-school level science through animation*
 
+*Scientific theories are about how shapes move in space, so we believe animation is the best way to explain them*
+
+
 See the live site [here:](https://jessicaml.github.io/ScienceMotion-Static)
+
+
+## Goals
+
+- To create something as fun as MTV or Sesame Street to look at, that teaches the concepts of high-school level science.
+
+- To get users to view and enjoy our animations - from high-school students, to retired dads to freelance bird-watching experts.
 
 
 ## To contribute
@@ -16,11 +26,6 @@ ScienceMotion-static
 
 Choose one to illustrate and create a pull request!
 
-## Goals
-
-- To create something as fun as MTV or Sesame Street to look at, that teaches the concepts of high-school level science.
-
-- To get users to view and enjoy our animations - from high-school students, to retired dads to freelance bird-watching experts.
 
 ## Other ideas for the project?
 
