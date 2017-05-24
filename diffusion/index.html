@@ -46,53 +46,53 @@
 
 
     <div id="slow">
-       <script type="text/javascript">
+      <!DOCTYPE html>
+  <meta charset="utf-8">
+  <body>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
 
+  <script>
 
+  var width = 960,
+      height = 500;
 
-         var w = 500,
-             h = 500,
-             nodes = [];
+  var nodes = [];
 
-         var svg = d3.select("body").append("svg:svg")
-             .attr("width", w)
-             .attr("height", h);
+  var svg = d3.select("body").append("svg")
+      .attr("width", width)
+      .attr("height", height);
 
+  var force = d3.layout.force()
+      .charge(-20)
+      .size([width, height])
+      .nodes(nodes)
+      .on("tick", tick)
+      .start();
 
-         var force = d3.layout.force()
-             .charge(-20)
-             .size([w, h])
-             .nodes(nodes)
-             .on("tick", tick)
-             .start();
+  function tick() {
+    svg.selectAll("circle")
+        .attr("cx", function(d) { return d.x; })
+        .attr("cy", function(d) { return d.y; });
+  }
 
-         function tick() {
-           svg.selectAll("circle")
-               .attr("cx", function(d) { return d.x; })
-               .attr("cy", function(d) { return d.y; })
-               .attr('fill','red');
-         }
+  var interval = setInterval(function() {
+    var d = {
+      x: width / 2 + 2 * Math.random() - 1,
+      y: height / 2 + 2 * Math.random() - 1
+    };
 
-         var interval = setInterval(function() {
-           var d = {
-             x: w / 2 + 2 * Math.random() - 1,
-             y: h / 2 + 2 * Math.random() - 1
-           };
+    svg.append("circle")
+        .data([d])
+        .attr("r", 1e-6)
+      .transition()
+        .ease(Math.sqrt)
+        .attr("r", 4.5);
 
-           svg.append("svg:circle")
-               .data([d])
-               .attr("r", 1e-6)
-             .transition()
-               .ease(Math.sqrt)
-               .attr("r", 4.5);
+    if (nodes.push(d) > 300) clearInterval(interval);
+    force.start();
+  }, 30);
 
-           if (nodes.push(d) > 300) clearInterval(interval);
-           force.start();
-         }, 30);
-
-
-
-       </script>
+  </script>
        </div>
     </section>
 		<section id="info">
