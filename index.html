@@ -229,7 +229,7 @@
 
 
       <div id="mc_embed_signup">
-      <form action="//jhn.us16.list-manage.com/subscribe/post-json?u=70d8e0ea2d8800a5f4e06792c&amp;id=b5095bc718" method="get" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+      <form id="mc-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
           <div id="mc_embed_signup_scroll">
       	<label for="mce-EMAIL">Subscribe to our mailing list</label>
       	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
@@ -250,7 +250,13 @@
     </footer>
 
     <script src="js/jquery.js"></script>
-    
+    <script src="https://raw.githubusercontent.com/scdoshi/jquery-ajaxchimp/master/jquery.ajaxchimp.js"></script>
+    <script>
+    $('#mc-form').ajaxChimp({
+    url: 'http://jhn.us16.list-manage.com/subscribe/post-json?u=70d8e0ea2d8800a5f4e06792c&amp;id=b5095bc718'
+});
+
+    </script>
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
