@@ -1,0 +1,70 @@
+@keyframes squiggly-anim {
+      0% {
+        -webkit-filter: url("#squiggly-0");
+        filter: url("#squiggly-0");
+      }
+      25% {
+        -webkit-filter: url("#squiggly-1");
+        filter: url("#squiggly-1");
+      }
+      50% {
+        -webkit-filter: url("#squiggly-2");
+        filter: url("#squiggly-2");
+      }
+      75% {
+        -webkit-filter: url("#squiggly-3");
+        filter: url("#squiggly-3");
+      }
+      100% {
+        -webkit-filter: url("#squiggly-4");
+        filter: url("#squiggly-4");
+      }
+    }
+
+    .facepiece {
+      position: absolute;
+    }
+
+    .gurprit {
+      width: 30%;
+      margin: auto;
+      pointer-events: none;
+      transform: translateZ(0);
+      transform-style: preserve-3d;
+      backface-visibility: hidden;
+      position: relative;
+      top: 1vw;
+    }
+
+    .gurprit svg {
+      width: 100%;
+    }
+
+    .content {
+      margin: auto;
+      text-align: center;
+      transform-style: preserve-3d;
+    }
+
+    .facepiece {
+      webkit-animation: squiggly-anim 0.3s infinite;
+      animation: squiggly-anim 0.3s infinite;
+    }
+
+    .glasses.facepiece {
+      transform: translateZ(30px);
+    }
+
+    .beard.facepiece {
+      transform: translateZ(20px);
+    }
+
+    .mouthparts.facepiece {
+      transform: translateZ(20px);
+    }
+
+    @media screen and (max-width: 667px) {
+      .gurprit {
+        width: 90%;
+      }
+    }
