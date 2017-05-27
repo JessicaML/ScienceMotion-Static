@@ -10,12 +10,9 @@
         <title>Diffusion</title>
 
   <head>
-    <!-- <script type="text/javascript" src="scripts/d3.js"></script> -->
-    <script type="text/javascript" src="https://mbostock.github.com/d3/d3.js?2.0.0"></script>
-    <!-- <script src="https://d3js.org/d3.v4.js"></script> -->
+    <!-- <script type="text/javascript" src="https://mbostock.github.com/d3/d3.js?2.0.0"></script> -->
+    <script src="https://d3js.org/d3.v4.js"></script>
 
-    <!-- <script type="text/javascript" src="//https://mbostock.github.com/d3/d3.geom.js?2.0.0"></script>
-    <script type="text/javascript" src="//https://mbostock.github.com/d3/d3.layout.js?2.0.0"></script> -->
 
 
         <meta charset="utf-8">
@@ -48,50 +45,53 @@
       <!DOCTYPE html>
   <meta charset="utf-8">
   <body>
-    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <!DOCTYPE html>
+    <meta charset="utf-8">
+    <body>
+    <!-- <script src="//d3js.org/d3.v3.min.js"></script> -->
+    <script>
 
-  <script>
+    var width = 960,
+        height = 500;
 
-  var width = 960,
-      height = 500;
+    var nodes = [];
 
-  var nodes = [];
+    var svg = d3.select("body").append("svg")
+        .attr("width", width)
+        .attr("height", height);
 
-  var svg = d3.select("body").append("svg")
-      .attr("width", width)
-      .attr("height", height);
+    var force = d3.layout.force()
+        .charge(-20)
+        .size([width, height])
+        .nodes(nodes)
+        .on("tick", tick)
+        .start();
 
-  var force = d3.layout.force()
-      .charge(-20)
-      .size([width, height])
-      .nodes(nodes)
-      .on("tick", tick)
-      .start();
+    function tick() {
+      svg.selectAll("circle")
+          .attr("cx", function(d) { return d.x; })
+          .attr("cy", function(d) { return d.y; });
+    }
 
-  function tick() {
-    svg.selectAll("circle")
-        .attr("cx", function(d) { return d.x; })
-        .attr("cy", function(d) { return d.y; });
-  }
+    var interval = setInterval(function() {
+      var d = {
+        x: width / 2 + 2 * Math.random() - 1,
+        y: height / 2 + 2 * Math.random() - 1
+      };
 
-  var interval = setInterval(function() {
-    var d = {
-      x: width / 2 + 2 * Math.random() - 1,
-      y: height / 2 + 2 * Math.random() - 1
-    };
+      svg.append("circle")
+          .data([d])
+          .attr("r", 1e-6)
+        .transition()
+          .ease(Math.sqrt)
+          .attr("r", 4.5);
 
-    svg.append("circle")
-        .data([d])
-        .attr("r", 1e-6)
-      .transition()
-        .ease(Math.sqrt)
-        .attr("r", 4.5);
+      if (nodes.push(d) > 300) clearInterval(interval);
+      force.start();
+    }, 30);
 
-    if (nodes.push(d) > 300) clearInterval(interval);
-    force.start();
-  }, 30);
+    </script>
 
-  </script>
        </div>
     </section>
 		<section id="info">
