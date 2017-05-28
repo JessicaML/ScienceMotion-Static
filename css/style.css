@@ -359,9 +359,9 @@
 				display: block;
 				width: 100%;
 				padding: 0.65em 0.75em;
-				background: none;
+				background: #fff;
 				border: solid 2px rgba(185,186,187,0.25);
-				color: inherit;
+				color: #3b3b3b;
 				border-radius: 0.5em;
 				outline: none;
 
