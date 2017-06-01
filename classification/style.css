@@ -89,7 +89,7 @@ section#info p {
 }
 
 input {
-  position: absolute;
+  /*position: absolute;*/
   bottom: 50px;
   left: 40%;
   width: 20%;
