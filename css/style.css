@@ -103,6 +103,21 @@
 		transition: all 0.2s ease-in-out, color 0.2s ease-in-out;
 	}
 
+	#test  {
+		background-color: yellow;
+
+	}
+	#test  h1 {
+		font-size: 40px;
+		color: #3b3b3b;
+
+	}
+
+	#test  p {
+		background-color: yellow;
+		font-size: 18pt;
+
+	}
 
 	input {
 	  height: 40px;
@@ -345,6 +360,9 @@
 	/* Form */
 
 		form {
+			margin-left: 20px;
+			margin-right: 20px;
+
 		}
 
 			form label {

@@ -64,18 +64,29 @@ audio:not([controls]) {
 section#top {
 	position:			relative;
 	width:				100%;
-	background:			#ffffff;
+
 	background-attachment:fixed;
-/*	opacity:            0.1;
-*/	height:				1100px;
-	overflow:			hidden;
-	margin-left: 20px;
+	height:				600px;
+
+
 }
+
+
+.box {
+	position:			absolute;
+	top:				0;
+	left:				0;
+	width:				100%;
+	background:			transparent url(../eye2.png) no-repeat center center;
+	height:				100%;
+}
+
 
 
 
 section#top #pupil1 {
 	position:			absolute;
+	top:				-15px;
 	left:				-32px;
 	width:				100%;
 	background:			transparent url(eye/pupil.png) no-repeat center center;
@@ -85,7 +96,7 @@ section#top #pupil1 {
 
 section#top #pupil2 {
 	position:			absolute;
-	bottom: -10px;
+	top:				-15px;
 	left:				-32px;
 	width:				100%;
 	background:			transparent url(eye/pupil.png) no-repeat center center;
@@ -95,7 +106,7 @@ section#top #pupil2 {
 section#top #cornea {
 	position:			absolute;
 	top:				0;
-	left:				-75px;
+	left:				0;
 	width:				100%;
 	background:			transparent url(eye/cornea.png) no-repeat center center;
 	height:				100%;
@@ -201,6 +212,31 @@ section#top #conjunctiva_label {
 	opacity:            0.1;
 
 
+}
+
+.header-unit {
+  border: 2px solid #000;
+  border-right:none;
+  border-left: none;
+  position: relative;
+  padding: 20px;
+}
+#video-container {
+	position: absolute;
+}
+#video-container {
+	top:0%;
+	left:0%;
+	height:100%;
+	width:100%;
+	overflow: hidden;
+}
+video {
+	position:absolute;
+	z-index:0;
+}
+video.fillWidth {
+	width: 100%;
 }
 
 section#info {
