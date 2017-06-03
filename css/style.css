@@ -483,14 +483,16 @@
 		.button {
 			background-color: #98c593;
 			border: 0;
-			border-radius: 3.5em;
+			border-radius: 2em;
 			color: #fff;
 			cursor: pointer;
 			display: inline-block;
-			height: 3.5em;
-			line-height: 3.5em;
+			height: 2em;
+			line-height: 2em;
 			outline: 0;
-			padding: 0 2em 0 2em;
+			padding: 0 1em 0 1em;
+			margin-top: 10px;
+			width: 50%;
 			position: relative;
 			text-align: center;
 			text-decoration: none;
@@ -1071,7 +1073,6 @@
 	#footer {
 		position: relative;
 		height: 400px;
-		line-height: 5em;
 		margin: 0;
 		background: #39454b;
 		color: #999;
