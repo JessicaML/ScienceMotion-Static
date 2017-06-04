@@ -1125,6 +1125,7 @@
 div #notification_container {
 	font-size: 12px;
 	margin-left: 25px;
+	line-height: normal;
 	color:#fff;
 }
 /*********************************************************************************/
