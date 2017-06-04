@@ -481,10 +481,10 @@
 		input[type="submit"],
 		input[type="reset"],
 		.button {
-			background-color: #98c593;
+			background-color: yellow;
 			border: 0;
 			border-radius: 2em;
-			color: #fff;
+			color: #3b3b3b;
 			cursor: pointer;
 			display: inline-block;
 			height: 2em;
@@ -1073,10 +1073,10 @@
 	#footer {
 		position: relative;
 		height: 400px;
-		margin: 0;
+		padding-top: 20px;
 		background: #39454b;
-		color: #999;
-		color: rgba(185,186,187,0.5);
+		color: yellow;
+		/*color: rgba(185,186,187,0.5);*/
 		overflow: hidden;
 	}
 
@@ -1125,6 +1125,7 @@
 div #notification_container {
 	font-size: 12px;
 	margin-left: 25px;
+	color:#fff;
 }
 /*********************************************************************************/
 /* Poptrox                                                                       */
