@@ -22,14 +22,14 @@
 
 	body {
 		height: 100%;
-		padding-top: 70px;
+		/*padding-top: 70px;*/
 		background: hsl(318, 68%, 68%); /* fallback for old browsers */
 		background: -webkit-linear-gradient(to left, hsl(318, 68%, 68%); , hsl(172, 100%, 50%)); /* Chrome 10-25, Safari 5.1-6 */
 		background: linear-gradient(to bottom, hsl(318, 68%, 68%); , hsl(172, 100%, 50%)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 
 	}
-
+/*
 		body.is-loading *,
 		body.is-resizing *
 		{
@@ -43,7 +43,7 @@
 			-o-animation: none !important;
 			-ms-animation: none !important;
 			animation: none !important;
-		}
+		}*/
 
 	body,input,textarea,select {
 		font-family: 'Space Mono', sans-serif;
@@ -73,10 +73,11 @@
 
 	 #second h1 {
 		font-size: 40px;
+		color: #3b3b3b;
 	 }
 
 	 #second  {
-		background: hsl(318, 68%, 68%);	 }
+		background: yellow;	 }
 
 	h2 {
 		font-size: 2.25em;
@@ -104,18 +105,20 @@
 	}
 
 	#test  {
-		background-color: yellow;
+		background-color: hsl(318, 68%, 68%);
+
 
 	}
 	#test  h1 {
 		font-size: 40px;
-		color: #3b3b3b;
+		color: #fff;
 
 	}
 
 	#test  p {
-		background-color: yellow;
 		font-size: 18pt;
+		color: #fff;
+
 
 	}
 
