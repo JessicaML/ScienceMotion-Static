@@ -33,7 +33,47 @@
 <script src="navigation.js"></script>
 
 </head>
+
 <body data-0="background-image:linear-gradient(90deg, hsl(172, 100%, 50%), hsl(318, 68%, 68%);" data-450="background-image:linear-gradient(450deg, hsl(172, 100%, 50%), hsl(318, 68%, 68%);">
+<style>
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #ddd;
+}
+
+button.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2212";
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+</style>
+
   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
           <!-- Brand and toggle get grouped for better mobile display -->
@@ -70,131 +110,166 @@
   </nav>
 
 <div class="container">
-  <div id='cssmenu'>
-<ul>
-   <li class="heading2"><a href='#'><span>Home</span></a></li>
-   <li class='heading2 active has-sub'><a href='#'><span>Products</span></a>
-      <ul>
-         <li class='has-sub heading3'><a href='#'><span>Product 1</span></a>
-            <ul>
-               <li style="list-style-type: none; float: left; padding: 16px;"><a href='#'><span>Sub Product</span></a></li>
-               <li style="list-style-type: none; float: left; padding: 16px;"class='last'><a href='#'><span>Sub Product</span></a></li>
-            </ul>
-         </li>
-         <li class='has-sub'><a href='#'><span>Product 2</span></a>
-            <ul>
-               <li><a href='#'><span>Sub Product</span></a></li>
-               <li class='last'><a href='#'><span>Sub Product</span></a></li>
-            </ul>
-         </li>
-      </ul>
-   </li>
-   <li><a href='#'><span>About</span></a></li>
-   <li class='last'><a href='#'><span>Contact</span></a></li>
-</ul>
-</div>
 
 
 <ul class="breadcrumb">
 
 
-  <li class="heading"> _Biology</li>
-  <ul>
-    <li class="heading2">Living organisms</li>
-      <ul>
-        <li class="heading3" style="clear: both;">_Classification</li>
-        <ul>
-          <li style="list-style-type: none; float: left; padding: 16px;"><a href="Biology/Classification/Lesson1.html"> _Lesson 1</a></li>
-          <li style="list-style-type: none; float: left; padding: 16px;"><a href="Biology/Classification/Lesson2.html"> _Lesson 2</a></li>
-          <li style="list-style-type: none; float: left; padding: 16px;"><a href="Biology/Classification/Lesson3.html"> _Lesson 3</a></li>
-          <li style="list-style-type: none; float: left; padding: 16px;"><a href="Biology/Classification/Lesson4.html"> _Lesson 4</a></li>
-          <li style="list-style-type: none; float: left; padding: 16px;"><a href="Biology/Classification/Lesson5.html"> _Lesson 5</a></li>
-          <li style="list-style-type: none; float: left; padding: 16px;"><a href="Biology/Classification/Lesson6.html"> _Lesson 6</a></li>
+  <h1 style="text-align:left; color:#00ff00;">_Biology</h1>
+  <br/>
 
+    <ul>
+      <button class="heading2 accordion">Living organisms</button>
+      <div class="panel">
+        <ul>
+          <li class="heading3" style="clear: both;">_Classification</li>
+          <ul>
+            <li style="list-style-type: none; float: left; padding: 16px;"><a href="Biology/Classification/Lesson1.html"> _Lesson 1</a></li>
+            <li style="list-style-type: none; float: left; padding: 16px;"><a href="Biology/Classification/Lesson2.html"> _Lesson 2</a></li>
+            <li style="list-style-type: none; float: left; padding: 16px;"><a href="Biology/Classification/Lesson3.html"> _Lesson 3</a></li>
+            <li style="list-style-type: none; float: left; padding: 16px;"><a href="Biology/Classification/Lesson4.html"> _Lesson 4</a></li>
+            <li style="list-style-type: none; float: left; padding: 16px;"><a href="Biology/Classification/Lesson5.html"> _Lesson 5</a></li>
+            <li style="list-style-type: none; float: left; padding: 16px;"><a href="Biology/Classification/Lesson6.html"> _Lesson 6</a></li>
+
+          </ul>
+          <li class="heading3" style="clear: both;">_Variety of living organisms</li>
+          <ul>
+            <li style="list-style-type: none; float: left; padding: 16px;"> _Lesson 1</li>
+            <li style="list-style-type: none; float: left; padding: 16px;"> _Lesson 2</li>
+            <li style="list-style-type: none; float: left; padding: 16px;"> _Lesson 3</li>
+          </ul>
+          <li class="heading3" style="clear: both;">_Levels of organisation</li>
+          <ul>
+            <li style="list-style-type: none; float: left; padding: 16px;"> _Lesson 1</li>
+            <li style="list-style-type: none; float: left; padding: 16px;"> _Lesson 2</li>
+            <li style="list-style-type: none; float: left; padding: 16px;"> _Lesson 3</li>
+          </ul>
+          <li class="heading3" style="clear: both;">_Movement across cell membranes</li>
+          <ul>
+            <li style="list-style-type: none; float: left; padding: 16px;"> _Lesson 1</li>
+            <li style="list-style-type: none; float: left; padding: 16px;"> _Lesson 2</li>
+            <li style="list-style-type: none; float: left; padding: 16px;"> _Lesson 3</li>
+          </ul>
+      </ul>
+    </div>
+    <button class="heading2 accordion">Nutrition, digestion and excretion</button>
+    <div class="panel">
+        <ul>
+          <li class="heading3" style="clear: both;">_Biological molecules</li>
+            <ul>
+              <li style="list-style-type: none; float: left; padding: 16px;"> _Lesson 1</li>
+              <li style="list-style-type: none; float: left; padding: 16px;"> _Lesson 2</li>
+              <li style="list-style-type: none; float: left; padding: 16px;"> _Lesson 3</li>
+            </ul>
+          <li class="heading3" style="clear: both;">_Diet</li>
+          <ul>
+            <li style="list-style-type: none; float: left; padding: 16px;"> _Lesson 1</li>
+            <li style="list-style-type: none; float: left; padding: 16px;"> _Lesson 2</li>
+            <li style="list-style-type: none; float: left; padding: 16px;"> _Lesson 3</li>
+          </ul>
+        <li class="heading3" style="clear: both;">_Digestive system</li>
+          <ul>
+            <li style="list-style-type: none; float: left; padding: 16px;"> _Lesson 1</li>
+            <li style="list-style-type: none; float: left; padding: 16px;"> _Lesson 2</li>
+            <li style="list-style-type: none; float: left; padding: 16px;"> _Lesson 3</li>
+          </ul>
+        <li class="heading3" style="clear: both;">_Plants</li>
+          <ul>
+            <li style="list-style-type: none; float: left; padding: 16px;"> _Lesson 1</li>
+            <li style="list-style-type: none; float: left; padding: 16px;"> _Lesson 2</li>
+            <li style="list-style-type: none; float: left; padding: 16px;"> _Lesson 3</li>
+          </ul>
+        <li class="heading3" style="clear: both;">_Excretion in plants and animals</li>
+          <ul>
+            <li style="list-style-type: none; float: left; padding: 16px;"> _Lesson 1</li>
+            <li style="list-style-type: none; float: left; padding: 16px;"> _Lesson 2</li>
+            <li style="list-style-type: none; float: left; padding: 16px;"> _Lesson 3</li>
+          </ul>
         </ul>
-        <li class="heading3" style="clear: both;">_Variety of living organisms</li>
+      </div>
+
+      <button class="heading2 accordion">Respiration and gas exchange</button>
+      <div class="panel">
+      <ul>
+        <li class="heading3" style="clear: both;">Aerobic and anaerobic respiration</li>
+
         <ul>
           <li style="list-style-type: none; float: left; padding: 16px;"> _Lesson 1</li>
           <li style="list-style-type: none; float: left; padding: 16px;"> _Lesson 2</li>
           <li style="list-style-type: none; float: left; padding: 16px;"> _Lesson 3</li>
         </ul>
-        <li class="heading3" style="clear: both;">_Levels of organisation</li>
+        <li class="heading3" style="clear: both;">_Gas exchange in plants</li>
         <ul>
           <li style="list-style-type: none; float: left; padding: 16px;"> _Lesson 1</li>
           <li style="list-style-type: none; float: left; padding: 16px;"> _Lesson 2</li>
           <li style="list-style-type: none; float: left; padding: 16px;"> _Lesson 3</li>
         </ul>
-        <li class="heading3" style="clear: both;">_Movement across cell membranes</li>
+        <li class="heading3" style="clear: both;">_Respiratory system</li>
         <ul>
           <li style="list-style-type: none; float: left; padding: 16px;"> _Lesson 1</li>
           <li style="list-style-type: none; float: left; padding: 16px;"> _Lesson 2</li>
           <li style="list-style-type: none; float: left; padding: 16px;"> _Lesson 3</li>
         </ul>
     </ul>
-    <li class="heading2" style="clear: both;">Nutrition, digestion and excretion</li>
-      <ul>
-        <li class="heading3" style="clear: both;">_Biological molecules</li>
-          <ul>
-            <li style="list-style-type: none; float: left; padding: 16px;"> _Lesson 1</li>
-            <li style="list-style-type: none; float: left; padding: 16px;"> _Lesson 2</li>
-            <li style="list-style-type: none; float: left; padding: 16px;"> _Lesson 3</li>
-          </ul>
-        <li class="heading3" style="clear: both;">_Diet</li>
-        <ul>
-          <li style="list-style-type: none; float: left; padding: 16px;"> _Lesson 1</li>
-          <li style="list-style-type: none; float: left; padding: 16px;"> _Lesson 2</li>
-          <li style="list-style-type: none; float: left; padding: 16px;"> _Lesson 3</li>
-        </ul>
-      <li class="heading3" style="clear: both;">_Digestive system</li>
-        <ul>
-          <li style="list-style-type: none; float: left; padding: 16px;"> _Lesson 1</li>
-          <li style="list-style-type: none; float: left; padding: 16px;"> _Lesson 2</li>
-          <li style="list-style-type: none; float: left; padding: 16px;"> _Lesson 3</li>
-        </ul>
-      <li class="heading3" style="clear: both;">_Plants</li>
-        <ul>
-          <li style="list-style-type: none; float: left; padding: 16px;"> _Lesson 1</li>
-          <li style="list-style-type: none; float: left; padding: 16px;"> _Lesson 2</li>
-          <li style="list-style-type: none; float: left; padding: 16px;"> _Lesson 3</li>
-        </ul>
-      <li class="heading3" style="clear: both;">_Excretion in plants and animals</li>
-        <ul>
-          <li style="list-style-type: none; float: left; padding: 16px;"> _Lesson 1</li>
-          <li style="list-style-type: none; float: left; padding: 16px;"> _Lesson 2</li>
-          <li style="list-style-type: none; float: left; padding: 16px;"> _Lesson 3</li>
-        </ul>
+  </ul>
 
-      </ul>
-    <li class="heading2" style="clear: both;">Respiration and gas exchange</li>
+  <h1 style="text-align:left; color:#E55D87;">_Chemistry</h1>
+  <br/>
 
     <ul>
-      <li class="heading3" style="clear: both;">Aerobic and anaerobic respiration</li>
+      <button class="heading2 accordion">x</button>
+      <div class="panel">
 
-      <ul>
-        <li style="list-style-type: none; float: left; padding: 16px;"> _Lesson 1</li>
-        <li style="list-style-type: none; float: left; padding: 16px;"> _Lesson 2</li>
-        <li style="list-style-type: none; float: left; padding: 16px;"> _Lesson 3</li>
-      </ul>
-      <li class="heading3" style="clear: both;">_Gas exchange in plants</li>
-      <ul>
-        <li style="list-style-type: none; float: left; padding: 16px;"> _Lesson 1</li>
-        <li style="list-style-type: none; float: left; padding: 16px;"> _Lesson 2</li>
-        <li style="list-style-type: none; float: left; padding: 16px;"> _Lesson 3</li>
-      </ul>
-      <li class="heading3" style="clear: both;">_Respiratory system</li>
-      <ul>
-        <li style="list-style-type: none; float: left; padding: 16px;"> _Lesson 1</li>
-        <li style="list-style-type: none; float: left; padding: 16px;"> _Lesson 2</li>
-        <li style="list-style-type: none; float: left; padding: 16px;"> _Lesson 3</li>
-      </ul>
-  </ul>
-</ul>
+        <ul>
+          <li style="clear: both;">a</li>
+          <ul>
+            <li style="list-style-type: none; float: left; padding: 16px;"> _1</li>
+            <li style="list-style-type: none; float: left; padding: 16px;"> _2</li>
+            <li style="list-style-type: none; float: left; padding: 16px;"> _3</li>
+          </ul>
+          <li style="clear: both;">b</li>
+          <ul>
+            <li style="list-style-type: none; float: left; padding: 16px;"> _1</li>
+            <li style="list-style-type: none; float: left; padding: 16px;"> _2</li>
+            <li style="list-style-type: none; float: left; padding: 16px;"> _3</li>
+          </ul>
+          <li style="clear: both;">c</li>
+          <ul>
+            <li style="list-style-type: none; float: left; padding: 16px;"> _1</li>
+            <li style="list-style-type: none; float: left; padding: 16px;"> _2</li>
+            <li style="list-style-type: none; float: left; padding: 16px;"> _3</li>
+          </ul>
+        </ul>
+      </div>
+      <button class="heading2 accordion">y</button>
+      <div class="panel">
+          <ul>
+            <li style="clear: both;">a</li>
+              <ul>
+                <li style="list-style-type: none; float: left; padding: 16px;"> _1</li>
+                <li style="list-style-type: none; float: left; padding: 16px;"> _2</li>
+                <li style="list-style-type: none; float: left; padding: 16px;"> _3</li>
+              </ul>
+            <li style="clear: both;">b</li>
+            <ul>
+              <li style="list-style-type: none; float: left; padding: 16px;"> _1</li>
+              <li style="list-style-type: none; float: left; padding: 16px;"> _2</li>
+              <li style="list-style-type: none; float: left; padding: 16px;"> _3</li>
+            </ul>
+          <li style="clear: both;">c</li>
+            <ul>
+              <li style="list-style-type: none; float: left; padding: 16px;"> _1</li>
+              <li style="list-style-type: none; float: left; padding: 16px;"> _2</li>
+              <li style="list-style-type: none; float: left; padding: 16px;"> _3</li>
+            </ul>
+          </ul>
+        </div>
+        <button class="heading2 accordion">z</button>
+        <div class="panel">
 
-  <li class="heading" style="clear: both;"> _Chemsitry</li>
-  <ul>
-    <li>x</li>
       <ul>
         <li style="clear: both;">a</li>
+
         <ul>
           <li style="list-style-type: none; float: left; padding: 16px;"> _1</li>
           <li style="list-style-type: none; float: left; padding: 16px;"> _2</li>
@@ -212,120 +287,110 @@
           <li style="list-style-type: none; float: left; padding: 16px;"> _2</li>
           <li style="list-style-type: none; float: left; padding: 16px;"> _3</li>
         </ul>
-      </ul>
-      <li style="clear: both;">y</li>
-        <ul>
-          <li style="clear: both;">a</li>
-            <ul>
-              <li style="list-style-type: none; float: left; padding: 16px;"> _1</li>
-              <li style="list-style-type: none; float: left; padding: 16px;"> _2</li>
-              <li style="list-style-type: none; float: left; padding: 16px;"> _3</li>
-            </ul>
-          <li style="clear: both;">b</li>
-          <ul>
-            <li style="list-style-type: none; float: left; padding: 16px;"> _1</li>
-            <li style="list-style-type: none; float: left; padding: 16px;"> _2</li>
-            <li style="list-style-type: none; float: left; padding: 16px;"> _3</li>
-          </ul>
-        <li style="clear: both;">c</li>
-          <ul>
-            <li style="list-style-type: none; float: left; padding: 16px;"> _1</li>
-            <li style="list-style-type: none; float: left; padding: 16px;"> _2</li>
-            <li style="list-style-type: none; float: left; padding: 16px;"> _3</li>
-          </ul>
-        </ul>
-    <li style="clear: both;">z</li>
-    <ul>
-      <li style="clear: both;">a</li>
-
-      <ul>
-        <li style="list-style-type: none; float: left; padding: 16px;"> _1</li>
-        <li style="list-style-type: none; float: left; padding: 16px;"> _2</li>
-        <li style="list-style-type: none; float: left; padding: 16px;"> _3</li>
-      </ul>
-      <li style="clear: both;">b</li>
-      <ul>
-        <li style="list-style-type: none; float: left; padding: 16px;"> _1</li>
-        <li style="list-style-type: none; float: left; padding: 16px;"> _2</li>
-        <li style="list-style-type: none; float: left; padding: 16px;"> _3</li>
-      </ul>
-      <li style="clear: both;">c</li>
-      <ul>
-        <li style="list-style-type: none; float: left; padding: 16px;"> _1</li>
-        <li style="list-style-type: none; float: left; padding: 16px;"> _2</li>
-        <li style="list-style-type: none; float: left; padding: 16px;"> _3</li>
-      </ul>
-  </ul>
+    </ul>
+</div>
 </ul>
 
+  <h1 style="text-align:left; color: #5FC3E4;">_Physics</h1>
+  <br/>
 
-  <li class="heading" style="clear: both;"> _Physics</li>
-  <ul>
-    <li style="clear: both;">x</li>
-      <ul>
-        <li style="clear: both;">a</li>
-        <ul>
-          <li style="list-style-type: none; float: left; padding: 16px;"> _1</li>
-          <li style="list-style-type: none; float: left; padding: 16px;"> _2</li>
-          <li style="list-style-type: none; float: left; padding: 16px;"> _3</li>
-        </ul>
-        <li style="clear: both;">b</li>
-        <ul>
-          <li style="list-style-type: none; float: left; padding: 16px;"> _1</li>
-          <li style="list-style-type: none; float: left; padding: 16px;"> _2</li>
-          <li style="list-style-type: none; float: left; padding: 16px;"> _3</li>
-        </ul>
-        <li style="clear: both;">c</li>
-        <ul>
-          <li style="list-style-type: none; float: left; padding: 16px;"> _1</li>
-          <li style="list-style-type: none; float: left; padding: 16px;"> _2</li>
-          <li style="list-style-type: none; float: left; padding: 16px;"> _3</li>
-        </ul>
-      </ul>
-      <li style="clear: both;">y</li>
+    <ul>
+      <button class="heading2 accordion">x</button>
+      <div class="panel">
+
         <ul>
           <li style="clear: both;">a</li>
-            <ul>
-              <li style="list-style-type: none; float: left; padding: 16px;"> _1</li>
-              <li style="list-style-type: none; float: left; padding: 16px;"> _2</li>
-              <li style="list-style-type: none; float: left; padding: 16px;"> _3</li>
-            </ul>
+          <ul>
+            <li style="list-style-type: none; float: left; padding: 16px;"> _1</li>
+            <li style="list-style-type: none; float: left; padding: 16px;"> _2</li>
+            <li style="list-style-type: none; float: left; padding: 16px;"> _3</li>
+          </ul>
           <li style="clear: both;">b</li>
           <ul>
             <li style="list-style-type: none; float: left; padding: 16px;"> _1</li>
             <li style="list-style-type: none; float: left; padding: 16px;"> _2</li>
             <li style="list-style-type: none; float: left; padding: 16px;"> _3</li>
           </ul>
-        <li style="clear: both;">c</li>
+          <li style="clear: both;">c</li>
           <ul>
             <li style="list-style-type: none; float: left; padding: 16px;"> _1</li>
             <li style="list-style-type: none; float: left; padding: 16px;"> _2</li>
             <li style="list-style-type: none; float: left; padding: 16px;"> _3</li>
           </ul>
         </ul>
-    <li style="clear: both;">z</li>
-    <ul>
-      <li style="clear: both;">a</li>
+      </div>
+      <button class="heading2 accordion">y</button>
+      <div class="panel">
+          <ul>
+            <li style="clear: both;">a</li>
+              <ul>
+                <li style="list-style-type: none; float: left; padding: 16px;"> _1</li>
+                <li style="list-style-type: none; float: left; padding: 16px;"> _2</li>
+                <li style="list-style-type: none; float: left; padding: 16px;"> _3</li>
+              </ul>
+            <li style="clear: both;">b</li>
+            <ul>
+              <li style="list-style-type: none; float: left; padding: 16px;"> _1</li>
+              <li style="list-style-type: none; float: left; padding: 16px;"> _2</li>
+              <li style="list-style-type: none; float: left; padding: 16px;"> _3</li>
+            </ul>
+          <li style="clear: both;">c</li>
+            <ul>
+              <li style="list-style-type: none; float: left; padding: 16px;"> _1</li>
+              <li style="list-style-type: none; float: left; padding: 16px;"> _2</li>
+              <li style="list-style-type: none; float: left; padding: 16px;"> _3</li>
+            </ul>
+          </ul>
+        </div>
+        <button class="heading2 accordion">z</button>
+        <div class="panel">
 
-      <ul>
-        <li style="list-style-type: none; float: left; padding: 16px;"> _1</li>
-        <li style="list-style-type: none; float: left; padding: 16px;"> _2</li>
-        <li style="list-style-type: none; float: left; padding: 16px;"> _3</li>
-      </ul>
-      <li style="clear: both;">b</li>
-      <ul>
-        <li style="list-style-type: none; float: left; padding: 16px;"> _1</li>
-        <li style="list-style-type: none; float: left; padding: 16px;"> _2</li>
-        <li style="list-style-type: none; float: left; padding: 16px;"> _3</li>
-      </ul>
-      <li style="clear: both;">c</li>
-      <ul>
-        <li style="list-style-type: none; float: left; padding: 16px;"> _1</li>
-        <li style="list-style-type: none; float: left; padding: 16px;"> _2</li>
-        <li style="list-style-type: none; float: left; padding: 16px;"> _3</li>
-      </ul>
-  </ul>
+          <ul>
+            <li style="clear: both;">a</li>
+
+            <ul>
+              <li style="list-style-type: none; float: left; padding: 16px;"> _1</li>
+              <li style="list-style-type: none; float: left; padding: 16px;"> _2</li>
+              <li style="list-style-type: none; float: left; padding: 16px;"> _3</li>
+            </ul>
+            <li style="clear: both;">b</li>
+            <ul>
+              <li style="list-style-type: none; float: left; padding: 16px;"> _1</li>
+              <li style="list-style-type: none; float: left; padding: 16px;"> _2</li>
+              <li style="list-style-type: none; float: left; padding: 16px;"> _3</li>
+            </ul>
+            <li style="clear: both;">c</li>
+            <ul>
+              <li style="list-style-type: none; float: left; padding: 16px;"> _1</li>
+              <li style="list-style-type: none; float: left; padding: 16px;"> _2</li>
+              <li style="list-style-type: none; float: left; padding: 16px;"> _3</li>
+            </ul>
+        </ul>
+      </div>
+    </ul>
+    </div>
+
+  <script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].onclick = function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  }
+}
+</script>
+
+  <script type="text/javascript" src="js/navigation.js"></script>
+
   <script type="text/javascript" src="js/skrollr.min.js"></script>
+
 
 	<script type="text/javascript">
 	skrollr.init();
