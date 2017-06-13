@@ -12,7 +12,6 @@ body
 {	margin:				0;
 	padding:			0;
 	font-family: 		arial;
-	font-size:			62.5%;
 
 }
 
@@ -63,25 +62,25 @@ audio:not([controls]) {
     display: none;
 }
 
-section#top {
-	position:			relative;
+section#visual {
 	width:				100%;
-	background:			#ffffff;
-	background-attachment:fixed;
-/*	opacity:            0.1;
-*/	height:				1100px;
+  height:				1100px;
 	overflow:			hidden;
-	background:   #ffff00;
+  padding-top: 75px;
+
+
+}
+
+section#visual button {
+	overflow:			hidden;
+  margin-left: 15px;
 
 }
 
 
-
-
-section#top p {
+section#visual p {
 		font-size:		2em;
 		font-family: 'Josefin Sans', sans-serif;
-
 		width:				80%;
 		text-align:		justify;
 		margin-left: :				20px;
@@ -89,31 +88,27 @@ section#top p {
 }
 
 
-section#info {
-	position:			relative;
-	background:			grey;
-	width: 100%;
-	height:				100%;
-	color:				#fff;
-	padding: 20px;
-	font-size:			1.4em;
 
-}
-
-section#top h1 {
+section#visual h1 {
 	font-family: "Courier New";
 	font-style: oblique;
 	font-weight: 900;
-	font-size:			6em;
+	font-size:			3em;
 	color:              #444444;
 	text-transform:		uppercase;
 	width:				80%;
 	text-align:			justify;
 }
 
+section#text {
+  background-color:  #5FC3E4;
+  width:				100%;
+  height:				1100px;
+
+}
 
 
-section#info h1 {
+section#text h1 {
 	font-size:			3.2em;
 	font-family: "Courier New";
 	font-style: oblique;
@@ -125,7 +120,7 @@ section#info h1 {
 	padding-left:			20px;
 }
 
-section#info h2 {
+section#text h2 {
 	font-size:			2.5em;
 	font-family: "Courier New";
 	font-style: oblique;
@@ -139,7 +134,7 @@ section#info h2 {
 	padding-left:			20px;
 }
 
-section#info p {
+section#text p {
 		font-size:		2em;
 		font-family: 'Josefin Sans', sans-serif;
 
@@ -152,19 +147,20 @@ section#info p {
 
 
 
-section#info a {
+section#text a {
     color: #b5ffda;
     text-decoration: none;
 }
 
 
-section#info a:hover
+section#text a:hover
 
 {
      color:#fff;
      text-decoration:none;
      cursor:pointer;
 }
+
 
 
 nav ul {
@@ -177,15 +173,15 @@ nav ul {
 nav li {
     float: left;
 		font-family: "Courier New";
-		font-size: 6.2em;
+		font-size: 14pt;
 		font-style: oblique;
 		font-weight: 900;
 
 }
-
+/*
 nav li:last-child {
 		float:right;
-}
+}*/
 
 
 
@@ -196,10 +192,118 @@ nav li a {
     text-decoration: none;
 }
 
-nav li a:hover{
-	color:#ff6796;
+a{
+  color:#00ff00;
+ text-decoration: none;
+ margin-left: 15px;
+ margin-right: 30px;
+
 }
 
+ a:hover{
+  color: #5FC3E4;
+  text-decoration: none;
+
+}
+
+/*a:visited {
+  color: #5FC3E4;
+  text-decoration: none;
+}*/
+
+.fond{
+  padding-top:45px;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+}
+
+.style_prevu_kit {
+    color:#00ff00;
+    display:inline-block;
+    border:0;
+    font-size: 85pt;
+    font-family: "Courier New";
+  	font-style: oblique;
+  	font-weight: 900;
+    /*width:196px;
+    height:210px;*/
+    position: relative;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);
+
+}
+.style_prevu_kit:hover
+{
+    /*box-shadow: 0px 0px 150px #000000;*/
+    color:  #5FC3E4;
+    text-decoration: none;
+    font-family: "Courier New";
+  	font-style: oblique;
+  	font-weight: 900;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.2);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.2);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.2);
+    transition: all 200ms ease-in;
+    transform: scale(1.2);
+}
+
+.button-flip {
+  color:#fff;
+  font-family: "Courier New";
+  font-style: oblique;
+  font-weight: 900;
+
+}
+
+@-webkit-keyframes bounce {
+        0% {
+    transform: scale(1,1) translate(0px, 0px);
+  }
+
+  30%{
+    transform: scale(1,0.8) translate(0px, 3px);
+  }
+
+  75%{
+    transform: scale(1,1.1) translate(0px, -7px);
+  }
+
+ 100% {
+    transform: scale(1,1) translate(0px, 0px);
+  }
+}
+
+
+.button-flip:hover button{
+  color:#fff;
+  font-family: "Courier New";
+  font-style: oblique;
+  font-weight: 900;
+  background-color :#00ff00;
+
+     -webkit-animation: bounce 0.75s infinite;
+}
+
+.button-flip button {
+  color:#fff;
+  font-family: "Courier New";
+  font-style: oblique;
+  font-weight: 900;
+  background-color: #E55D87;
+
+}
 /*nav .active {
 	color:#ff6796;
 

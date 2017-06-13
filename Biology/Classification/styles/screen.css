@@ -1,18 +1,9 @@
-/* ==========================================================================
-   HTML5 display definitions
-   ========================================================================== */
-
-/**
- * Correct `block` display not defined in IE 6/7/8/9 and Firefox 3.
- */
-
- @import url('https://fonts.googleapis.com/css?family=Abel|Josefin+Sans|Rajdhani');
+@import url('https://fonts.googleapis.com/css?family=Abel|Josefin+Sans|Rajdhani');
 
 body
 {	margin:				0;
-	padding:			0;
-	font-family: 		arial;
-	font-size:			62.5%;
+ padding:			0;
+ font-family: 		arial;
 
 }
 
@@ -29,178 +20,278 @@ main,
 nav,
 section,
 summary {
-    display: block;
+   display: block;
 }
 
 /**
- * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
- */
+* Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+*/
 
 audio,
 canvas,
 video {
-    display: inline-block;
-    *display: inline;
-    *zoom: 1;
+   display: inline-block;
+   *display: inline;
+   *zoom: 1;
 }
 
 /**
- * Prevent modern browsers from displaying `audio` without controls.
- * Remove excess height in iOS 5 devices.
- */
+* Prevent modern browsers from displaying `audio` without controls.
+* Remove excess height in iOS 5 devices.
+*/
 
 audio:not([controls]) {
-    display: none;
-    height: 0;
+   display: none;
+   height: 0;
 }
 
 /**
- * Address styling not present in IE 7/8/9, Firefox 3, and Safari 4.
- * Known issue: no IE 6 support.
- */
+* Address styling not present in IE 7/8/9, Firefox 3, and Safari 4.
+* Known issue: no IE 6 support.
+*/
 
 [hidden] {
-    display: none;
+   display: none;
 }
 
-section#top {
-	position:			relative;
-	width:				100%;
-	background:			#ffffff;
-	background-attachment:fixed;
-/*	opacity:            0.1;
-*/	height:				1100px;
-	overflow:			hidden;
-	background:   #ffff00;
+section#visual {
+ width:				100%;
+ height:				1100px;
+ overflow:			hidden;
+ padding-top: 75px;
+
 
 }
 
-
-
-
-section#top p {
-		font-size:		2em;
-		font-family: 'Josefin Sans', sans-serif;
-
-		width:				80%;
-		text-align:		justify;
-		margin-left: :				20px;
-		padding-left:			20px;
-}
-
-
-section#info {
-	position:			relative;
-	background:			grey;
-	width: 100%;
-	height:				100%;
-	color:				#fff;
-	padding: 20px;
-	font-size:			1.4em;
+section#visual button {
+ overflow:			hidden;
+ margin-left: 15px;
 
 }
 
-section#top h1 {
-	font-family: "Courier New";
-	font-style: oblique;
-	font-weight: 900;
-	font-size:			6em;
-	color:              #444444;
-	text-transform:		uppercase;
-	width:				80%;
-	text-align:			justify;
+
+section#visual p {
+   font-size:		2em;
+   font-family: 'Josefin Sans', sans-serif;
+   width:				80%;
+   text-align:		justify;
+   margin-left: :				20px;
+   padding-left:			20px;
 }
 
 
 
-section#info h1 {
-	font-size:			3.2em;
-	font-family: "Courier New";
-	font-style: oblique;
-	font-weight: 900;
-	text-transform:		uppercase;
-	width:				80%;
-	text-align:			justify;
-	margin-left: :				20px;
-	padding-left:			20px;
+section#visual h1 {
+ font-family: "Courier New";
+ font-style: oblique;
+ font-weight: 900;
+ font-size:			3em;
+ color:              #444444;
+ text-transform:		uppercase;
+ width:				80%;
+ text-align:			justify;
 }
 
-section#info h2 {
-	font-size:			2.5em;
-	font-family: "Courier New";
-	font-style: oblique;
-	text-transform:		uppercase;
+section#text {
+ background-color:  #5FC3E4;
+ width:				100%;
+ padding-bottom: 70px;
 
-	font-weight: 900;
-	width:				80%;
-	text-align:			justify;
-	line-height:		1.8em;
-	margin-left: :				20px;
-	padding-left:			20px;
 }
 
-section#info p {
-		font-size:		2em;
-		font-family: 'Josefin Sans', sans-serif;
 
-		width:				80%;
-		text-align:		justify;
-		margin-left: :				20px;
-		padding-left:			20px;
+section#text h1 {
+  color: #3b3b3b;
+line-height: 3.2em;
+ font-size:			3.2em;
+ font-family: "Courier New";
+ font-style: oblique;
+ font-weight: 900;
+ text-transform:		uppercase;
+ width:				80%;
+ text-align:			justify;
+ margin-left: :				20px;
+ padding-left:			20px;
+}
+
+section#text h2 {
+ font-size:			2.5em;
+ font-family: "Courier New";
+ font-style: oblique;
+ text-transform:		uppercase;
+ color: #fff;
+ font-weight: 900;
+ width:				80%;
+ line-height:		1.8em;
+ margin-left: :				20px;
+ padding-left:			20px;
+}
+
+section#text p {
+   font-size:		14pt;
+   font-family: 'Josefin Sans', sans-serif;
+   width:				80%;
+   margin-left: :				20px;
+   padding-left:			20px;
 }
 
 
 
 
-section#info a {
-    color: #b5ffda;
-    text-decoration: none;
+section#text a {
+   color: #b5ffda;
+   text-decoration: none;
 }
 
 
-section#info a:hover
+section#text a:hover
 
 {
-     color:#fff;
-     text-decoration:none;
-     cursor:pointer;
+    color:#fff;
+    text-decoration:none;
+    cursor:pointer;
 }
+
 
 
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
 }
 
 nav li {
-    float: left;
-		font-family: "Courier New";
-		font-size: 6.2em;
-		font-style: oblique;
-		font-weight: 900;
+   float: left;
+   font-family: "Courier New";
+   font-size: 14pt;
+   font-style: oblique;
+   font-weight: 900;
 
 }
-
+/*
 nav li:last-child {
-		float:right;
-}
+   float:right;
+}*/
 
 
 
 nav li a {
-    display: block;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+   display: block;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
 }
 
-nav li a:hover{
-	color:#ff6796;
+a{
+ color:#00ff00;
+text-decoration: none;
+margin-left: 15px;
+margin-right: 30px;
+
 }
 
-/*nav .active {
-	color:#ff6796;
+a:hover{
+ color: #5FC3E4;
+ text-decoration: none;
 
+}
+
+/*a:visited {
+ color: #5FC3E4;
+ text-decoration: none;
 }*/
+
+.fond{
+ padding-top:45px;
+ top:0;
+ left:0;
+ right:0;
+ bottom:0;
+}
+
+.style_prevu_kit {
+   color:#00ff00;
+   display:inline-block;
+   border:0;
+   font-size: 85pt;
+   font-family: "Courier New";
+   font-style: oblique;
+   font-weight: 900;
+   /*width:196px;
+   height:210px;*/
+   position: relative;
+   -webkit-transition: all 200ms ease-in;
+   -webkit-transform: scale(1);
+   -ms-transition: all 200ms ease-in;
+   -ms-transform: scale(1);
+   -moz-transition: all 200ms ease-in;
+   -moz-transform: scale(1);
+   transition: all 200ms ease-in;
+   transform: scale(1);
+
+}
+.style_prevu_kit:hover
+{
+   /*box-shadow: 0px 0px 150px #000000;*/
+   color:  #5FC3E4;
+   text-decoration: none;
+   font-family: "Courier New";
+   font-style: oblique;
+   font-weight: 900;
+   z-index: 2;
+   -webkit-transition: all 200ms ease-in;
+   -webkit-transform: scale(1.2);
+   -ms-transition: all 200ms ease-in;
+   -ms-transform: scale(1.2);
+   -moz-transition: all 200ms ease-in;
+   -moz-transform: scale(1.2);
+   transition: all 200ms ease-in;
+   transform: scale(1.2);
+}
+
+.button-flip {
+ color:#fff;
+ font-family: "Courier New";
+ font-style: oblique;
+ font-weight: 900;
+
+}
+
+@-webkit-keyframes bounce {
+       0% {
+   transform: scale(1,1) translate(0px, 0px);
+ }
+
+ 30%{
+   transform: scale(1,0.8) translate(0px, 3px);
+ }
+
+ 75%{
+   transform: scale(1,1.1) translate(0px, -7px);
+ }
+
+100% {
+   transform: scale(1,1) translate(0px, 0px);
+ }
+}
+
+
+.button-flip:hover button{
+ color:#fff;
+ font-family: "Courier New";
+ font-style: oblique;
+ font-weight: 900;
+ background-color :#00ff00;
+
+    -webkit-animation: bounce 0.75s infinite;
+}
+
+.button-flip button {
+ color:#fff;
+ font-family: "Courier New";
+ font-style: oblique;
+ font-weight: 900;
+ background-color: #E55D87;
+
+}
