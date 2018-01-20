@@ -1,0 +1,563 @@
+/** * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/) * http://cssreset.com */
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+display: block;}
+
+body {
+line-height: 1.5;
+}
+
+ol, ul {
+list-style: none;
+}
+
+blockquote, q {
+quotes: none;
+}
+
+blockquote:before, blockquote:after,q:before, q:after {
+content: '';
+content: none;
+}
+
+table {
+border-collapse: collapse;	border-spacing: 0;
+}
+
+/* end reset*/
+
+
+
+
+/* default styles (all device widths)*/
+body  {
+margin: 0;
+padding: 0;
+width: 100%;
+height: 100%;
+font-family: 'Ubuntu', Helvetica, sans-serif;
+font-size: 1.5em;
+background: white;
+color: black;
+}
+
+header {
+position: fixed;
+left: 0px;
+top: 0%;
+padding: 1%;
+width: 100%;
+background: #507800;
+color:#999;
+font-size: .8em;
+opacity: 1;
+text-align: center;
+border-bottom: 5px solid #3A4C03;
+z-index: 101;
+}
+
+#title  {
+color: white;
+font-variant: small-caps;
+font-size: 1.5em;
+}
+
+.current {
+color: white;
+}
+
+#summary  {
+position: fixed;
+top: 0%;
+left: 0%;
+height: 100%;
+width: 100%;
+border: 0px dashed yellow;
+z-index:8;
+background: #1c1919;
+color: white;
+margin: 0%;
+padding: 0%;
+}
+
+#summary p {
+width: 90%;
+font-size: .9em;
+margin: 5% auto;
+text-align: center;
+  border: 0px dashed blue;
+}
+
+#summary h1 {
+  text-align: center;
+  border: 0px dashed red;
+  font-weight: bold;
+  margin: 15% auto 0% auto;
+  padding: 1%;
+  font-size: 2.5em;
+}
+
+/*CSS for all the heading placements*/
+h2 {
+  border: 0px dashed red;
+  font-weight: bold;
+  font-size: 1.2em;
+  border-bottom: 3px solid #669900;
+}
+
+.part1 h2, .part2 h2, .part4 h2 {
+  margin: -80% auto 0% auto;
+  padding: 1%;
+}
+
+.part3 h2, .part7 h2 {
+  margin: -30% auto 0% auto;
+  padding: 1%;
+}
+
+.part5 h2 {
+  margin: -45% auto 0% auto;
+  padding: 1%;
+}
+
+.part6 h2 {
+  margin: -60% auto 0% auto;
+  padding: 1%;
+}
+
+/*CSS for all the different sections. Controls location on page */
+.part1, .part4, .part5, .part7, .part9 {
+float: none;
+  padding: 15% 5%;
+  margin-left: 0%;
+  margin-top: 10%;
+  line-height: 1.5;
+position: fixed;
+font-size: .70em;
+  border: 0px solid green;
+z-index: 99%
+}
+
+.part2 {
+  float: none;
+  padding: 15% 5%;
+  margin-left: 0%;
+  margin-top: 30%;
+  line-height: 1.5;
+  position: fixed;
+  font-size: .70em;
+  border: 0px solid green;
+  z-index: 99%
+}
+
+#dataexample {
+  font-family: Courier, sans-serif;
+  font-size: .75em;
+  width: 40%;
+position: fixed;
+left: 5%;
+bottom: 20%;
+  border: 0px solid green;
+z-index: 99;
+}
+
+.dataStyle {
+color: red;
+font-weight:100;
+}
+
+
+.part3, .part6  {
+  float: none;
+  padding: 8% 5%;
+  margin-left: 0%;
+  margin-top: 80%;
+  line-height: 1.5;
+  position: fixed;
+  border: 0px solid green;
+  z-index: 99%;
+  font-size: .70em;
+  }
+
+.part8 {
+  float: none;
+  top: 0%;
+  left: 100%;
+  padding: 15% 5%;
+  margin-left: 0%;
+  margin-top: 10%;
+  line-height: 1.5;
+  position: fixed;
+  border: 0px solid green;
+  z-index: 99%;
+  font-size: .70em;
+  }
+
+/*Determines design of scroll counter */
+#scrollCount  {
+position: fixed;
+top: 10%;
+right: 5%;
+width: 2em;
+padding: 2% 8%;
+color: white;
+background: #931A0B;
+z-index: 11;
+}
+
+/*Controls elements of alien abduction*/
+.aliens  {
+  float: none;
+  padding: 0%;
+  margin-left: 0%;
+  margin-top: 0%;
+  border: 0px solid pink;
+  max-height: 60%;
+  overflow: hidden;
+  position: fixed;
+  top: 0%;
+  left: 100%;
+  width: 100%;
+  }
+
+#capture {
+  float: none;
+  padding: 0%;
+  margin-left: 0%;
+  margin-top: 0%;
+  border: 0px solid pink;
+  overflow: hidden;
+  position: fixed;
+  top: 100%;
+  left: 0%;
+  width: 100%;
+  }
+
+.guy {
+  float: none;
+  margin-top: 89%;
+  border: 0px solid pink;
+  overflow: hidden;
+  position: fixed;
+  top: 0%;
+  left: 100%;
+  width: 40%;
+  }
+
+#guy3 {
+  float: none;
+  margin-top: 89%;
+  border: 0px solid pink;
+  overflow: hidden;
+  position: fixed;
+  margin-left: 30%;
+  width: 40%;
+  top: 100%;
+  left: 0%;
+}
+
+/*Footer information, such as location and link styles*/
+#resources {
+float: none;
+  padding: 0% 5%;
+  margin-left: 0%;
+  margin-top: 20%;
+  line-height: 1.5;
+position: fixed;
+color: black;
+  border: 0px solid green;
+z-index: 99%
+}
+
+/* unvisited link */
+#resources a:link {
+color: #00305A;
+}
+
+/* visited link */
+#resources a:visited {
+color: #00305A;
+}
+
+/* mouse over link */
+#resources a:hover {
+color: #669900;
+}
+
+/* selected link */
+#resources a:active {
+color: #669900;
+}
+
+footer {
+  position: fixed;
+  left: 0px;
+  bottom: 0%;
+  padding: .5%;
+  width: 100%;
+  background: #0c0b0b;
+  color:#fff;
+  font-size: .8em;
+  opacity: 1;
+  text-align: center;
+  border: 0px solid #000;
+  z-index: 101;
+  }
+
+/*CSS for video*/
+.video-container {
+position: relative;
+padding-bottom: 56.25%;
+padding-top: 30px;
+height: 0;
+overflow: hidden;
+z-index: 1;
+}
+
+#sky-video {
+display: block;
+position: absolute;
+top: 0%;
+left: 0%;
+width: 100%;
+height: 100%;
+z-index: 1;
+}
+
+/*    .slideIn > .part4 {
+  left: 0%;
+  }
+*/
+
+/* Map styles */
+#map-canvas {
+  height: 100%;
+  margin: 0px;
+  padding: 0px
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 100%;
+  left: 0%;
+  z-index: 96;
+  }
+
+
+.clear {
+  clear: both;
+  }
+
+.imageBox, .video-section  {
+  float: none;
+  padding: 0%;
+  margin-left: 0%;
+  margin-top: 0%;
+  border: 0px solid pink;
+  max-height: 60%;
+  overflow: hidden;
+  position: fixed;
+  }
+
+img  {
+  width: 100%;
+  }
+
+/*  .active  {
+display: block;
+}
+
+.hidden  {
+display: none;
+}
+*/
+
+/* tablet styles */
+@media only screen and (min-width: 500px) and (max-width: 800px) {
+
+.imageBox  {
+  float: none;
+  margin-left: 0%;
+  margin-top: 0%;
+}
+
+.part1 h2, .part4 h2, .part9 h2 {
+  margin: -80% auto 0% auto;
+  padding: 1%;
+}
+
+.part2 h2 {
+  margin-top: -30%;
+}
+
+.part5 h2, .part7 h2, .part8 h2,  {
+  margin-top: -40%;
+}
+
+.part2 {
+  padding: none;
+  margin-left: 0%;
+  margin-top: 10%;
+  line-height: 1.5;
+  border: 0px solid green;
+}
+
+#dataexample {
+  font-size: .75em;
+  padding: 0;
+  border: 0px solid green;
+}
+
+.part3, .part6  {
+  margin-top: 60%;
+  border: 0px solid green;
+  }
+
+.aliens  {
+  margin-left: 0%;
+  margin-top: 0%;
+  width: 60%;
+  }
+
+#capture {
+  margin-left: 20%;
+  margin-top: 0%;
+  border: 0px solid pink;
+  width: 60%;
+  max-height: 60%;
+  }
+
+.guy {
+  margin-top: 60%;
+  border: 0px solid pink;
+  top: 0%;
+  left: 100%;
+  width: 20%;
+  }
+
+#guy3 {
+  margin-top: 60%;
+  border: 0px solid pink;
+  margin-left: 40%;
+  width: 20%;
+}
+
+#scrollCount  {
+top: 30px;
+width: 3.5em;
+padding: 1.5% 2%;
+}
+
+#resources {
+  margin-top: 10%;
+  border: 0px solid green;
+}
+
+}
+
+/* desktop styles */
+@media only screen and (min-width: 801px) {
+
+#summary p {
+width: 60%;
+}
+
+.imageBox, .video-section  {
+  float: left;
+  width: 47%;
+  margin-left: 4%;
+  margin-top: 10%;
+  border: 0px solid black;
+}
+
+#scrollCount  {
+  width: 3.5em;
+  padding: 1.5% 2%;
+  }
+
+.part1 h2, .part2 h2, .part4 h2, .part5 h2, .part7 h2, .part8 h2, .part9 h2 {
+  margin: -10% auto 0% auto;
+  padding: 1%;
+}
+
+#part3title h2 {
+  margin: -35% auto 0% auto;
+}
+
+#part6title h2 {
+  margin: -65% auto 0% auto;
+}
+
+.part1, .part2, .part4, .part5, .part7, .part8, .part9 {
+  padding: 5% 25% 100% 25%;
+  width: 100%;
+  font-size: 1em;
+  margin: 10% 0% 5% 0%;
+  border: 0px solid blue;
+  }
+
+#dataexample {
+font-size: .75em;
+  padding: 0;
+width: 100%;
+  border: 0px solid green;
+}
+
+.part3, .part6  {
+  float: right;
+  padding: 15% 0% 15% 55%;
+  margin: 0% 0%;
+  font-size: 1em;
+  line-height: 1.5em;
+  border: 0px solid green;
+  }
+
+.aliens  {
+  margin-left: 0%;
+  margin-top: 0%;
+  width: 40%;
+  }
+
+#capture {
+  margin-left: 30%;
+  margin-top: 0%;
+  border: 0px solid pink;
+width: 40%;
+  max-height: 60%;
+}
+
+.guy {
+  margin-top: 30%;
+  border: 0px solid pink;
+top: 0%;
+left: 100%;
+width: 10%;
+}
+
+#guy3 {
+  margin-top: 30%;
+  border: 0px solid pink;
+  margin-left: 45%;
+  width: 10%;
+}
+
+#resources {
+  padding: 15% 5%;
+  margin-left: 0%;
+  margin-top: -5%;
+  border: 0px solid green;
+  z-index: 99%
+}
+
+
+}
