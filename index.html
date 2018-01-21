@@ -360,7 +360,7 @@
             success     : function(data) {
 
               if (data.result != "success") {
-                var message = data.msg.substring(4);
+                var message = data.msg.substring(0);
                 $('#notification_container').html('<span class="alert">'+message+'</span>');
               }
 
