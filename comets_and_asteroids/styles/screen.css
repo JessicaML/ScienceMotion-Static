@@ -1,0 +1,48 @@
+#info{
+    background: grey;
+}
+html{
+    color:white;
+}
+h1{
+    font-size: 2.5em;
+    width: 80%;
+    text-align: justify;
+    line-height: 1.8em;
+    margin: 20px;
+    padding: 20px;
+}
+span{
+    font-weight: bold;
+    text-decoration: none;
+}
+p{
+        font-size: 2em;
+    width: 80%;
+    text-align: justify;
+    margin: 20px;
+    padding: 20px;
+}
+#container {
+  width: 400px;
+  height: 400px;
+  position: center;
+  background: url(/images/for_both_comet_asteroid.jpg);
+  
+}
+#animate {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background:  url(/images/comet_transparent_bg.png);
+  top:0px;
+  right:0px;
+}
+#asteroid{
+     width: 50px;
+  height: 50px;
+  position: absolute;
+  background: transparent url(comets and asteroids/images/asteroid_belt.png);
+  top:0px;
+  right:0px;
+}
