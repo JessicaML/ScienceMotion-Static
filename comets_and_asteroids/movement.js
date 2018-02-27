@@ -4,7 +4,7 @@ function myMove() {
   img.onload = function() {
   div.appendChild(img);
 };
-img.src = "comets and asteroids/images/images.png";
+img.src = "comets_and_asteroids/images/images.png";
   var pos = 0;
   var id = setInterval(frame, 5);
   function frame() {
