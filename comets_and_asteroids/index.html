@@ -1,56 +1,32 @@
+<!DOCTYPE html>
 <html>
-        <title>Comets and Asteroids</title>
+<style>
+#container {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  background: url('https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/0kjHIH6/cartoon-earth-saturn-mars-and-moon-in-space_eytcf3tje__F0000.png') center;
+}
+#animate {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+</style>
+<body>
 
-  <head>
+<p>
+<button onclick="myMove()">Click Me</button>
+</p>
 
-   <!-- <link href="css/bootstrap.min.css" rel="stylesheet">-->
-  <link href='http://fonts.googleapis.com/css?family=Nova+Round' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="styles/screen.css">
-        <script src="movement.js"></script>
-    <!-- Custom CSS -->
-
-
-        <link rel="stylesheet" href="styles/screen.css">
-        <link rel='apple-touch-icon' sizes='57x57' href='../images/favicons/apple-icon-57x57.png'>
-        <link rel='apple-touch-icon' sizes='60x60' href='../images/favicons/apple-icon-60x60.png'>
-        <link rel='apple-touch-icon' sizes='72x72' href='../images/favicons/apple-icon-72x72.png'>
-        <link rel='apple-touch-icon' sizes='76x76' href='../images/favicons/apple-icon-76x76.png'>
-        <link rel='apple-touch-icon' sizes='114x114' href='../images/favicons/apple-icon-114x114.png'>
-        <link rel='apple-touch-icon' sizes='120x120' href='../images/favicons/apple-icon-120x120.png'>
-        <link rel='apple-touch-icon' sizes='144x144' href='../images/favicons/apple-icon-144x144.png'>
-        <link rel='apple-touch-icon' sizes='152x152' href='../images/favicons/apple-icon-152x152.png'>
-        <link rel='apple-touch-icon' sizes='180x180' href='../images/favicons/apple-icon-180x180.png'>
-        <link rel='icon' type='image/png', sizes='192x192', href='../images/favicons/android-icon-192x192.png'>
-        <link rel='icon' type='image/png', sizes='32x32', href='../images/favicons/favicon-32x32.png'>
-        <link rel='icon' type='image/png', sizes='16x16', href='../images/favicons/favicon-16x16.png'>
-        <meta charset="utf-8">
-
-
-  </head>
-  <body>
-		<section id="top">
-
-
-<div id="animate">
-    <!--<img id="img" src ="./images/images.png" onclick="myMove()"/>-->
-  </div>
-            
-<div id="asteroid">
-    <!--<img id="img" src ="./images/images.png" onclick="myMove()"/>-->
-  </div>
-<div id="container">
-    <!--<img id="img" src ="./images/images.png" onclick="myMove()"/>-->
-    </div>
-            <div id="button">
-    <!--<img id="img" src ="./images/images.png" onclick="myMove()"/>-->
-               <button onclick="myMove()">Click Me</button>
-                   </div>
-
-
-
-
-		</section>
-		<section id= "info">
+<div id ="container">
+<div id ="animate">
+  <img src="http://exchangedownloads.smarttech.com/public/content/98/98c50a64-ad15-4fdd-83b9-598f60b99487/previews/medium/0001.png" height="50px" width="50px">
+</div>
+</div>
+<section id= "info">
       <div >
 
 				<h1>Comets
@@ -81,5 +57,24 @@ It is thought that this drop in temperature contributed to the extinction of din
 		</section>
 	
        
+<script>
+function myMove() {
+  var elem = document.getElementById("animate");
+  var posx = 350;
+  var posy = 0;
+  var id = setInterval(frame, 5);
+  function frame() {
+    if (posx == 0) {
+      clearInterval(id);
+    } else {
+      posx--;
+      posy++;
+      elem.style.top = posy + 'px';
+      elem.style.left = posx + 'px';
+    }
+  }
+}
+</script>
+
 </body>
 </html>

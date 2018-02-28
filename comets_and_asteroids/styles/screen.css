@@ -16,33 +16,11 @@ span{
     font-weight: bold;
     text-decoration: none;
 }
-p{
+p{background: grey;
         font-size: 2em;
     width: 80%;
     text-align: justify;
     margin: 20px;
     padding: 20px;
 }
-#container {
-  width: 400px;
-  height: 400px;
-  position: center;
-  background: url(/images/for_both_comet_asteroid.jpg);
-  
-}
-#animate {
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  background:  url(/images/comet_transparent_bg.png);
-  top:0px;
-  right:0px;
-}
-#asteroid{
-     width: 50px;
-  height: 50px;
-  position: absolute;
-  background: transparent url(comets and asteroids/images/asteroid_belt.png);
-  top:0px;
-  right:0px;
-}
+
