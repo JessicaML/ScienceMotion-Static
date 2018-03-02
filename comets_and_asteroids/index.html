@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
+    <head ><link rel="stylesheet" href="styles/screen.css"></head>
 <style>
 #container {
   width: 400px;
   height: 400px;
-  position: relative;
+  position: center;
   background: url('https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/0kjHIH6/cartoon-earth-saturn-mars-and-moon-in-space_eytcf3tje__F0000.png') center;
 }
 #animate {
@@ -14,20 +15,24 @@
   top: 0;
   right: 0;
 }
+    #parent {
+width: 30%;
+margin: 0 auto;
+}
 </style>
 <body>
 
-<p>
+
 <button onclick="myMove()">Click Me</button>
-</p>
+
 
 <div id ="container">
 <div id ="animate">
   <img src="http://exchangedownloads.smarttech.com/public/content/98/98c50a64-ad15-4fdd-83b9-598f60b99487/previews/medium/0001.png" height="50px" width="50px">
 </div>
 </div>
-<section id= "info">
-      <div >
+<section id= "info"  >
+      <div id="info"  >
 
 				<h1>Comets
 </h1>
@@ -56,7 +61,7 @@ It is thought that this drop in temperature contributed to the extinction of din
 
 		</section>
 	
-       
+      <class="center">
 <script>
 function myMove() {
   var elem = document.getElementById("animate");
@@ -75,6 +80,8 @@ function myMove() {
   }
 }
 </script>
+    </class>
+    
 
 </body>
 </html>
