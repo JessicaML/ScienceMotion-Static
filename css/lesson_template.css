@@ -260,6 +260,7 @@ a:hover {
 
 
 .button-flip:hover button {
+    z-index: 55;
     color: #fff;
     font-family: 'Courier New', serif;
     font-style: oblique;
