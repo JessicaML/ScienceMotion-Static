@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Fugaz+One');
+@import url('https://fonts.googleapis.com/css?family=Space+Mono');
+
+#visual {
+    font-size: 1em;
+    font-family: 'Space mono', sans-serif;
+    width: 80%;
+    text-align: justify;
+    margin-left: : 20px;
+    padding-left: 20px;
+}
+
+#visual div {
+    padding: 0 0 0 5px; 
+}
+
+.redlitmus {
+    width: 250px;
+    height: 75px;
+    background-color: #db6066;
+    box-shadow: 10px 10px 5px grey;
+}
+
+.bluelitmus {
+    width: 250px;
+    height: 75px;
+    background-color: #608fdb;
+    box-shadow: 10px 10px 5px grey;
+}
+
+
+.red:hover {
+    -webkit-animation-name: turnred;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s;
+    /* Safari 4.0 - 8.0 */
+}
+
+@-webkit-keyframes turnred {
+    from {
+        background-color: #608fdb;
+    }
+    to {
+        background-color: #db6066;
+    }
+}
+
+    .blu:hover {
+        -webkit-animation-name: turnblue;
+        /* Safari 4.0 - 8.0 */
+        -webkit-animation-duration: 4s;
+        /* Safari 4.0 - 8.0 */
+    }
+
+    @-webkit-keyframes turnblue {
+        from {
+            background-color: #db6066;
+        }
+        to {
+            background-color: #608fdb
+        }
+    }
