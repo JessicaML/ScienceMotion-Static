@@ -1,98 +1,85 @@
 <!DOCTYPE html>
 
-    <body>
-        <!--[if lt IE 7]>
+<body>
+    <!--[if lt IE 7]>
         <![endif]-->
+    <html>
+    <title>Sound waves</title>
 
+    <head>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- Custom CSS -->
+        <link href="../css/bootstrap.css" rel="stylesheet">
+        <link href="../css/lesson_template.css" rel="stylesheet">
+        <link rel='apple-touch-icon' sizes='57x57' href='../../images/favicons/apple-icon-57x57.png'>
+        <link rel='icon' type='image/png' , sizes='192x192' , href='../../images/favicons/android-icon-192x192.png'>
+        <link rel='icon' type='image/png' , sizes='96x96' , href='../../images/favicons/favicon-96x96.png'>
+    </head>
 
-
-<html>
-        <title>Sound waves</title>
-
-  <head>
-
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-
-
-        <link rel="stylesheet" href="styles/screen.css">
-        <link rel='apple-touch-icon' sizes='57x57' href='../images/favicons/apple-icon-57x57.png'>
-        <link rel='apple-touch-icon' sizes='60x60' href='../images/favicons/apple-icon-60x60.png'>
-        <link rel='apple-touch-icon' sizes='72x72' href='../images/favicons/apple-icon-72x72.png'>
-        <link rel='apple-touch-icon' sizes='76x76' href='../images/favicons/apple-icon-76x76.png'>
-        <link rel='apple-touch-icon' sizes='114x114' href='../images/favicons/apple-icon-114x114.png'>
-        <link rel='apple-touch-icon' sizes='120x120' href='../images/favicons/apple-icon-120x120.png'>
-        <link rel='apple-touch-icon' sizes='144x144' href='../images/favicons/apple-icon-144x144.png'>
-        <link rel='apple-touch-icon' sizes='152x152' href='../images/favicons/apple-icon-152x152.png'>
-        <link rel='apple-touch-icon' sizes='180x180' href='../images/favicons/apple-icon-180x180.png'>
-        <link rel='icon' type='image/png', sizes='192x192', href='../images/favicons/android-icon-192x192.png'>
-        <link rel='icon' type='image/png', sizes='32x32', href='../images/favicons/favicon-32x32.png'>
-        <link rel='icon' type='image/png', sizes='16x16', href='../images/favicons/favicon-16x16.png'>
-        <meta charset="utf-8">
-
-
-  </head>
-  <body>
-		<section id="top">
-
-
-<!-- slower diffusion
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="../navigation.html">All lessons</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="fond">
+            <div id="forb" style="float:left;" class="style_prevu_kit">
+            </div>
+            <div id="button" style="float:left;" class="button-flip">
+                <a id="button" class="active" href="#text">
+                    <button style="color: #fff; margin-top: 50px;" type="button" class="btn" href="#text">More info</button>
+                </a>
+            </div>
+            <div id="forb" style="float:right;" class="style_prevu_kit">
+            </div>
+        </div>
+        <section id="top">
+            <!-- slower diffusion
  -->
-
-
-
-
-
-
-  <div id="nav-one" class="nav">
-
-        <audio id="beep-one">
-        <source src="https://cdn.rawgit.com/JessicaML/ScienceMotion-Static/aa82537e/sound_waves/wouldnt_say.mp3" controls></source>
-        <source src="https://cdn.rawgit.com/JessicaML/ScienceMotion-Static/aa82537e/sound_waves/wouldnt_say.ogg" controls></source>
-        Your browser isn't invited for super fun time.
-      </audio>
-
-
-<a href="#" id="miami_1"><img src="images/miami_1.png" onmouseover="this.src='images/miami_1.gif'" onmouseout="this.src='images/miami_1.png'"/></a>
-</div>
-
-
-
-		</section>
-		<section id="info">
-      <div class="col-md-12 portfolio-item">
-
-				<h1>Properties of sound waves
+            <div id="nav-one" class="nav">
+                <audio id="beep-one">
+                    <source src="https://cdn.rawgit.com/JessicaML/ScienceMotion-Static/aa82537e/sound_waves/wouldnt_say.mp3" controls></source>
+                    <source src="https://cdn.rawgit.com/JessicaML/ScienceMotion-Static/aa82537e/sound_waves/wouldnt_say.ogg" controls></source>
+                    Your browser isn't invited for super fun time.
+                </audio>
+                <a href="#" id="miami_1"><img src="images/miami_1.png" onmouseover="this.src='images/miami_1.gif'" onmouseout="this.src='images/miami_1.png'"/></a>
+            </div>
+        </section>
+        <section id="text">
+            <div>
+                <h1>Properties of sound waves
 </h1>
+                <p>Sound waves are <span style="color:#E376C4;">longitudinal</span> waves which means they vibrate in the same direction as the direction of travel. They are produced by vibrating sources, such as speakers. Sound waves can only travel through a solid, liquid or gas medium. They travel fastest in solids, then liquids and slowest in gases. A good model for sound waves is a spring.</p>
+                <p>The sections of the sound waves where the particles are pushed together are areas of <span style="color:#6EF5DE;">compression</span>. The sections of the sound waves where the particles are further apart are areas of <span style="color:#FDF734;">rarefaction</span>.</p>
+                <p>Sound waves can be <span style="color:#E376C4;">reflected</span> to form an echo, <span style="color:#6EF5DE;">refracted</span> and <span style="color:#FDF734;">diffracted</span>.</p>
+            </div>
+        </section>
+        <!-- End Site Content -->
+        <script src="scripts/lib/jquery-1.9.1.min.js"></script>
+        <script>
+        $("#nav-one a")
+            .each(function(i) {
+                if (i != 0) {
+                    $("#beep-one")
+                        .clone()
+                        .attr("id", "beep-one" + i)
+                        .appendTo($(this).parent());
+                }
+                $(this).data("beeper", i);
+            })
+            .mouseenter(function() {
+                $("#beep-one" + $(this).data("beeper"))[0].play();
+            });
+        $("#beep-one").attr("id", "beep-one0");
+        </script>
+    </body>
 
-
-<p>Sound waves are <span style="color:#cc8d9c;">longitudinal</span> waves which means they vibrate in the same direction as the direction of travel. They are produced by vibrating sources, such as speakers. Sound waves can only travel through a solid, liquid or gas medium. They travel fastest in solids, then liquids and slowest in gases. A good model for sound waves is a spring.</p>
-
-<p>The sections of the sound waves where the particles are pushed together are areas of <span style="color:#149fff;">compression</span>. The sections of the sound waves where the particles are further apart are areas of <span style="color:#149fff;">rarefaction</span>.</p>
-
-<p>Sound waves can be <span style="color:#00ffb5;">reflected</span> to form an echo, <span style="color:#00ffb5;">refracted</span> and <span style="color:#00ffb5;">diffracted</span>.</p>
-
-
-</div>
-
-		</section>
-		<!-- End Site Content -->
-    <script src="scripts/lib/jquery-1.9.1.min.js"></script>
-
-    <script>$("#nav-one a")
-  .each(function(i) {
-    if (i != 0) {
-      $("#beep-one")
-        .clone()
-        .attr("id", "beep-one" + i)
-        .appendTo($(this).parent());
-    }
-    $(this).data("beeper", i);
-  })
-  .mouseenter(function() {
-    $("#beep-one" + $(this).data("beeper"))[0].play();
-  });
-$("#beep-one").attr("id", "beep-one0");</script>
-</body>
-</html>
+    </html>
