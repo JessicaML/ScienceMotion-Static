@@ -12,8 +12,8 @@
     font-size: 16px;
     border-radius: 15px;
     border: 2px solid blue;
-    width:350px;
-    height:100px;
+    width:300px;
+    height:200px;
 }
 .button1 {
     background-color: #f0b27a;
@@ -25,8 +25,8 @@
     font-size: 18px;
     border-radius: 15px;
     border: 2px solid blue;
-    width:150px;
-    height:50px;
+    width:250px;
+    height:100px;
     -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
     -webkit-animation-timing-function: linear; /* Safari 4.0 - 8.0 */
     animation: mymove 5s infinite;
@@ -61,28 +61,28 @@ setInterval(blinker, 1000);
 </head>
 <body style="background-color:black">
 
-<div class="w3-container w3-center w3-animate-zoom" style="text-align:center;color:red;margin:20px" id="classification" >
-  <h1 class="blinking"><b>KINGDOMS CLASSIFICATION</b></h1>
+<div class="w3-container w3-center w3-animate-zoom" style="text-align:center;color:#ED462F;margin:20px" id="classification" >
+  <h1 class="blinking" style="font-size:75px;font-family:Fugaz One"><b>KINGDOMS CLASSIFICATION</b></h1>
 </div>
  <br>
 
 <h4 style="margin-left:100px;color:white" class="blinking"><i>Click below  ---><i></h4>
-<div class="container" style="margin-left:50px;margin-right:50px;margin-below:50px;background-color:#f7e2e2">
-	<div class="row" style="margin:10px">
+<div class="container" style="margin-left:50px;margin-right:50px;margin-below:50px;background-color:#FDF734;">
+	<div class="row" style="margin:20px">
     		<div class="col-sm-4">
 <img src = "" id = "img"/>
 <br><br>
-	<button onclick="pic1()" class="button" style="color:Black;font-weight:bold">ANIMALIA <i>(Animalia)</i><br>Multicellular;heterotrophic feeders;no cell wall;cell have a nucleus</button> 
+	<button onclick="pic1()" class="button" style="color:Black;font-weight:bold;background-color:#E7932E;font-size:18px;font-family:space mono">ANIMALIA <i>(Animalia)</i><br>Multicellular;heterotrophic feeders;no cell wall;cell have a nucleus</button> 
 		</div>
 		<div class="col-sm-4" >
 <img src = "" id = "img1"/>
 <br><br>	
-<button onclick="pic2()" class="button" style="background-color:#27ae60;color:Black;font-weight:bold">PLANTS <i>(Plantae)</i><br>Multicellular;autotrophic feeders so have chloroplasts;have cell walls made of cellulose;cell have a nucleus</button> 
+<button onclick="pic2()" class="button" style="font-size:18px;font-family:space mono;background-color:#6ACE10;color:Black;font-weight:bold">PLANTS <i>(Plantae)</i><br>Multicellular;autotrophic feeders so have chloroplasts;have cell walls made of cellulose;cell have a nucleus</button> 
 		</div>	
 		<div class="col-sm-4" >
 <img src = "" id = "img2"/>
 <br><br>
-	<button onclick="pic3()" class="button" style="background-color:#909497;color:Black;font-weight:bold">FUNGI<br>Multicellular;sapophytic feeders;have cell wall;cell have a nucleus</button> 
+	<button onclick="pic3()" class="button" style="font-size:18px;font-family:space mono;background-color:#6EF5DE;color:Black;font-weight:bold">FUNGI<br>Multicellular;sapophytic feeders;have cell wall;cell have a nucleus</button> 
 		</div>	
 	</div>	
 	<div class="row" style="margin:10px">
@@ -90,17 +90,17 @@ setInterval(blinker, 1000);
 		<div class="col-sm-4" >
 <img src = "" id = "img3"/>
 <br><br>
-	<button onclick="pic4()" class="button" style="color:Black;font-weight:bold;background-color: #aed6f1">PROTISTS<i> (Protoctistae)</i><br><br>Mostly multicellular;cells have a nucleus</button> 
+	<button onclick="pic4()" class="button" style="color:Black;font-weight:bold;background-color:#E376C4;font-size:18px;font-family:space mono">PROTISTS<i> (Protoctistae)</i><br><br>Mostly multicellular;cells have a nucleus</button> 
 		</div>
-		<div class="col-sm-4" s>
+		<div class="col-sm-4" s>	
 <img src = "" id = "img4"/>
 <br><br>
-	<button onclick="pic5()" class="button" style="color:Black;font-weight:bold;background-color: #d6dbdf ">PROKARYOTES<i> (Prokaryotae)</i><br><br>Unicellular;no nucleus in cell</button>
+	<button onclick="pic5()" class="button" style="color:Black;font-weight:bold;background-color:#254AFB ;font-size:18px;font-family:space mono">PROKARYOTES<i> (Prokaryotae)</i><br><br>Unicellular;no nucleus in cell</button>
 		</div>
 		<div class="col-sm-4" >
 <img src = "" id = "img5"/>
 <br><br>
-	<button onclick="pic6()" class="button" style="color:white;font-weight:bold;background-color:#000">VIRUSES<br><br>Not Classified as living as do not grow or feed</button>
+	<button onclick="pic6()" class="button" style="color:white;font-weight:bold;background-color:#8C8CC8;font-size:18px;font-family:space mono">VIRUSES<br><br>Not Classified as living as do not grow or feed</button>
 		</div>
 	</div>
 </div>
@@ -109,18 +109,18 @@ setInterval(blinker, 1000);
            onmousedown="this.setAttribute('scrollamount', 3, 0);"
            onmouseup="this.setAttribute('scrollamount', 10, 0);">
 
-  <h1 style="color:red" id="plant"><b>PLANT KINGDOM</b></h1>
+  <h1 style="color:#ED462F;font-size:75px;font-family:Fugaz One" id="plant"><b>PLANT KINGDOM</b></h1>
  </marquee>
 <div id="flip" style="color:black;background-color:yellow;text-align:center"><b><i>Click to view Plant Kingdom</i></b></div>
 <br><br>
-<div id="panel" style="background-color:white;height:800px">
-
+<div id="panel" style="background-color:white;height:1200px">
+<br>
 <div class="w3-container w3-center w3-animate-right">
-	<button onclick="des1()" class="button1" style="color:Black;font-weight:bold;background-color: #f95f5f">Kingdom</button>
+<button onclick="des1()" class="button1" style="color:Black;font-weight:bold;background-color:#7F44CE;font-size:40px;font-family:Fugaz One">Kingdom</button>
 	<marquee behavior="scroll" direction="left"
            onmousedown="this.setAttribute('scrollamount', 3, 0);"
            onmouseup="this.setAttribute('scrollamount', 10, 0);">
-	<img id="d1" src="" /> 
+	<p id="d1" style="font-size:18px;font-family:space mono;color:#E376C4"><b>Animalia,Plantar,Fungi</b></p> 
 	</marquee>
 </div>
 <div style="text-align:center">
@@ -128,11 +128,11 @@ setInterval(blinker, 1000);
 <div>
 
 <div class="w3-container w3-center w3-animate-right">
-	<button onclick="des2()" class="button1" style="color:Black;font-weight:bold;background-color: #f95f5f">Phylum</button> 
+	<button onclick="des2()" class="button1" style="color:Black;font-weight:bold;background-color:#7F44CE;font-size:40px;font-family:Fugaz One">Phylum</button> 
 	<marquee behavior="scroll" direction="left"
            onmousedown="this.setAttribute('scrollamount', 3, 0);"
            onmouseup="this.setAttribute('scrollamount', 10, 0);">	
-	<img id="d2" src="" />
+	<p id="d2" style="font-size:18px;font-family:space mono;color:#E376C4"><b>Arthropoda,Chordata,Magnoliaphyte,Basidiomycota,Proteobacteria</b></p>
 	</marquee>
 </div>
 <div style="text-align:center">
@@ -140,11 +140,11 @@ setInterval(blinker, 1000);
 <div>
 
 <div class="w3-container w3-center w3-animate-right">
-	<button onclick="des3()" class="button1" style="color:Black;font-weight:bold;background-color: #f95f5f">Class</button>
+	<button onclick="des3()" class="button1" style="color:Black;font-weight:bold;background-color:#7F44CE;font-size:40px;font-family:Fugaz One">Class</button>
 	<marquee behavior="scroll" direction="left"
            onmousedown="this.setAttribute('scrollamount', 3, 0);"
            onmouseup="this.setAttribute('scrollamount', 10, 0);">	
-	<img id="d3" src="" />  
+	<p id="d3" style="font-size:18px;font-family:space mono;color:#E376C4"><b>Insecta,mammalia,magnoliopsida,agaricomycetes,gammaproteobacteria.</b></p>  
 	</marquee>
 </div>
 <div style="text-align:center">
@@ -152,11 +152,11 @@ setInterval(blinker, 1000);
 <div>
 
 <div class="w3-container w3-center w3-animate-right">
-	<button onclick="des4()" class="button1" style="color:Black;font-weight:bold;background-color: #f95f5f">Order</button>
+	<button onclick="des4()" class="button1" style="color:Black;font-weight:bold;background-color:#7F44CE;font-size:40px;font-family:Fugaz One">Order</button>
 	<marquee behavior="scroll" direction="left"
            onmousedown="this.setAttribute('scrollamount', 3, 0);"
            onmouseup="this.setAttribute('scrollamount', 10, 0);">	
-		<img id="d4" src="" />  
+		<p id="d4" style="font-size:18px;font-family:space mono;color:#E376C4"><b>Diapetra,Primates,Fables,Agricales,Enterbacteriales</b></p>  
 	</marquee>
 </div>
 <div style="text-align:center">
@@ -164,23 +164,22 @@ setInterval(blinker, 1000);
 <div>
 
 <div class="w3-container w3-center w3-animate-right">
-	<button onclick="des5()" class="button1" style="color:Black;font-weight:bold;background-color: #f95f5f">Family</button>
+	<button onclick="des5()" class="button1" style="color:Black;font-weight:bold;background-color:#7F44CE;font-size:40px;font-family:Fugaz One">Family</button>
 	<marquee behavior="scroll" direction="left"
            onmousedown="this.setAttribute('scrollamount', 3, 0);"
            onmouseup="this.setAttribute('scrollamount', 10, 0);">	
-	<img id="d5" src="" /> 
+	<p id="d5" style="font-size:18px;font-family:space mono;color:#E376C4"><b>Drosophilinae,Homininae,Faboideae,Amanitoideae,Enterbacteriaceae</b></p> 
 	</marquee>
-</div>
 <div style="text-align:center">
 <img src="arrow.png"/> 
 <div> 
 
 <div class="w3-container w3-center w3-animate-right">
-	<button onclick="des6()" class="button1" style="color:Black;font-weight:bold;background-color: #f95f5f">Genus</button> 
+	<button onclick="des6()" class="button1" style="color:Black;font-weight:bold;background-color:#7F44CE;font-size:40px;font-family:Fugaz One">Genus</button> 
 	<marquee behavior="scroll" direction="left"
            onmousedown="this.setAttribute('scrollamount', 3, 0);"
            onmouseup="this.setAttribute('scrollamount', 10, 0);">	
-	<img id="d6" src="" />
+	<p id="d6" style="font-size:18px;font-family:space mono;color:#E376C4"><b>Drosophila,Homo,Pisum,Amanita,Escherichia.</b></p>
 	</marquee>
 </div>
 <div style="text-align:center">
@@ -188,11 +187,11 @@ setInterval(blinker, 1000);
 <div>
 
 <div class="w3-container w3-center w3-animate-right">
-	<button onclick="des7()" class="button1" style="color:Black;font-weight:bold;background-color: #f95f5f">Species</button> 
+	<button onclick="des7()" class="button1" style="color:Black;font-weight:bold;background-color:#7F44CE;font-size:40px;font-family:Fugaz One">Species</button> 
 	<marquee behavior="scroll" direction="left"
            onmousedown="this.setAttribute('scrollamount', 3, 0);"
            onmouseup="this.setAttribute('scrollamount', 10, 0);">	
-	<img id="d7" src="" />
+	<p id="d7" style="font-size:18px;font-family:space mono;color:#E376C4"><b>Melanogaster,Sapiens,Sativum,Muscaria,Coli</b></p>
 	</marquee>
 </div>
 </div>
@@ -200,47 +199,48 @@ setInterval(blinker, 1000);
 
 <br><br><br><br><br><br><br><br>
 <div class="margin:20px">
-<div class="w3-container w3-center w3-animate-zoom" style="text-align:center;color:red;margin:20px">
+<div class="w3-container w3-center w3-animate-zoom" style="text-align:center;color:#ED462F;margin:20px">
  <marquee behavior="scroll" direction="left"
            onmousedown="this.setAttribute('scrollamount', 3, 0);"
            onmouseup="this.setAttribute('scrollamount', 10, 0);">
-  <h1><b>ABOUT</b></h1>
+  <h1 style="font-size:75px;font-family:Fugaz One"><b>ABOUT</b></h1>
 </marquee>
 </div>
 
 <div id="flip1" style="color:black;background-color:yellow;text-align:center"><b><i>Click here to view contents.</i></b></div>
-<div id="panel1" style="background-color:#d5dbdb;height:1200px;margin:40px" class="w3-container w3-center w3-animate-below">
-	<h2 style="text-align:center;color: #e74c3c "><b><u>BINOMIAL SYSTEM</u></b></h2>
-	<p style="color: #0b5345 ;text-align:left;margin-top:50px"><b>There are millions of species on our planet. Although species can be very different from each other, many have similar features that allow us to put them into groups. This is called</b><b style="color: #dc7633 "> classification of Kingdoms</b>.</p><br>
-	<p style="color: #0b5345;text-align:left"><b>The first big division of living things in the classification system is to put them into one of five kingdoms. These are based on what an organism's cells are like.</b></p><br>
-	<a href="#classification"><h4 style="color:black;text-align:left;color: #2874a6" class="blinking"><b>The five kingdoms are:</b></h4></a>
-		<h6 style="color: #8e44ad ;text-align:left;margin-left:100px"><b>animals (all multicellular animals)</b></h6>
-		<h6 style="color: #8e44ad ;text-align:left;margin-left:100px"><b>plants (all green plants)</b></h6>
-		<h6 style="color: #8e44ad ;text-align:left;margin-left:100px"><b>fungi (moulds, mushrooms, yeast)</b></h6>
-		<h6 style="color: #8e44ad ;text-align:left;margin-left:100px"><b>prokaryotes (bacteria, blue-green algae)</b></h6>	
-		<h6 style="color: #8e44ad ;text-align:left;margin-left:100px"><b>protoctists (Amoeba, Chlorella and Plasmodium)</b></h6>
-	<a href="#plant"><h4 style="text-align:left;color:#2874a6" class="blinking"><b>Plant Kingdoms:</b></h4></a>
-		<h6 style="color: #8e44ad ;text-align:left;margin-left:100px"><b>Kingdoms</b></h6>
-		<h6 style="color: #8e44ad ;text-align:left;margin-left:100px"><b>Phylum</b></h6>
-		<h6 style="color: #8e44ad ;text-align:left;margin-left:100px"><b>Class</b></h6>
-		<h6 style="color: #8e44ad ;text-align:left;margin-left:100px"><b>Order</b></h6>	
-		<h6 style="color: #8e44ad ;text-align:left;margin-left:100px"><b>Family</b></h6>
-		<h6 style="color: #8e44ad ;text-align:left;margin-left:100px"><b>Genus</b></h6>	
-		<h6 style="color: #8e44ad ;text-align:left;margin-left:100px"><b>Species</b></h6>
+<div id="panel1" style="background-color: #CCCCCC
+;height:1650px;margin:40px" class="w3-container w3-center w3-animate-below">
+	<h2 style="text-align:center;color:#6ACE10;font-size:40px;font-family:Fugaz One "><b><u>BINOMIAL SYSTEM</u></b></h2>
+	<p style="color:#254AFB ;text-align:left;margin-top:50px;font-size:18px;font-family:space mono"><b>There are millions of species on our planet. Although species can be very different from each other, many have similar features that allow us to put them into groups. This is called</b><b style="color: #dc7633 "> classification of Kingdoms</b>.</p><br>
+	<p style="color:#254AFB;text-align:left;font-size:18px;font-family:space mono"><b>The first big division of living things in the classification system is to put them into one of five kingdoms. These are based on what an organism's cells are like.</b></p><br>
+	<a href="#classification"><h4 style="font-family:Fugaz One;color:black;text-align:left;color:#7F44CE;font-size:40px" class="blinking"><b>The five kingdoms are:</b></h4></a>
+		<h6 style="color: #E376C4 ;text-align:left;margin-left:100px;font-size:18px;font-family:space mono"><b><li>animals (all multicellular animals)</li></b></h6>
+		<h6 style="color: #E376C4 ;text-align:left;margin-left:100px;font-size:18px;font-family:space mono"><b><li>plants (all green plants)</li></b></h6>
+		<h6 style="color: #E376C4 ;text-align:left;margin-left:100px;font-size:18px;font-family:space mono"><b><li>fungi (moulds, mushrooms, yeast)</li></b></h6>
+		<h6 style="color: #E376C4 ;text-align:left;margin-left:100px;font-size:18px;font-family:space mono"><b><li>prokaryotes (bacteria, blue-green algae)</li><b></h6>	
+		<h6 style="color: #E376C4 ;text-align:left;margin-left:100px;font-size:18px;font-family:space mono"><b><li>protoctists (Amoeba, Chlorella and Plasmodium)</li></b></h6><a href="#plant">
+<br><h4 style="text-align:left;color:#7F44CE;font-size:40px;font-family:Fugaz One" class="blinking"><b>Plant Kingdoms:</b></h4></a>
+		<h6 style="color: #E376C4 ;text-align:left;margin-left:100px;font-size:18px;font-family:space mono"><b><li>Kingdoms</li></b></h6>
+		<h6 style="color: #E376C4 ;text-align:left;margin-left:100px;font-size:18px;font-family:space mono"><b><li>Phylum</li></b></h6>
+		<h6 style="color: #E376C4 ;text-align:left;margin-left:100px;font-size:18px;font-family:space mono"><b><li>Class</li></b></h6>
+		<h6 style="color: #E376C4 ;text-align:left;margin-left:100px;font-size:18px;font-family:space mono"><b><li>Order</li></b></h6>	
+		<h6 style="color: #E376C4 ;text-align:left;margin-left:100px;font-size:18px;font-family:space mono"><b><li>Family</li></b></h6>
+		<h6 style="color: #E376C4 ;text-align:left;margin-left:100px;font-size:18px;font-family:space mono"><b><li>Genus</li></b></h6>	
+		<h6 style="color: #E376C4 ;text-align:left;margin-left:100px;font-size:18px;font-family:space mono"><b><li>Species</li></b></h6>
 	<br>	
-	<h4 style="color:black;text-align:left;color: #2874a6"><b>The binomial system of naming species uses Latin words</b><h4> 
-	<h5 style="text-align:left;color: #0b5345;margin-left:100px">Each name has two parts</h5>
-		<h6 style="text-align:left;color:black;margin-left:300px"><b style="color: #e74c3c ">Genus</b></h6>
-		<h6 style="text-align:left;color:black;margin-left:300px"><b style="color: #e74c3c ">Species</b></h6> 
-	<h4 style="text-align:left;color:black;margin-left:100px;color: #2874a6">Examples:</h4>
-		 <h5 style="text-align:left;color:black;margin-left:200px">human beings belong to the genus <b style="color: #dc7633">Homo</b>, and our species is <b style="color: #dc7633 ">sapiens</b> - so the scientific name is<b style="color: #dc7633 "> Homo sapiens</b>.</h5>
-		 <h5 style="text-align:left;color:black;margin-left:200px"><b style="color: #dc7633 ">Robin perched</b> on a snow-covered branch</h5>
-		 <h5 style="text-align:left;color:black;margin-left:200px"><b style="color: #dc7633 ">Erithacus rubecula</b>, the European Robin</h5>
+	<h4 style="color:black;text-align:left;color:#7F44CE;font-size:40px;font-family:Fugaz One"><b>The binomial system of naming species uses Latin words</b><h4> 
+	<h5 style="text-align:left;color:#254AFB;margin-left:100px;font-size:18px;font-family:space mono"><b>Each name has two parts</b></h5>
+		<h6 style="text-align:left;color:black;margin-left:300px"><b style="color: #e74c3c;font-fmaily:space mono;font-size:18px"><li><b>Genus</b></li></b></h6>
+		<h6 style="text-align:left;color:black;margin-left:300px"><b style="color: #e74c3c;font-fmaily:space mono;font-size:18px"><li><b>Species</b></li></b></h6> 
+	<h4 style="text-align:left;color:black;margin-left:100px;color:#7F44CE;font-size:40px;font-family:Fugaz One">Examples:</h4>
+		 <h5 style="text-align:left;color:black;margin-left:200px;font-family:space mono;font-size:18px"><li>human beings belong to the genus <b style="color: #dc7633">Homo</b>, and our species is <b style="color: #dc7633 ">sapiens</b> - so the scientific name is<b style="color: #dc7633 "> Homo sapiens</b>.</li></h5>
+		 <h5 style="text-align:left;color:black;margin-left:200px;font-family:space mono;font-size:18px"><b style="color: #dc7633 "><li>Robin perched</b> on a snow-covered branch</li></h5>
+		 <h5 style="text-align:left;color:black;margin-left:200px;font-family:space mono;font-size:18px"><b style="color: #dc7633 "><li>Erithacus rubecula</b>, the European Robin</li></h5>
 
-	<h4 style="text-align:left;color:black;margin-left:10px;color: #2874a6"><b>Advantages</b></h4>
-	<p style="text-align:left;color: #0b5345;margin-left:100px"><b>The binomial system is important because it allows scientists to accurately identify individual species. For example, the European robin is Erithacus rubecula. It is much smaller than the American robin, Turdus migratorius, which belongs to a different genus.</b></p><br>
-	<h4 style="text-align:left;color:black;margin-left:10px;color: #2874a6"><b>Other classification systems</b></h4>
-	<p style="text-align:left;color: #0b5345;margin-left:100px"><b style="color: #dc7633 ">Cladistics</b> <b>is another way to classify organisms. It can use data from DNA or RNA sequences, rather than just physical characteristics. It emphasises the evolutionary relationships between different species."</b></p>
+	<br><br><h4 style="text-align:left;color:black;margin-left:10px;color:#7F44CE;font-size:40px;font-family:Fugaz One"><b>Advantages</b></h4>
+	<p style="text-align:left;color:#254AFB;margin-left:100px;font-size:18px;font-family:space mono"><b>The binomial system is important because it allows scientists to accurately identify individual species. For example, the European robin is Erithacus rubecula. It is much smaller than the American robin, Turdus migratorius, which belongs to a different genus.</b></p><br><br>
+	<h4 style="text-align:left;color:black;margin-left:10px;color:#7F44CE;font-size:40px;font-family:Fugaz One"><b>Other classification systems</b></h4><br>
+	<p style="text-align:left;color:#254AFB;margin-left:100px ;font-size:18px;font-family:space mono"><b style="color: #dc7633 ">Cladistics</b> <b>is another way to classify organisms. It can use data from DNA or RNA sequences, rather than just physical characteristics. It emphasises the evolutionary relationships between different species."</b></p>
 
 </div>
 </div>
@@ -273,31 +273,31 @@ setInterval(blinker, 1000);
 	
 	function des1()
         {
-            document.getElementById("d1").src = "1.jpeg";
+            document.getElementById("d1");
         }
 	function des2()
         {
-            document.getElementById("d2").src = "2.jpeg";
+            document.getElementById("d2");
         }
 	function des3()
         {
-            document.getElementById("d3").src = "3.jpeg";
+            document.getElementById("d3");
         }
 	function des4()
         {
-            document.getElementById("d4").src = "4.jpeg";
+            document.getElementById("d4");
         }
 	function des5()
         {
-            document.getElementById("d5").src = "5.jpeg";
+            document.getElementById("d5");
         }
 	function des6()
         {
-            document.getElementById("d6").src = "6.jpeg";
+            document.getElementById("d6");
         }
 	function des7()
         {
-            document.getElementById("d7").src = "7.jpeg";
+            document.getElementById("d7");
         }
 
 $(document).ready(function(){
