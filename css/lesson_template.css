@@ -77,8 +77,9 @@ section#visual button {
 }
 
 section#visual p {
-    font-size: 2em;
-    font-family: 'Josefin Sans', sans-serif;
+    padding-top: 1.5em;
+    font-size: 1.5em;
+    font-family: 'Space mono', sans-serif;
     width: 80%;
     text-align: justify;
     margin-left: : 20px;
