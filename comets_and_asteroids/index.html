@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title>Comets and Asteroids</title>
+        <script type="text/javascript" src="../js/jquery.js"></script>
+  <link href="../../css/bootstrap.css" rel="stylesheet">
+  <link href="styles/screen.css" rel="stylesheet">
+        <!--<link href='http://fonts.googleapis.com/css?family=Nova+Round' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="styles/screen.css">
+        <script src="scripts/lib/modernizr-2.6.2.min.js"></script>
+         <link href="../../css/bootstrap.css" rel="stylesheet">
+         <link href="../css/lesson_template.css" rel="stylesheet">-->
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+        <![endif]-->
+		
+        <style>
+#container {
+  width:530px;
+  height: 310px;
+   
+  display:flex;
+    object-fit:none;
+    object-position: center;
+    
+ 
+    
+  background-image: url('images/anigif_sub-buzz-14756-1500657559-13.gif') ;
+    margin-left: 500px;
+}
+#animate {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: 0;
+  right: 600px;
+    
+}
+    #parent {
+width: 30%;
+margin: 0 auto;
+}
+</style>
+        <section id="visual">
+        <button id="button" onclick="myMove()">Click Me</button>
+
+
+<div id ="container">
+    
+<div id ="animate">
+  <img src="http://exchangedownloads.smarttech.com/public/content/98/98c50a64-ad15-4fdd-83b9-598f60b99487/previews/medium/0001.png" height="50px" width="50px">
+</div>
+</div>
+            </section>
+        
+		<section id="text">
+			<div>
+                
+       
+				<h1>Comets and Asteroids
+</h1>
+     
+				<h2>Comets
+</h2>
+
+<p>
+    Comets are balls of ice and dust in orbit around the Sun. The orbits of comets are different from those of planets - they are elliptical. A comet's orbit takes it very close to the Sun and then far away again. The time to complete an orbit varies - some comets take a few years, while others take millions of years to complete an orbit.</p>
+
+<p>
+
+Comets are often visible from Earth when they get close to the Sun, because the Sun's heat vaporises material from their surface, and this vapour forms a tail which always points away from the Sun.</p>
+          
+				<h2>Asteroids
+</h2>
+
+<p>
+Asteroids are comprised of rock and metal, and are smaller than planets. Most of them are found in an 'asteroid belt', in orbit around the Sun between Mars and Jupiter. The minor planet Ceres is found here, too. Asteroids can crash into each other. When they do, they may break apart and their orbit may change.
+</p>
+
+<p>
+    The orbits of some asteroids cross the Earth's orbit. At various times during the Earth's history, asteroids have hit the Earth. When this happened, a tremendous amount of energy was released, throwing up billions of tonnes of dust. This huge dust cloud blocked heat and light from the Sun, making the Earth very cold.</p>
+<p>
+It is thought that this drop in temperature contributed to the extinction of dinosaurs. Scientists worry that an asteroid could still hit the Earth and cause a global catastrophe.</p>
+
+</div>
+
+		</section>    
+     <section id="visual">   
+<div style="object-position:center; left-margin:560px;">
+<script>
+function myMove() {
+  var elem = document.getElementById("animate");
+  var posx = 500;
+  var posy = 100;
+  var id = setInterval(frame, 5);
+  function frame() {
+    if (posx == 0|| posy==330) {
+      clearInterval(id);
+        $(document).ready(function(){
+    $("button").click(function(){
+        $("animate").remove();
+    });
+});
+        }else {
+      posx--;
+      posy++;
+      elem.style.top = posy + 'px';
+      elem.style.left = posx + 'px';
+    }
+  }
+}
+</script>
+    </div>
+     
+		<!-- End Site Content -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="scripts/lib/jquery-1.9.1.min.js"><\/script>')</script>
+        <script src="scripts/oakley.js"></script>
+         </section>
+    </body>
+</html>
