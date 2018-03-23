@@ -4,11 +4,14 @@
   	 <link rel="stylesheet" type="text/css" href="screen.css">
      <link href='https://fonts.googleapis.com/css?family=Fugaz One' rel='stylesheet'>
      <link href='https://fonts.googleapis.com/css?family=Space Mono' rel='stylesheet'>
+     <link href="https://fonts.googleapis.com/css?family=Coda+Caption:800" rel="stylesheet">
+
      <script src="jquery-3.3.1.js"></script>
      <script type="text/javascript" src="animate.js"></script>     
   </head>	
   <body>
     <section id="top">
+<center><div id="instruction">~HOVER OVER THE NAMES TO SEE THE PARTS~ </div></center>
       <div id="cont">
         <div id="left" >
           <center>
@@ -20,7 +23,7 @@
           </center>
         </div> 
         <div id="diag">
-           <img src="BActeriatransparent1.png" style="max-width:50%;" class="base"/>
+           <img src="BActeriatransparent1.png" style="max-width:50%;max-height:100%;" class="base" id="base_"/>
            <img  src="capsule.png" class="overlay" style="max-width:50%;" id="capsule"/>
            <img  src="cellmembrane.png" class="overlay" style="max-width:50%;" id="cellm"/>
            <img  src="cellwall.png" class="overlay" style="max-width:50%;" id="cellw"/>
@@ -31,6 +34,7 @@
            <img  src="pili.png" class="overlay" style="max-width:50%;" id="pili"/>
            <img  src="plasmid.png" class="overlay" style="max-width:50%;" id="plasm"/>
            <img  src="ribosomes.png" class="overlay" style="max-width:50%;" id="ribo"/>
+            
         </div>
         <div id="right">
          <center>
@@ -41,8 +45,10 @@
           <a href="#" id="rib">Ribosomes</a><br/>
          </center>
         </div>
+
       </div>   
     </section>
+
     <div id="para">
      <p style="font-size: 32px; text-align: center; color: #3edc81; font-family: 'Space Mono'; margin-top: 6px;">Genus Salmonella bacteria's Ultrastructure</p 
     </div>
@@ -78,10 +84,7 @@
       </li>
      </ol>
     
-    <center>
-        <img id="ecoli" src="e_coli.gif" alt="E-coli Bacteria" width="550px" height="500px" style="border-radius: 50px;"/>
-        <p style="font-size: 17px; text-align: center;">Escherichia coli(E-coli) bacteria's Ultrastructure</p>      
-    </center>     
+  
     <h2 style="color: #FDE3A7;">Bacterial Cell Structure</h2>   
      <p>Bacterial cells have a <mark style="color: #E376C4;">cell wall</mark> made of polysaccharides and proteins.<br/>They <mark style="color: #6EF5DE;">do not have a nucleus</mark>, but instead they have a <mark style="color: #FDF734;">circular chromosome of DNA.</mark> They may also have small extra circles of DNA called <mark style="color: #ED462F;">plasmids.</mark><br/></p>
 
@@ -90,7 +93,6 @@
     <br/>
     Some bacteria are pathogens, for example <mark style="color: #6EF5DE;">Pneumococcus (which causes pneumonia).</mark></p>
     </div>
-    <center><img id="bacell" src="baccell.gif" alt="Illustration of Bacterial Cell Structure"/></center>
    </section>
   </body>
 </html>

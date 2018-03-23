@@ -1,16 +1,17 @@
+* {
+    box-sizing: border-box;
+}
 
 body
 {	margin:				0;
 	padding:			0;
-	font-family: 		arial;
-	font-size:			62.5%;
 	overflow-x:    		hidden;
 }
 
 section#top {
 	position:			relative;
 	width:				100%;
-	background-image: 	url("bacteriabg.png");
+	background-image: 	url("source.gif");
 	background-size: 	cover;
 	max-height: 		90%;
 	overflow:			hidden;
@@ -25,7 +26,7 @@ section#info {
 	color:				#fff;
 	padding-top:		20px;
 	padding: 			20px;
-	margin:				-20px;
+	margin:				0px;
 	font-size:			1.4em;
 
 }
@@ -80,29 +81,24 @@ section#info mark{
 }
 
 .base{
-           position: absolute;
-           z-index:1;
-           height:auto;
-           width:auto;
- 		   display:inline-block;
+        	position: absolute;
+			display:block;
+	       	z-index:1;
+        	width:auto;
+			height:auto;
+	
+           
  }
 
 .overlay{
            position: absolute;
-           z-index: 2;
+           z-index: 1;
            height: auto;
            width:auto;
            display: none;
  }
 
- #diag {
- 	width: 56%;
-	height:70%;
-	max-height: 25%;
-	padding-bottom: 100px;
-	display:inline-block;
- }
-
+ 
  #struct {
  	height: auto; 
  	max-width: 45%;
@@ -111,7 +107,7 @@ section#info mark{
  	display:inline-block;
  }
 
-  a {
+ a {
  	text-decoration: none;
  	font-size: 30px;
  	padding-bottom: 5px;
@@ -119,7 +115,7 @@ section#info mark{
  	color: #39d5ff;
  }
 
- a:hover {
+a:hover {
 	color: #ff8cc8;
 	font-size: 36px;
 }
@@ -130,18 +126,47 @@ section#info mark{
 }
 
  #left {
- 	width: auto;
- 	padding-left: 35px;
-	height: auto;
-	display:inline-block;
+ 	display: flex;
+  	align-items: center;
+  	justify-content: center;
+	width: 22%;
+ 	height:70%;
+	float:left;
  }
 
+#diag { 	
+	width: 56%;
+	height:50%;
+	float:left;	
+ }
+
+
 #right {
- 	padding: 35px;
- 	display:inline-block;
- 	width: auto;
-	height: auto;
+ 	 display: flex;
+  	align-items: center;
+  	justify-content: center; 
+ 	width: 22%;
+	height: 70%;
+	
+	float:left;
  } 
+@media (max-width: 600px) {
+    body {
+    width: 100%;
+	height:70%;
+	
+    }
+
+      
+}
+#instruction{
+	font-family:'Calibri';
+	color: black;
+	font-size:20px;
+	font-weight: bold;
+	margin-top:2%;
+	text-shadow: 3px 3px 8px #76FF03;
+}
 
  #para {
  	 width: 100%;
