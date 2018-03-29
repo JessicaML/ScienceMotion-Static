@@ -1,0 +1,240 @@
+
+:before,
+:after {
+  content: "";
+  position: absolute;
+}
+
+.container {
+  width: 140px;
+  margin: 280px auto 40px auto;
+}
+
+.pot {
+  background: #E7932E;
+  position: relative;
+}
+
+.pot > div {
+  position: absolute;
+}
+
+.pot-bot {
+  width: 100px;
+  height: 100px;
+}
+
+.pot-bot:before {
+  top: 0;
+  left: -15px;
+  border-left: 15px solid transparent;
+  border-right: 0px solid transparent;
+  border-top: 100px solid #E7932E;
+}
+
+.pot-bot:after {
+  top: 0;
+  right: -15px;
+  border-left: 0px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 100px solid #E7932E;
+}
+
+.pot-top {
+  width: 140px;
+  height: 25px;
+  top: -25px;
+  left: 50%;
+  margin-left: -70px;
+}
+
+.pot-top:before {
+  left: -5px;
+  top: 0;
+  border-left: 5px solid transparent;
+  border-right: 0px solid transparent;
+  border-top: 25px solid #E7932E;
+}
+
+.pot-top:after {
+  right: -5px;
+  top: 0;
+  border-right: 5px solid transparent;
+  border-left: 0px solid transparent;
+  border-top: 25px solid #E7932E;
+}
+
+.pot-shadow {
+  z-index: 3;
+  width: 125px;
+  height: 10px;
+  background: rgba(220,84,0,0.2);
+  left: 50%;
+  top: 0;
+  margin-left: -62.5px;
+}
+
+
+.shadow {
+  background: rgba(220, 84,0,0.1);
+  z-index: -1;
+  bottom: -5px;
+  left: 50%;
+  margin-left: -60px;
+  width: 120px;
+  height: 10px;
+  border-radius: 120px / 10px;
+}
+
+.plant {
+  height: 280px;
+  background: #6ACE10;
+  width: 16px;
+  z-index: -1;
+  bottom: 0;
+  left: 50%;
+  margin-left: -8px;
+  border-radius: 16px 16px 0 0;
+}
+
+.plant > div {
+  position: absolute;
+}
+
+.plant:before {
+  height: 275px;
+  width: 4px;
+  right: 0;
+  bottom: 0;
+  background: #6ACE10;
+  border-radius: 0 30px 0 0;
+}
+
+.plant:after {
+  left: 10px;
+  top: 110px;
+  width: 0px;
+  height: 0px;
+  border-radius: 100px 0px 100px 0px;
+  background:#6ACE10;
+  transform: rotate(-20deg);
+}
+
+.head {
+  width: 50px;
+  height: 50px;
+  left: 50%;
+  top: -15px;
+  margin-left: -25px;
+  border-radius: 50px;
+  background:  #E7932E;
+}
+
+.face {
+  background: #a3430c;
+  width: 20px;
+  height: 20px;
+  border-radius: 25px;
+  position: absolute;
+  margin-top: -10px;
+  margin-left: -10px;
+  top: 50%;
+  left: 50%;
+}
+
+.a1 {
+  list-style: none;
+  width:50px;
+  height:30px;
+  position: absolute;
+  float:left;
+  border-radius: 100px 0px 100px 0px;
+  background:#FDF734;
+}
+
+.a1:nth-child(1) {
+  top:10px;
+  left:60px;
+  transform: rotate(30deg);
+}
+
+.a1:nth-child(2) {
+  top:15px;
+  right:60px;
+  transform: rotate(20deg);
+}
+
+.a1:nth-child(3) {
+  top:55px;
+  right:45px;
+  transform: rotate(-20deg);
+}
+
+.a1:nth-child(4) {
+  top:55px;
+  left:45px;
+  transform: rotate(-110deg);
+}
+
+.a1:nth-child(5) {
+  top:75px;
+  left:00px;
+  transform: rotate(-60deg);
+}
+
+.a1:nth-child(6) {
+  bottom: 55px;
+  left:45px;
+  transform: rotate(-20deg);
+}
+
+.a1:nth-child(7) {
+  bottom:55px;
+  right:45px;
+  transform: rotate(-110deg);
+}
+
+.a1:nth-child(8) {
+  bottom:75px;
+  left:00px;
+  transform: rotate(-60deg);
+}
+
+/* animation controls */
+
+.plant, .plant:before {
+  animation: grow 4s ease-out forwards;
+}
+
+.head {
+  transform: scale(0.4);
+  animation-name: flower, rota;
+  animation-duration: 3s, 15s;
+  animation-timing-function: ease-out, ease-out;
+  animation-fill-mode: forwards;
+  animation-delay: 1s, 4s;
+}
+.plant:after {
+  animation: leaf 5s ease-out forwards;
+  animation-delay: 4s;
+}
+
+@keyframes grow {
+  from { height : 50px; }
+  to { height : 280px ; }
+}
+
+@keyframes flower {
+  from { transform: scale(0.4); }
+  to { transform: scale(1); }
+}
+
+@keyframes rota {
+  from { transform : rotate(0); }
+  to { transform : rotate(360deg); }
+}
+
+@keyframes leaf {
+  from { width : 0px; height: 0; }
+  to {   width: 40px; height: 20px; }
+}
