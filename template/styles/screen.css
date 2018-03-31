@@ -9,9 +9,9 @@
  @import url('https://fonts.googleapis.com/css?family=Abel|Josefin+Sans|Rajdhani');
 
 body
-{	margin:				0;
-	padding:			0;
-	font-family: 		arial;
+{ margin:       0;
+  padding:      0;
+  font-family:    arial;
 
 }
 
@@ -63,85 +63,85 @@ audio:not([controls]) {
 }
 
 section#visual {
-	width:				100%;
-  height:				1100px;
-	overflow:			hidden;
+  width:        100%;
+  height:       1100px;
+  overflow:     hidden;
   padding-top: 75px;
 
 
 }
 
 section#visual button {
-	overflow:			hidden;
+  overflow:     hidden;
   margin-left: 15px;
 
 }
 
 
 section#visual p {
-		font-size:		2em;
-		font-family: 'Josefin Sans', sans-serif;
-		width:				80%;
-		text-align:		justify;
-		margin-left: :				20px;
-		padding-left:			20px;
+    font-size:    2em;
+    font-family: 'Josefin Sans', sans-serif;
+    width:        80%;
+    text-align:   justify;
+    margin-left: :        20px;
+    padding-left:     20px;
 }
 
 
 
 section#visual h1 {
-	font-family: "Courier New";
-	font-style: oblique;
-	font-weight: 900;
-	font-size:			3em;
-	color:              #444444;
-	text-transform:		uppercase;
-	width:				80%;
-	text-align:			justify;
+  font-family: 'Fugaz One', monospace, sans-serif;
+  font-size: 30px;
+  font-style: oblique;
+  font-weight: 900;
+  font-size:      3em;
+  color:              #444444;
+  text-transform:   uppercase;
+  width:        80%;
+  text-align:     justify;
 }
 
 section#text {
   background-color:  #5FC3E4;
-  width:				100%;
-  height:				1100px;
+  width:        100%;
+  height:       1100px;
 
 }
 
 
 section#text h1 {
-	font-size:			3.2em;
-	font-family: "Courier New";
-	font-style: oblique;
-	font-weight: 900;
-	text-transform:		uppercase;
-	width:				80%;
-	text-align:			justify;
-	margin-left: :				20px;
-	padding-left:			20px;
+  font-size:      3.2em;
+  font-family: 'Fugaz One', monospace, sans-serif;
+  font-style: oblique;
+  font-weight: 900;
+  text-transform:   uppercase;
+  width:        80%;
+  text-align:     justify;
+  margin-left: :        20px;
+  padding-left:     20px;
 }
 
 section#text h2 {
-	font-size:			2.5em;
-	font-family: "Courier New";
-	font-style: oblique;
-	text-transform:		uppercase;
+  font-size:      2.5em;
+  font-family: 'Fugaz One', monospace, sans-serif;
+  font-style: oblique;
+  text-transform:   uppercase;
 
-	font-weight: 900;
-	width:				80%;
-	text-align:			justify;
-	line-height:		1.8em;
-	margin-left: :				20px;
-	padding-left:			20px;
+  font-weight: 900;
+  width:        80%;
+  text-align:     justify;
+  line-height:    1.8em;
+  margin-left: :        20px;
+  padding-left:     20px;
 }
 
 section#text p {
-		font-size:		2em;
-		font-family: 'Josefin Sans', sans-serif;
-
-		width:				80%;
-		text-align:		justify;
-		margin-left: :				20px;
-		padding-left:			20px;
+    font-size:    2em;
+    font-family: 'Space mono', sans-serif;
+    width:        80%;
+    text-align:   justify;
+    margin-left: :        20px;
+    padding-left:     20px;
 }
 
 
@@ -172,15 +172,15 @@ nav ul {
 
 nav li {
     float: left;
-		font-family: "Courier New";
-		font-size: 14pt;
-		font-style: oblique;
-		font-weight: 900;
+    font-family: "Courier New";
+    font-size: 14pt;
+    font-style: oblique;
+    font-weight: 900;
 
 }
 /*
 nav li:last-child {
-		float:right;
+    float:right;
 }*/
 
 
@@ -225,8 +225,8 @@ a{
     border:0;
     font-size: 85pt;
     font-family: "Courier New";
-  	font-style: oblique;
-  	font-weight: 900;
+    font-style: oblique;
+    font-weight: 900;
     /*width:196px;
     height:210px;*/
     position: relative;
@@ -246,8 +246,8 @@ a{
     color:  #5FC3E4;
     text-decoration: none;
     font-family: "Courier New";
-  	font-style: oblique;
-  	font-weight: 900;
+    font-style: oblique;
+    font-weight: 900;
     z-index: 2;
     -webkit-transition: all 200ms ease-in;
     -webkit-transform: scale(1.2);
@@ -288,23 +288,23 @@ a{
 
 .button-flip:hover button{
   color:#fff;
-  font-family: "Courier New";
+  font-family: 'Space mono', sans-serif;
   font-style: oblique;
   font-weight: 900;
-  background-color :#00ff00;
+  background-color: #E55D87;
 
      -webkit-animation: bounce 0.75s infinite;
 }
 
 .button-flip button {
   color:#fff;
-  font-family: "Courier New";
+  font-family: 'Space mono', sans-serif;
   font-style: oblique;
   font-weight: 900;
-  background-color: #E55D87;
+  background-color :#00ff00;
 
 }
 /*nav .active {
-	color:#ff6796;
+  color:#ff6796;
 
 }*/
