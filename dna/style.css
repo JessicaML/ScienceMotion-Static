@@ -11,22 +11,22 @@ img {
   height: 50%;
 }
 
-img.learn {
+img.t {
   top: 0;
   left: 0;
 }
 
-img.to {
+img.c {
   top: 0;
   right: 0;
 }
 
-img.code {
+img.a {
   bottom: 0;
   left: 0;
 }
 
-img.now {
+img.g {
   bottom: 0;
   right: 0;
 }
@@ -36,7 +36,7 @@ section#top {
 	width:				100%;
 	height:				750px;
 	overflow:			hidden;
-	text-align:  center;
+	text-align:   center;
 
 }
 
