@@ -1,14 +1,14 @@
 
 WIDTH = 1000;
 HEIGHT = 1000;
-var color = 'blue';
+var color = '#6EF5DE';
 var noOfCircles = 100;
 var circles = [];
 var canvas = document.getElementById('myCanvas');
 canvas.width = WIDTH;
 canvas.height =HEIGHT ;
 var ctx = canvas.getContext('2d');
-var col=['red','blue','green','yellow','magenta'],
+var col=['#E376C4','#6EF5DE','green','#E7932E','magenta'],
 bounce=-1;
 
 function Circle(x,y,sx,sy){
@@ -74,9 +74,9 @@ function changeState(num){
 
 function update(){
     ctx.clearRect(0,0,canvas.width,canvas.height);
-    if(circles.length==50) color = "yellow";
-    if(circles.length==200) color = "blue";
-    if(circles.length==500) color = "red";
+    if(circles.length==50) color = "#E7932E";
+    if(circles.length==200) color = "#6EF5DE";
+    if(circles.length==500) color = "#E376C4";
 
     for(var i=0;i<circles.length;i++){
         circles[i].drawCircle(color);
