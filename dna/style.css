@@ -37,13 +37,10 @@ section#top {
 	height:				750px;
 	overflow:			hidden;
 	text-align:   center;
-
 }
 
 div#header {
   top: 20%;
-  /*left: 50%;*/
-	/*transform: translate(-50%, -50%);*/
 	font-size: 28px;
 
 }
@@ -51,9 +48,6 @@ div#header {
 div.phrase {
   top: 50%;
 	padding-top: 7%;
-
-  /*left: 50%;*/
-	/*transform: translate(-50%, -50%);*/
 	font-size: 28px;
 
 }
@@ -98,8 +92,6 @@ section#info h2 {
     margin-left: 20px;
     padding-left: 20px;
 }
-
-
 
 section#info p {
     font-size: 1em;
