@@ -1,0 +1,250 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="generator" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <title>Viruses</title>
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/lesson_template.css" rel="stylesheet">
+    <link href="u.css" rel="stylesheet">
+    <script src="jquery.js"></script>
+
+    <link rel='apple-touch-icon' sizes='57x57' href='../../images/favicons/apple-icon-57x57.png'>
+    <link rel='icon' type='image/png' , sizes='192x192' , href='../../images/favicons/android-icon-192x192.png'>
+    <link rel='icon' type='image/png' , sizes='96x96' , href='../../images/favicons/favicon-96x96.png'>
+    <link href='http://fonts.googleapis.com/css?family=Nova+Round' rel='stylesheet' type='text/css'>
+    <!-- <link rel="stylesheet" href="_base.css"> -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li>
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="../navigation.html">All lessons</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <section id="top" style=" background-color: #39454A;">
+         <div id="button" style="float:left;" class="button-flip " >
+            <a id="button" class="active" href="#text">
+                <button style="color: #fff; margin-top: 50px;" type="button" class="btn" href="#text">More info</button>
+            </a>
+        </div>
+
+         <canvas id ="canvas" style=" line-height: 0;"></canvas>
+
+    </section>
+    <section id="text" style="background-color: #39454A;">
+      <div>
+        <h1>Viruses</h1>
+        <p>Viruses are very small particles capable of infecting every type of living organism. They are <span style="color:#cc8d9c;">parasitic</span> and can only reproduce inside living cells. </p>
+        <p>For example:
+<br><span style="color:#149fff;">the tobacco mosaic virus</span> - this stops chloroplasts forming in tobacco plants and causes the tobacco leaves to become discoloured
+<br><span style="color:#149fff;">the influenza virus</span> - this causes flu
+<br><span style="color:#149fff;">HIV (human immunodeficiency virus)</span> - this causes AIDS</p>
+<h2>Virus structure</h2>
+            <p>
+                <br>
+
+Virus particles have a variety of shapes. They do not have a <span style="color:#cc8d9c;">cellular structure</span>. Instead, they have a core of genetic material surrounded by a protein coat. Their genetic material can be <span style="color:#00ffb5;">DNA or RNA</span>, but not both.
+Biomedical illustration showing hepatitis C virus
+The structure of a hepatitis virus</p>
+        </div>
+    </section>
+
+
+
+</body>
+
+<script type="text/javascript">
+    (function(){
+    var canvasBody = document.getElementById("canvas"),
+            canvas = canvasBody.getContext("2d"),
+
+            w = canvasBody.width = window.innerWidth,
+            h = canvasBody.height = window.innerHeight,
+
+            pi2 = Math.PI*2,
+            tick = 0,
+            opts = {
+                canvas: {
+                    backgroundColor: "#39454A",
+                    organismAmount: 10
+                },
+                organism: {
+                    baseRadius: 5,
+                    baseIllumination: 5,
+                    minPointAmount: 1,
+                    maxPointAmount: 10,
+                    color: "#6ACE10",
+                    minSpeed: 1,
+                    addedSpeed: 2,
+                    yI: 100,
+                    xI: 2,
+
+                    partRadius: 3.5,
+                    partIllumination: 8,
+                    partColor: " #6EF5DE"
+                }
+            },
+            World = function(){
+                this.bodies = {};
+                this.addBody = function(body){
+                    var bodyType = body.name;
+                    this.bodies[bodyType] ? true : this.bodies[bodyType] = [];
+                    this.bodies[bodyType].push(body);
+                };
+                this.update = function(){
+                    for(key in this.bodies){
+                        this.bodies[key].map( function(Entity){
+                            Entity.update();
+                        })
+                    }
+                };
+                this.render = function(){
+                    for(key in this.bodies){
+                        this.bodies[key].map( function(Entity){
+                            Entity.render();
+                        })
+                    }
+                };
+                this.initBody = function(bodyType){
+                    for(var i = 0; i < this.bodies[bodyType].length; i++){
+                        this.bodies[bodyType][i].init();
+                    }
+                }
+            },
+            Organism = function(){
+                this.name = "organism";
+                this.x;
+                this.y;
+                this.yOffset = Math.random()*h/2;
+                this.speed = opts.organism.minSpeed + Math.random()*opts.organism.addedSpeed;
+                this.xI = Math.random()*opts.organism.xI;
+                this.yI = Math.random()*opts.organism.yI;
+                this.equation = function(x){};
+                this.radius;
+                this.angle = (Math.random()*360);
+                this.parts = [];
+                this.color = opts.organism.color;
+                this.partsRadius;
+                this.partsMaxAmount = opts.organism.minPointAmount + Math.floor(Math.random() * opts.organism.maxPointAmount);
+                this.init = function(){
+                    this.radius = opts.organism.baseRadius + this.partsMaxAmount*1.5;
+                    for(var i = 0; i < this.partsMaxAmount; i++){
+                        this.parts.push( new Part(this.radius) )
+                    }
+                    this.x = Math.random()*w;
+                    this.equation = function(x){
+                        return [x, Math.sin(x)];
+                    }
+                };
+
+                this.update = function(){
+                    this.angle++;
+                    var angle = this.angle;
+                    this.parts.map( function(Part){
+                        Part.update(angle);
+                    });
+
+                    this.x < w + this.radius*5 ? this.x += this.speed : this.x = 0 - this.radius*5;
+                    this.y = this.equation(Math.radians(this.x)*this.xI)[1]*this.yI + this.yOffset + this.x/3;
+                };
+
+                this.render = function(){
+                    canvas.beginPath();
+                    for(var i = 0 ; i < this.parts.length; i++){
+                        canvas.moveTo(this.parts[i].x + this.x, this.parts[i].y + this.y);
+                        canvas.lineTo(this.x, this.y);
+                    }
+                    canvas.closePath();
+                    canvas.strokeStyle = "rgba(255,255,255,0.5)";
+                    canvas.stroke();
+
+                    var coord = [this.x, this.y]
+                    this.parts.map( function(Part){
+                        Part.render(coord[0], coord[1]);
+                    });
+
+                    canvas.beginPath();
+                    canvas.arc(this.x, this.y, this.radius, 0, pi2);
+                    canvas.closePath();
+                    canvas.shadowBlur = opts.organism.baseIllumination;
+                    canvas.shadowColor = this.color;
+                    canvas.fillStyle = this.color;
+                    canvas.fill();
+                };
+            },
+            Part = function(radius){
+                this.startAngle = Math.radians(Math.random()*360);
+                this.rotationSpeed = Math.random()*2;
+                this.angle = this.startAngle;
+                this.centerDistance = radius*2 + Math.random()*radius;
+                this.radius = opts.organism.partRadius;
+                this.x = Math.cos(Math.radians(this.angle))*this.radius;
+                this.y = Math.sin(Math.radians(this.angle))*this.radius;
+                this.color = opts.organism.partColor;
+                this.update = function(angle){
+                    this.angle += angle*this.rotationSpeed;
+                    this.x = Math.cos(Math.radians(this.angle))*this.centerDistance;
+                    this.y = Math.sin(Math.radians(this.angle))*this.centerDistance;
+                    this.angle = this.startAngle
+                };
+
+                this.render = function(x, y){
+                    canvas.beginPath();
+                    canvas.arc(this.x + x, this.y + y, this.radius, 0, pi2);
+                    canvas.closePath();
+                    canvas.shadowBlur = opts.organism.partIllumination;
+                    canvas.shadowColor = this.color;
+                    canvas.fillStyle = this.color;
+                    canvas.fill();
+
+                    canvas.shadowBlur = 0;
+                };
+            };
+
+    Math.radians = function(deg){
+        return deg * (Math.PI / 180);
+    };
+
+    function setup(){
+        world = new World();
+        for(var i = 0; i < opts.canvas.organismAmount; i++){
+            world.addBody( new Organism() );
+        }
+        world.initBody( "organism" );
+
+        console.log(world)
+        window.requestAnimationFrame(loop);
+    };
+    function loop(){
+        canvas.fillStyle = opts.canvas.backgroundColor;
+        canvas.fillRect(0,0,w,h);
+
+        world.update();
+        world.render();
+
+        window.requestAnimationFrame(loop);
+    };
+    setup();
+
+    window.addEventListener("resize", function(){
+        w = canvasBody.width = window.innerWidth;
+        h = canvasBody.height = window.innerHeight;
+    });
+})();
+</script>
+
+
+</html>
