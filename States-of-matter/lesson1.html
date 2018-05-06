@@ -7,6 +7,7 @@
           <meta charset="utf-8">
       <link href="../css/bootstrap.css" rel="stylesheet">
       <link href="../css/lesson_template.css" rel="stylesheet">
+      <link href="statesmatter.css" rel="stylesheet">
       <link rel='apple-touch-icon' sizes='57x57' href='../../images/favicons/apple-icon-57x57.png'>
       <link rel='icon' type='image/png' , sizes='192x192' , href='../../images/favicons/android-icon-192x192.png'>
       <link rel='icon' type='image/png' , sizes='96x96' , href='../../images/favicons/favicon-96x96.png'>
@@ -45,9 +46,9 @@
   <section id="visual">
     <br>
     <div class = "buttons" >
-      <button onclick="changeState(500)">SOLID</button>
-      <button onclick="changeState(200)">LIQUID</button>
-      <button onclick="changeState(50)">GAS</button>
+      <button id="solid" onclick="changeState(500)">SOLID</button>
+      <button  id="liquid" onclick="changeState(200)">LIQUID</button>
+      <button  id="gas" onclick="changeState(50)">GAS</button>
     </div>
     <canvas  id="myCanvas" width="1000" height="1000" style="border:0px solid #000000;">
 
@@ -70,67 +71,41 @@
 
   <h1> Characteristics Of Solids Liquids and Gases </h1 >
 
-
-<style>
-table,th,td
-{
-  border: 1px grey;
-  text-align : center;
-  padding : 15px;
-  font-family: 'Space Mono', monospace, sans-serif;
-  font-size: 15px;
-  margin: 20px;
-}
-th{
-  font-size: 25px;
-}
-.buttons{
-  text-align: center;
-  font-family: 'Courier New', monospace, sans-serif;
-}
-h2{
-  font-family: 'Fugaz One', monospace, sans-serif;
-}
-
-</style>
-
-<p>
-
-<table border = "0" align="center" >
+<table border = "0" align="center" class="table">
 
   <tr>
-    <th> Characteristic </th>
-    <th> Solids </th>
-    <th> Liquids </th>
-    <th> Gases </th>
+    <th scope="col"> Characteristic </th>
+    <th scope="col"> Solids </th>
+    <th scope="col"> Liquids </th>
+    <th scope="col"> Gases </th>
   </tr>
 
   <tr>
-    <td style = " font-size : 25px" > Distance </td>
+    <th scope="row" style = " font-size : 25px" > Distance </td>
     <td> Particles are closely packed </td>
     <td> Particles are loosely packed </td>
     <td> Particles are very loosely packed </td>
   </tr>
   <tr>
-    <td style = " font-size : 25px"> Shape and Volume </td>
+    <th scope="row" style = " font-size : 25px"> Shape and Volume </td>
     <td> Very rigid, has fixed shape and volume </td>
     <td> No fixed shape , but has fixed volume </td>
     <td> No fixed shape or volume, assumes shape of the container </td>
   </tr>
   <tr>
-    <td style = " font-size : 25px"> Compressibility </td>
+    <th scope="row" style = " font-size : 25px"> Compressibility </td>
     <td> Incompressible </td>
     <td> Difficult to compress </td>
     <td> Easily Compressible </td>
   </tr>
   <tr>
-    <td style = " font-size : 25px"> Density </td>
+    <th scope="row" style = " font-size : 25px"> Density </td>
     <td> High density </td>
     <td> Lower than solids but higher than liquids </td>
     <td> Least density </td>
   </tr>
 </table>
-</p>
+
 </section>
 
 </body>
