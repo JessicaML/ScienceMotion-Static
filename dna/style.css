@@ -11,22 +11,22 @@ img {
   height: 50%;
 }
 
-img.learn {
+img.t {
   top: 0;
   left: 0;
 }
 
-img.to {
+img.c {
   top: 0;
   right: 0;
 }
 
-img.code {
+img.a {
   bottom: 0;
   left: 0;
 }
 
-img.now {
+img.g {
   bottom: 0;
   right: 0;
 }
@@ -37,13 +37,10 @@ section#top {
 	height:				750px;
 	overflow:			hidden;
 	text-align:   center;
-
 }
 
 div#header {
   top: 20%;
-  /*left: 50%;*/
-	/*transform: translate(-50%, -50%);*/
 	font-size: 28px;
 
 }
@@ -51,9 +48,6 @@ div#header {
 div.phrase {
   top: 50%;
 	padding-top: 7%;
-
-  /*left: 50%;*/
-	/*transform: translate(-50%, -50%);*/
 	font-size: 28px;
 
 }
@@ -98,8 +92,6 @@ section#info h2 {
     margin-left: 20px;
     padding-left: 20px;
 }
-
-
 
 section#info p {
     font-size: 1em;
