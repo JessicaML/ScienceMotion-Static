@@ -1,0 +1,71 @@
+.fixed-block {
+  position: fixed;
+  z-index: -1;
+  float: left;
+  padding-left: 0px;
+  margin-left: 0px;
+}
+
+.container {
+  width: 90%;
+}
+
+.left-side {
+  position: relative;
+  float: left;
+  width: 40%;
+  margin-top: 6px;
+}
+
+.right-side {
+  position: relative;
+  z-index: 101;
+  float: right;
+  width: 40%;
+  margin-top: 6px;
+  grid-column-start: 2;
+}
+
+/* Typography */
+
+p {
+  padding: 5px;
+  margin: 2px;
+}
+
+.right-side p {
+  padding-bottom: 300px;
+}
+
+#top-container {
+  margin: 50px 20px 0 20px;
+}
+
+#text-intro {
+  font-weight: bold;
+  text-align: center;
+}
+
+.instructions {
+  font-style: italic;
+  font-size: medium;
+  text-align: center;
+  padding-bottom: 500px;
+}
+
+.summary,
+.further-reading {
+  text-align: center;
+}
+
+/*Images */
+
+#base {
+  padding-left: -10px;
+  margin-left: 0px;
+}
+
+/*CSS Grid */
+.container {
+  display: grid;
+}

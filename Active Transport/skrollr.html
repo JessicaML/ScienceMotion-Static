@@ -1,0 +1,40 @@
+<div id="intro" data-0="top:25%" data-300="top:-100%;">
+  <div class="scroll">
+    <p>scroll</p>
+  </div>
+</div>
+
+<div id="FACE">
+<div id="topHead"><img src="img1.png" data-0="top:-220px;" data-500="top:30px;"></div>
+<div id="leftBrow" ><img src="img2.png" data-200="top:-200px;" data-700="top:155px;"></div>
+<div id="rightBrow"><img src="img3.png" data-400="top:-200px;" data-900="top:155px;"></div>
+<!-- <div id="nose"><img src="img4.png" data-600="top:-200px;" data-1100="top:280px;"></div> -->
+
+<div id="nose"><img src="img4.png" data-600="left:100;" data-1100="left:25;" style="left: 25%;"></div>
+
+<!-- <div id="easing" data-3900="left:100%" data-4600="left:25%;" class="skrollable skrollable-after" style="left: 25%;">
+  <h2>easing?</h2>
+  <p>sure.</p>
+  <p>let me dim the <span data-3900="" data-4900="color[swing]:rgb(0,0,0);" data-5900="color:rgb(255,255,0);" class="skrollable skrollable-between" style="color: rgb(0, 0, 0);">lights</span> for this one...</p>
+  <p data-5900="opacity:0;font-size:100%;" data-6500="opacity:1;font-size:150%;" class="skrollable skrollable-before" style="opacity: 0; font-size: 100%;">you can set easings for each property and define own easing functions</p>
+</div> -->
+
+
+<div id="nose"><img src="img5.png" data-600="top:-200px;" data-1100="top:280px;"></div>
+
+</div>
+  <div id="progress" data-0="height:0%;background:hsl(200, 100%, 50%);" data-end="height:100%;background:hsl(920, 100%, 50%);"></div>
+<div id="scrollbar" data-0="top:0%;margin-top:2px;" data-end="top:100%;margin-top:-52px;"></div>
+<script type="text/javascript" src="skrollr.min.js"></script>
+
+<script type="text/javascript">
+var s = skrollr.init({
+  edgeStrategy: 'set',
+  easing: {
+    WTF: Math.random,
+    inverted: function(p) {
+      return 1-p;
+    }
+  }
+});
+</script>

@@ -1,0 +1,121 @@
+@charset 'UTF-8';
+@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
+@import url("font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css?family=Fugaz+One");
+@import url("https://fonts.googleapis.com/css?family=Bitter");
+@import url("https://fonts.googleapis.com/css?family=Space+Mono");
+/*
+	Big Picture by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
+
+/*********************************************************************************/
+/* Basic                                                                         */
+/*********************************************************************************/
+
+/*html {
+		height: 100%;
+	}*/
+
+body {
+  /*	height: 100%; */
+  /*padding-top: 70px;*/
+  background: hsl(318, 68%, 68%); /* fallback for old browsers */
+}
+
+#easing {
+  top: 10%;
+  width: 50%;
+  z-index: 101;
+}
+/*
+		body.is-loading *,
+		body.is-resizing *
+		{
+			-moz-transition: none !important;
+			-webkit-transition: none !important;
+			-o-transition: none !important;
+			-ms-transition: none !important;
+			transition: none !important;
+			-moz-animation: none !important;
+			-webkit-animation: none !important;
+			-o-animation: none !important;
+			-ms-animation: none !important;
+			animation: none !important;
+		}*/
+
+body,
+input,
+textarea,
+select {
+  font-family: "Space Mono", sans-serif;
+  font-weight: 300;
+  font-size: 18pt;
+  line-height: 1.75em;
+  color: #99154e;
+  /* color: #39454b; */
+  letter-spacing: 0.5px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 900;
+  color: inherit;
+  font-family: "Fugaz One";
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: inherit;
+  text-decoration: none;
+}
+h1 {
+  text-align: center;
+  color: #0ff004;
+  font-size: 75px;
+}
+
+#second h1 {
+  font-size: 40px;
+  color: #3b3b3b;
+}
+
+#second {
+  background: yellow;
+}
+
+h2 {
+  font-size: 2.25em;
+  letter-spacing: -2px;
+  line-height: 1.25em;
+}
+
+strong,
+b {
+  font-weight: 900;
+  color: inherit;
+}
+
+em,
+i {
+  font-style: italic;
+}
+
+a {
+  color: #98c593;
+
+  -moz-transition: all 0.2s ease-in-out, color 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out, color 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out, color 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out, color 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out, color 0.2s ease-in-out;
+}
