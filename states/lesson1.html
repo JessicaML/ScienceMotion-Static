@@ -1,112 +1,119 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <script src="scripts/d3.v2.js"></script>
-  
-  
-          <meta charset="utf-8">
-      <link href="../css/bootstrap.css" rel="stylesheet">
-      <link href="../css/lesson_template.css" rel="stylesheet">
-      <link href="statesmatter.css" rel="stylesheet">
-      <link rel='apple-touch-icon' sizes='57x57' href='../../images/favicons/apple-icon-57x57.png'>
-      <link rel='icon' type='image/png' , sizes='192x192' , href='../../images/favicons/android-icon-192x192.png'>
-      <link rel='icon' type='image/png' , sizes='96x96' , href='../../images/favicons/favicon-96x96.png'>
 
+
+  <meta charset="utf-8">
+  <link href="../css/bootstrap.css" rel="stylesheet">
+  <link href="../css/lesson_template.css" rel="stylesheet">
+  <link href="statesmatter.css" rel="stylesheet">
+  <link rel='apple-touch-icon' sizes='57x57' href='../images/favicons/apple-icon-57x57.png'>
+  <link rel='icon' type='image/png' , sizes='192x192' , href='../images/favicons/android-icon-192x192.png'>
+  <link rel='icon' type='image/png' , sizes='96x96' , href='../images/favicons/favicon-96x96.png'>
 </head>
+
 <body>
 
 
   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav">
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
 
-                <li>
-                    <a href="../index.html">Home</a>
-                </li>
+        <li>
+          <a href="../index.html">Home</a>
+        </li>
 
-                  <li>
-                      <a href="../navigation.html">All lessons</a>
-                  </li>
-               </ul>
+        <li>
+          <a href="../navigation.html">All lessons</a>
+        </li>
+      </ul>
 
-          </div>
+    </div>
   </nav>
 
 
-  <div class="fond">
-      <div id="forb"style="float:left;" class="style_prevu_kit">
-      <a id="forb" class="active" href="index.html"><</a></div>
-      <div id="button"style="float:left;" class="button-flip">
-      <a id="button" class="active" href="#text">  <button style="color: #fff; margin-top: 50px;" type="button" class="btn" href="#text" >More info</button>
-  </a></div>
-      <div id="forb" style="float:right;" class="style_prevu_kit">
-      <a id="forb" class="active" href="index.html">></a></div>
+  <div class="fond" id="smoothscroll">
+    <div id="forb" style="float:left;" class="style_prevu_kit">
+    </div>
+    <div id="button" style="float:left;" class="button-flip">
+      <a id="button" class="active" href="#text">
+        <button style="color: #fff; margin-top: 50px;" type="button" class="btn" href="#text">More info</button>
+      </a>
+    </div>
+    <div id="forb" style="float:right;" class="style_prevu_kit">
+    </div>
   </div>
+
   <section id="visual">
     <br>
-    <div class = "buttons" >
+    <div class="buttons">
       <button id="solid" onclick="changeState(500)">SOLID</button>
-      <button  id="liquid" onclick="changeState(200)">LIQUID</button>
-      <button  id="gas" onclick="changeState(50)">GAS</button>
+      <button id="liquid" onclick="changeState(200)">LIQUID</button>
+      <button id="gas" onclick="changeState(50)">GAS</button>
     </div>
-    <canvas  id="myCanvas" width="1000" height="1000" style="border:0px solid #000000;">
+    <canvas id="myCanvas" width="1000" height="1000" style="border:0px solid #000000;">
 
-   </canvas>
-   <style>
-     canvas {
-      padding-left: 0;
-      padding-right: 0;
-      margin-left: auto;
-      margin-right: auto;
-      display: block;
-      width: 800px;
-  }
-</style>
-<script type="text/javascript" src="./lesson1.js"></script>
+    </canvas>
+    <style>
+      canvas {
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: 800px;
+      }
+    </style>
+    <script type="text/javascript" src="./lesson1.js"></script>
 
-</section>
+  </section>
 
-<section id="text" style = "color: white ; background-color : #39454A"    >
+  <section id="text" style="color: white ; background-color : #39454A">
 
-  <h1> Characteristics Of Solids Liquids and Gases </h1 >
+    <h1> Characteristics Of Solids Liquids and Gases </h1>
 
-<table border = "0" align="center" class="table">
+    <table border="0" align="center" class="table">
 
-  <tr>
-    <th scope="col"> Characteristic </th>
-    <th scope="col"> Solids </th>
-    <th scope="col"> Liquids </th>
-    <th scope="col"> Gases </th>
-  </tr>
+      <tr>
+        <th scope="col"> Characteristic </th>
+        <th scope="col"> Solids </th>
+        <th scope="col"> Liquids </th>
+        <th scope="col"> Gases </th>
+      </tr>
 
-  <tr>
-    <th scope="row" style = " font-size : 25px" > Distance </td>
-    <td> Particles are closely packed </td>
-    <td> Particles are loosely packed </td>
-    <td> Particles are very loosely packed </td>
-  </tr>
-  <tr>
-    <th scope="row" style = " font-size : 25px"> Shape and Volume </td>
-    <td> Very rigid, has fixed shape and volume </td>
-    <td> No fixed shape , but has fixed volume </td>
-    <td> No fixed shape or volume, assumes shape of the container </td>
-  </tr>
-  <tr>
-    <th scope="row" style = " font-size : 25px"> Compressibility </td>
-    <td> Incompressible </td>
-    <td> Difficult to compress </td>
-    <td> Easily Compressible </td>
-  </tr>
-  <tr>
-    <th scope="row" style = " font-size : 25px"> Density </td>
-    <td> High density </td>
-    <td> Lower than solids but higher than liquids </td>
-    <td> Least density </td>
-  </tr>
-</table>
+      <tr>
+        <th scope="row" style=" font-size : 25px"> Distance </td>
+          <td> Particles are closely packed </td>
+          <td> Particles are loosely packed </td>
+          <td> Particles are very loosely packed </td>
+      </tr>
+      <tr>
+        <th scope="row" style=" font-size : 25px"> Shape and Volume </td>
+          <td> Very rigid, has fixed shape and volume </td>
+          <td> No fixed shape , but has fixed volume </td>
+          <td> No fixed shape or volume, assumes shape of the container </td>
+      </tr>
+      <tr>
+        <th scope="row" style=" font-size : 25px"> Compressibility </td>
+          <td> Incompressible </td>
+          <td> Difficult to compress </td>
+          <td> Easily Compressible </td>
+      </tr>
+      <tr>
+        <th scope="row" style=" font-size : 25px"> Density </td>
+          <td> High density </td>
+          <td> Lower than solids but higher than liquids </td>
+          <td> Least density </td>
+      </tr>
+    </table>
 
-</section>
+  </section>
+  <script type="text/javascript" src="../js/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/scrollnav.js"></script>
 
 </body>
+
 </html>

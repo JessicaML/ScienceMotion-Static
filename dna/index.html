@@ -9,9 +9,9 @@
     <title>DNA</title>
     <link href="../css/bootstrap.css" rel="stylesheet">
     <link href="../css/lesson_template.css" rel="stylesheet">
-    <link rel='apple-touch-icon' sizes='57x57' href='../../images/favicons/apple-icon-57x57.png'>
-    <link rel='icon' type='image/png' , sizes='192x192' , href='../../images/favicons/android-icon-192x192.png'>
-    <link rel='icon' type='image/png' , sizes='96x96' , href='../../images/favicons/favicon-96x96.png'>
+    <link rel='apple-touch-icon' sizes='57x57' href='../images/favicons/apple-icon-57x57.png'>
+    <link rel='icon' type='image/png' , sizes='192x192' , href='../images/favicons/android-icon-192x192.png'>
+    <link rel='icon' type='image/png' , sizes='96x96' , href='../images/favicons/favicon-96x96.png'>
     <link rel="stylesheet" href="_base.css">
     <link rel="stylesheet" href="style.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -41,7 +41,7 @@
                 </ul>
             </div>
         </nav>
-        <div class="fond">
+        <div class="fond" id="smoothscroll">
             <div id="forb" style="float:left;" class="style_prevu_kit">
             </div>
             <div id="button" style="float:left;" class="button-flip">
@@ -52,10 +52,10 @@
             <div id="forb" style="float:right;" class="style_prevu_kit">
             </div>
         </div>
-        <img src="cytosine.png" class="c">
-        <img src="thymine.png" class="t">
-        <img src="adenine.png" class="a">
-        <img src="guanine.png" class="g">
+        <img src="cytosine.png" class="c" />
+        <img src="thymine.png" class="t" />
+        <img src="adenine.png" class="a" />
+        <img src="guanine.png" class="g" />
     </section>
     <section id="text">
         <div>
@@ -81,9 +81,8 @@
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
     <script src="movement.js"></script>
     <script type="text/javascript" src="../js/skrollr.min.js"></script>
-    <script type="text/javascript">
-        skrollr.init();
-    </script>
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/scrollnav.js"></script> skrollr.init();
 </body>
 
 </html>
