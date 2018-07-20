@@ -8,11 +8,11 @@
 
 <head>
     <script type="text/javascript" src="../js/jquery.js"></script>
-  <link href="../../css/bootstrap.css" rel="stylesheet">
-  <link href="../../css/lesson_template.css" rel="stylesheet">
-    <link rel='apple-touch-icon' sizes='57x57' href='../../images/favicons/apple-icon-57x57.png'>
-    <link rel='icon' type='image/png' , sizes='192x192' , href='../../images/favicons/android-icon-192x192.png'>
-    <link rel='icon' type='image/png' , sizes='96x96' , href='../../images/favicons/favicon-96x96.png'>
+    <link href="../../css/bootstrap.css" rel="stylesheet">
+    <link href="../../css/lesson_template.css" rel="stylesheet">
+    <link rel='apple-touch-icon' sizes='57x57' href='../images/favicons/apple-icon-57x57.png'>
+    <link rel='icon' type='image/png' , sizes='192x192' , href='../images/favicons/android-icon-192x192.png'>
+    <link rel='icon' type='image/png' , sizes='96x96' , href='../images/favicons/favicon-96x96.png'>
 </head>
 
 <body>
@@ -23,18 +23,16 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
                 <li>
-                    <a href="../../index.html">Home</a>
+                    <a href="../index.html">Home</a>
                 </li>
                 <li>
-                    <a href="../../navigation.html">All lessons</a>
+                    <a href="../navigation.html">All lessons</a>
                 </li>
             </ul>
         </div>
     </nav>
-    <div class="fond">
+    <div class="fond" id="smoothscroll">
         <div id="forb" style="float:left;" class="style_prevu_kit">
-            <a id="forb" class="active" href="Lesson1.html">
-                <</a>
         </div>
         <div id="button" style="float:left;" class="button-flip">
             <a id="button" class="active" href="#text">
@@ -42,26 +40,35 @@
             </a>
         </div>
         <div id="forb" style="float:right;" class="style_prevu_kit">
-            <a id="forb" class="active" href="">|</a></div>
+        </div>
     </div>
     <section id="visual">
     </section>
     <section id="text">
         <div>
             <h1>Keys and identification</h1>
-            <p> Keys are used to identify different species. A key will usually ask questions based on easily identifiable features of an organism. Dichotomous keys use questions to which there are only two answers. They can be presented as a table of questions, or as a branching tree of questions. </p>
+            <p> Keys are used to identify different species. A key will usually ask questions based on easily identifiable features
+                of an organism. Dichotomous keys use questions to which there are only two answers. They can be presented
+                as a table of questions, or as a branching tree of questions. </p>
             <h2>Branching tree example</h2>
-            <p> This tree could help you identify a new vertebrate. For example, if it had no fur or feathers and dry skin, you would follow the right-hand pathway at the first and second junctions, but the left-hand pathway at the third junction. This would lead you to identify the animal as a reptile.
+            <p> This tree could help you identify a new vertebrate. For example, if it had no fur or feathers and dry skin, you
+                would follow the right-hand pathway at the first and second junctions, but the left-hand pathway at the third
+                junction. This would lead you to identify the animal as a reptile.
             </p>
-            <p>Fur then mammal (ie badger). No fur but feathers then bird (ie owl). No feathers but dry skin, then reptile (tortoise). Moist skin and scales then fish. Moist skin no scales then amphibian (ie frog). </p>
+            <p>Fur then mammal (ie badger). No fur but feathers then bird (ie owl). No feathers but dry skin, then reptile (tortoise).
+                Moist skin and scales then fish. Moist skin no scales then amphibian (ie frog). </p>
         </div>
     </section>
     <!-- End Site Content -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script>
-    window.jQuery || document.write('<script src="scripts/lib/jquery-1.9.1.min.js"><\/script>')
+        window.jQuery || document.write('<script src="scripts/lib/jquery-1.9.1.min.js"><\/script>')
     </script>
     <script src="scripts/oakley.js"></script>
+    <script src="copy.js"></script>
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/scrollnav.js"></script>
+
 </body>
 
 </html>

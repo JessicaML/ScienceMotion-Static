@@ -1,143 +1,144 @@
 <!DOCTYPE html>
+<html class="no-js">
+<!--<![endif]-->
 
-    <body>
-        <!--[if lt IE 7]>
-        <![endif]-->
-
-
-
-<html>
-        <title>Diffusion</title>
-
-  <head>
-    <!-- <script type="text/javascript" src="https://mbostock.github.com/d3/d3.js?2.0.0"></script> -->
-    <!-- <script src="https://gist.github.com/mscook/b21a1877cba76565937a.js"></script> -->
-        <script src="scripts/d3.v2.js"></script>
-
-
-        <meta charset="utf-8">
+<head>
+    <title>Diffusion</title>
+    <link rel='apple-touch-icon' sizes='57x57' href='../images/favicons/apple-icon-57x57.png'>
+    <link rel='icon' type='image/png' , sizes='192x192' , href='../images/favicons/android-icon-192x192.png'>
+    <link rel='icon' type='image/png' , sizes='96x96' , href='../images/favicons/favicon-96x96.png'>
+    <script src="scripts/d3.v2.js"></script>
     <link href="../css/bootstrap.css" rel="stylesheet">
     <link href="../css/lesson_template.css" rel="stylesheet">
-    <link rel='apple-touch-icon' sizes='57x57' href='../../images/favicons/apple-icon-57x57.png'>
-    <link rel='icon' type='image/png' , sizes='192x192' , href='../../images/favicons/android-icon-192x192.png'>
-    <link rel='icon' type='image/png' , sizes='96x96' , href='../../images/favicons/favicon-96x96.png'>
-  </head>
-  <body>
-		<section id="top">
 
 
-<!-- slower diffusion
+</head>
+
+<body>
+    <section id="top">
+
+
+        <!-- slower diffusion
  -->
 
 
-    <div id="slow">
-      <!DOCTYPE html>
-  <meta charset="utf-8">
-  <body>
-    <!DOCTYPE html>
-    <meta charset="utf-8">
-    <body>
-    <!-- <script src="//d3js.org/d3.v3.min.js"></script> -->
-<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
-            <li>
-                        <a href="../index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="../navigation.html">All lessons</a>
-            </li>
-        </ul>
-    </div>
-</nav>
-<div class="fond">
-    <div id="forb" style="float:left;" class="style_prevu_kit">
-    </div>
-    <div id="button" style="float:left;" class="button-flip">
-        <a id="button" class="active" href="#text">
-            <button style="color: #fff; margin-top: 50px;" type="button" class="btn" href="#text">More info</button>
-        </a>
-    </div>
-    <div id="forb" style="float:right;" class="style_prevu_kit">
-    </div>
-</div>
-<script>
-var width = 960,
-    height = 500;
+        <div id="slow">
+            <!DOCTYPE html>
+            <meta charset="utf-8">
 
-var nodes = [];
+            <body>
+                <!DOCTYPE html>
+                <meta charset="utf-8">
 
-var svg = d3.select("body").append("svg")
-        .attr("width", width)
-        .attr("height", height);
+                <body>
+                    <!-- <script src="//d3js.org/d3.v3.min.js"></script> -->
+                    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li>
+                                    <a href="../index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a href="../navigation.html">All lessons</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="fond" id="smoothscroll">
+                        <div id="forb" style="float:left;" class="style_prevu_kit">
+                        </div>
+                        <div id="button" style="float:left;" class="button-flip">
+                            <a id="button" class="active" href="#text">
+                                <button style="color: #fff; margin-top: 50px;" type="button" class="btn" href="#text">More info</button>
+                            </a>
+                        </div>
+                        <div id="forb" style="float:right;" class="style_prevu_kit">
+                        </div>
+                    </div>
+                    <script>
+                        var width = 960,
+                            height = 500;
 
-    var force = d3.layout.force()
-        .charge(-20)
-        .size([width, height])
-        .nodes(nodes)
-        .on("tick", tick)
-        .start();
+                        var nodes = [];
 
-    function tick() {
-      svg.selectAll("circle")
-          .attr("cx", function(d) { return d.x; })
-          .attr("cy", function(d) { return d.y; });
-    }
+                        var svg = d3.select("body").append("svg")
+                            .attr("width", width)
+                            .attr("height", height);
 
-    var interval = setInterval(function() {
-      var d = {
-        x: width / 2 + 2 * Math.random() - 1,
-        y: height / 2 + 2 * Math.random() - 1
-      };
+                        var force = d3.layout.force()
+                            .charge(-20)
+                            .size([width, height])
+                            .nodes(nodes)
+                            .on("tick", tick)
+                            .start();
 
-      svg.append("circle")
-          .data([d])
-          .attr("r", 1e-6)
-        .transition()
-          .ease(Math.sqrt)
-          .attr("r", 4.5);
+                        function tick() {
+                            svg.selectAll("circle")
+                                .attr("cx", function (d) { return d.x; })
+                                .attr("cy", function (d) { return d.y; });
+                        }
 
-      if (nodes.push(d) > 300) clearInterval(interval);
-      force.start();
-    }, 30);
+                        var interval = setInterval(function () {
+                            var d = {
+                                x: width / 2 + 2 * Math.random() - 1,
+                                y: height / 2 + 2 * Math.random() - 1
+                            };
 
-    </script>
+                            svg.append("circle")
+                                .data([d])
+                                .attr("r", 1e-6)
+                                .transition()
+                                .ease(Math.sqrt)
+                                .attr("r", 4.5);
 
-       </div>
+                            if (nodes.push(d) > 300) clearInterval(interval);
+                            force.start();
+                        }, 30);
+
+                    </script>
+
+        </div>
     </section>
     <section id="text">
-      <div>
-				<h1>Evidence for particles - diffusion</h1>
+        <div>
+            <h1>Evidence for particles - diffusion</h1>
 
-        <h2>Diffusion in gases</h2>
+            <h2>Diffusion in gases</h2>
 
-        <p>When chemicals, like the smell of perfume or burning toast, are let loose in a room, the particles mix with the air particles. The particles of smelly gas are free to move quickly in all directions. They eventually spread throughout the whole room. This is called diffusion.</p>
+            <p>When chemicals, like the smell of perfume or burning toast, are let loose in a room, the particles mix with the
+                air particles. The particles of smelly gas are free to move quickly in all directions. They eventually spread
+                throughout the whole room. This is called diffusion.</p>
 
-        <p>Diffusion in gases is quick because the particles in a gas move quickly. It happens even faster in hot gases.</p>
+            <p>Diffusion in gases is quick because the particles in a gas move quickly. It happens even faster in hot gases.</p>
 
-        <h2>Mixture of two gases</h2>
+            <h2>Mixture of two gases</h2>
 
-        <p> Before diffusion, particles of one gas are concentrated in one area. After diffusion, the particles are spread more evenly throughout the other gas.
-        Diffusion happens quickly in gases. </p>
+            <p> Before diffusion, particles of one gas are concentrated in one area. After diffusion, the particles are spread
+                more evenly throughout the other gas. Diffusion happens quickly in gases. </p>
 
-        <h2>Diffusion in liquids</h2>
+            <h2>Diffusion in liquids</h2>
 
-        <p>Diffusion can also happen in liquids. This is because the particles in liquids can move around each other, which means that eventually they are evenly mixed.
-        For example, if you drop a little bit of paint into a jar of water the colour will spread slowly through the water by diffusion.
+            <p>Diffusion can also happen in liquids. This is because the particles in liquids can move around each other, which
+                means that eventually they are evenly mixed. For example, if you drop a little bit of paint into a jar of
+                water the colour will spread slowly through the water by diffusion.</p>
 
-        <p>Diffusion in liquids is slower than in gases because the particles in a liquid move more slowly.</p>
+            <p>Diffusion in liquids is slower than in gases because the particles in a liquid move more slowly.</p>
 
-        <h2>Solids</h2>
+            <h2>Solids</h2>
 
 
-        <p>Diffusion does not happen at all in solids because the particles in a solid can only vibrate on the spot, rather than being able to move from place to place.</p>
-      </div>
+            <p>Diffusion does not happen at all in solids because the particles in a solid can only vibrate on the spot, rather
+                than being able to move from place to place.</p>
+        </div>
 
-		</section>
+    </section>
 
-		<!-- End Site Content -->
+    <!-- End Site Content -->
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/scrollnav.js"></script>
 
 
     </body>
+
 </html>
