@@ -1,0 +1,11 @@
+th {
+  text-align: center;
+}
+
+.left-column {
+  font-weight: bold;
+}
+
+.active {
+  color: white;
+}

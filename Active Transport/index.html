@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Active Transport</title>
+    <meta http-equiv="Content-Type"
+          content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <link rel='apple-touch-icon'
+          sizes='57x57'
+          href='../images/favicons/apple-icon-57x57.png'>
+    <link rel='apple-touch-icon'
+          sizes='60x60'
+          href='../images/favicons/apple-icon-60x60.png'>
+    <link rel='apple-touch-icon'
+          sizes='72x72'
+          href='../images/favicons/apple-icon-72x72.png'>
+    <link rel='apple-touch-icon'
+          sizes='76x76'
+          href='../images/favicons/apple-icon-76x76.png'>
+    <link rel='apple-touch-icon'
+          sizes='114x114'
+          href='../images/favicons/apple-icon-114x114.png'>
+    <link rel='apple-touch-icon'
+          sizes='120x120'
+          href='../images/favicons/apple-icon-120x120.png'>
+    <link rel='apple-touch-icon'
+          sizes='144x144'
+          href='../images/favicons/apple-icon-144x144.png'>
+    <link rel='apple-touch-icon'
+          sizes='152x152'
+          href='../images/favicons/apple-icon-152x152.png'>
+    <link rel='apple-touch-icon'
+          sizes='180x180'
+          href='../images/favicons/apple-icon-180x180.png'>
+    <link rel='icon'
+          type='image/png'
+          ,
+          sizes='192x192'
+          ,
+          href='../images/favicons/android-icon-192x192.png'>
+    <link rel='icon'
+          type='image/png'
+          ,
+          sizes='32x32'
+          ,
+          href='../images/favicons/favicon-32x32.png'>
+    <link rel='icon'
+          type='image/png'
+          ,
+          sizes='16x16'
+          ,
+          href='../images/favicons/favicon-16x16.png'>
+
+    <!-- <link href='http://fonts.googleapis.com/css?family=Nova+Round' rel='stylesheet' type='text/css'> -->
+
+    <meta name="csrf-param"
+          content="authenticity_token" />
+    <meta name="csrf-token"
+          content="wrwJ0ZO3Kc0odDcqVNzVY0IV9g8W3h5JYdo/Yyje0CaFvbdbKFAy+1CXw7esl0jfNlp3+gtiSKz70cDNQ+pswA==" />
+    <!-- <link rel="stylesheet" media="all" href="css/style.css"/> -->
+    <link href="bootstrap.css"
+          rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <!-- CSS for table -->
+
+    <link href="lesson_template.css"
+          rel="stylesheet">
+    <link href="style.css"
+          rel="stylesheet">
+    <link href='active_transport.css'
+          rel='stylesheet'>
+    <link href="table-style.css"
+          rel="stylesheet">
+    <link href='fixed-positioning.css'
+          rel='stylesheet'>
+
+    <link rel="shortcut icon"
+          type="image/x-icon"
+          href="/assets/favicon-d0e8ff63da72a0c5ea15ebc045a7f9d2979d211a12e596a5ed5f5b1534e78919.png" />
+    <!-- <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700" rel="stylesheet" type="text/css"> -->
+    <script src="navigation.js"></script>
+
+    <script type="text/javascript"
+            src="skrollr.js"></script>
+
+</head>
+
+<body>
+
+<div align="center"
+     class="fond">
+    <div style="width:1000px;">
+
+        <div class="style_prevu_kit"
+             style="background-color:#cb2025;"></div>
+        <div class="style_prevu_kit"
+             style="background-color:#f8b334;"></div>
+        <div class="style_prevu_kit"
+             style="background-color:#97bf0d;"></div>
+        <div class="style_prevu_kit"
+             style="background-color:#00a096;"></div>
+        <div class="style_prevu_kit"
+             style="background-color:#93a6a8;"></div>
+
+
+        <div style="padding:5px; color:#b5e6e3; font-weight:300; font-size:30px; font-family:'Roboto';padding-top:20px;">
+            <font style="font-weight:400;"></font>
+        </div>
+        <a href="http://www.wifeo.com/code"
+           style="text-decoration:none;"
+           target="_blank">
+            <div style="  color:#b5e6e3; font-weight:300; font-size:20px; font-family:'Roboto';"></div>
+        </a>
+
+    </div>
+</div>
+
+<nav class="navbar navbar-inverse navbar-fixed-top"
+     role="navigation">
+    <div class="collapse navbar-collapse"
+         id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav"
+            style="width:80%;">
+
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="navigation.html">All lessons</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<section id="top-container">
+    <h1>Active Transport</h1>
+
+
+    <p id="text-intro">Active transport is the movement of dissolved molecules into or out of a cell through the cell membrane, from a region
+        of lower concentration to a region of higher concentration. </p>
+    <p class="instructions">Scroll to see how particles move against the concentration gradient.</p>
+
+
+    <div class="left-side">
+        <div data-0="top: 100%;"
+             data-500='top: 5%;'
+             data-2100="display: block;"
+             data-4000="top: -100%;"
+             class='animation fixed-block left-side'>
+            <img src="img1.png">
+        </div>
+        <div data-0="top: 100%;"
+             data-600='top: 32%; display: block;'
+             data-600="display: block;"
+             data-4000="top:-100%;display:none;"
+             class='animation fixed-block'>
+            <img src="img2.png">
+        </div>
+        <div id="easing"
+             data-0="left:-100%;"
+             data-600='left:0%; display: block;'
+             data-2000="display: block;"
+             data-4000="left:100%%;display:none;"
+             class='animation fixed-block'>
+            <img src="img4.png">
+        </div>
+    </div>
+
+    <div class="right-side">
+        <p id='text_1'>Sometimes molecules need to move from low to high concentration. Or against the concentration gradient </p>
+        <p id='text_2'>In order to get those molecules to the higher concentration, you need energy. </p>
+        <p id='text_3'> Carrier proteins take those molecules and use energy released during respiration to transport the molecules across
+            the membrane.
+        </p>
+        <p id='text_4'> With the energy and the antiporter channel that the molecules travel through, the molecules arrive at the higher
+            concentration!
+        </p>
+    </div>
+</section>
+
+<section data-500="top: 100%;"
+         data-500='top: 20%;'
+         data-2100="display: block;"
+         data-4000="top: 20%;"
+         class='animation fixed-block'>
+
+    <div class="container">
+
+        <div class="summary">
+            <h3>Summary</h3>
+            <p>Sometimes dissolved molecules are at a higher concentration outside the cell than inside (or vice versa), but,
+                because the organism needs these molecules, they still have to be moved into the cell or out. </p>
+            <p>Carrier proteins pick up specific molecules and take them through the cell membrane against the concentration
+                gradient.
+            </p>
+        </div>
+
+        <div class="further-reading">
+            <h3>For Further Reading</h3>
+            <table>
+                <colgroup>
+                    <col style="font-weight:bold">
+                    <col>
+                    <col>
+                    <col style="color: white">
+                </colgroup>
+                <tr>
+                    <th></th>
+                    <th>Diffusion</th>
+                    <th>Osmosis</th>
+                    <th class="active">Active Transport</th>
+                </tr>
+                <tr>
+                    <td class="left-column">Down a concentration gradient</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td class="active">No</td>
+                </tr>
+                <tr>
+                    <td class="left-column">Against a concentration gradient </td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td class="active">Yes</td>
+                </tr>
+                <tr>
+                    <td class="left-column">Energy needed </td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td class="active">Yes</td>
+                </tr>
+                <tr>
+                    <td class="left-column">Substance moved </td>
+                    <td>Dissolved solutes</td>
+                    <td>Water</td>
+                    <td class="active">Dissolved solutes</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</section>
+
+<script type="text/javascript"
+        src="../js/jquery.js"></script>
+
+
+<script type="text/javascript">
+    var s = skrollr.init( {
+        edgeStrategy: 'set'
+        , easing: {
+            WTF: Math.random
+            , inverted: function( p ) {
+                return 1 - p;
+            }
+        }
+    } );
+
+</script>
+</body>
+
+</html>
