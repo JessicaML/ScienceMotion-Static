@@ -18,13 +18,7 @@
     <link href="css/style.css" rel="stylesheet">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122645771-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
 
-        gtag('config', 'UA-122645771-1');
-    </script>
 </head>
 
 <body id="skrollr-body">
@@ -284,47 +278,55 @@
                 </div>
             </div>
         </div>
-        <script src="js/jquery.js"></script>
-        <script type="text/javascript">
-            $(function () {
-                var $form = $('#mc-embedded-subscribe-form');
-
-                $('#mc-embedded-subscribe').on('click', function (event) {
-                    if (event) event.preventDefault();
-                    register($form);
-                });
-            });
-
-            function register($form) {
-                $.ajax({
-                    type: $form.attr('method'),
-                    url: $form.attr('action'),
-                    data: $form.serialize(),
-                    cache: false,
-                    dataType: 'json',
-                    contentType: "application/json; charset=utf-8",
-                    error: function (err) { $('#notification_container').html('<span class="alert">Could not connect to server. Please try again later.</span>'); },
-                    success: function (data) {
-
-                        if (data.result != "success") {
-                            var message = data.msg.substring();
-                            $('#notification_container').html('<span class="alert">' + message + '</span>');
-                        } else {
-                            var message = data.msg;
-                            $('#notification_container').html('<span class="success">' + message + '</span>');
-                        }
-                    }
-                });
-            }
-        </script>
-
     </footer>
+
+    <script src="js/jquery.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            var $form = $('#mc-embedded-subscribe-form');
+
+            $('#mc-embedded-subscribe').on('click', function (event) {
+                if (event) event.preventDefault();
+                register($form);
+            });
+        });
+
+        function register($form) {
+            $.ajax({
+                type: $form.attr('method'),
+                url: $form.attr('action'),
+                data: $form.serialize(),
+                cache: false,
+                dataType: 'json',
+                contentType: "application/json; charset=utf-8",
+                error: function (err) { $('#notification_container').html('<span class="alert">Could not connect to server. Please try again later.</span>'); },
+                success: function (data) {
+
+                    if (data.result != "success") {
+                        var message = data.msg.substring();
+                        $('#notification_container').html('<span class="alert">' + message + '</span>');
+                    } else {
+                        var message = data.msg;
+                        $('#notification_container').html('<span class="success">' + message + '</span>');
+                    }
+                }
+            });
+        }
+    </script>
+
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/skrollr.min.js"></script>
-    <script type="text/javascript" src="js/scrollnav.js"></script>
+    <script type="text/javascript" src="js/smoothscroll.js"></script>
     <script type="text/javascript">
         skrollr.init();
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-122645771-1');
     </script>
 </body>
 

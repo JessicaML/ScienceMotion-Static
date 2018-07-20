@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  function scrollNav() {
+  function smoothscroll() {
     $("#smoothscroll a").click(function() {
       $("html, body")
         .stop()
@@ -14,5 +14,5 @@ $(document).ready(function() {
     $(".scrollTop a").scrollTop();
   }
 
-  scrollNav();
+  smoothscroll();
 });
