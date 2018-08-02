@@ -365,9 +365,6 @@ ul.actions li:first-child {
   margin-left: 0;
 }
 
-ol {
-}
-
 ol.default {
   list-style: decimal;
   padding-left: 1.25em;
@@ -489,9 +486,6 @@ table.default thead {
 
 table.default tfoot {
   background: #eee;
-}
-
-table.default tbody {
 }
 
 /* Button */
@@ -648,9 +642,6 @@ input[type="reset"].style2:hover,
   transform: translateZ(0);
 }
 
-.main.style1.inactive {
-}
-
 .main.style1.inactive .content {
   opacity: 0;
 }
@@ -679,8 +670,6 @@ input[type="reset"].style2:hover,
   transform: translateZ(0);
 }
 
-.main.style2.left {
-}
 
 .main.style2.left:after {
   content: "";
@@ -693,8 +682,6 @@ input[type="reset"].style2:hover,
   left: 0;
 }
 
-.main.style2.right {
-}
 
 .main.style2.right:before {
   content: "";
@@ -705,12 +692,6 @@ input[type="reset"].style2:hover,
 
 .main.style2.right .content {
   left: 65%;
-}
-
-.main.style2.inactive {
-}
-
-.main.style2.inactive .content {
 }
 
 .main.style2.inactive.left .content {
@@ -724,9 +705,6 @@ input[type="reset"].style2:hover,
 .main.style3 {
   text-align: center;
   padding: 6em 0 6em 0;
-}
-
-.main.style3 .content {
 }
 
 .main.style3 .content > header {
@@ -1348,10 +1326,7 @@ body {
 /* ******************************************************************************* */
 /* Work */
 /* ******************************************************************************* */
-#work {
-}
-#work .row.images {
-}
+
 #work .row.images .image {
   position: relative;
   top: 0;
@@ -1368,8 +1343,7 @@ body {
   -ms-transform: translateZ(0);
   transform: translateZ(0);
 }
-#work .row.images.inactive {
-}
+
 #work .row.images.inactive .image {
   opacity: 0;
 }
@@ -1621,7 +1595,6 @@ div #notification_container {
 }
 /* ******************************************************************************* */
 /* Touch Mode */
-}
 /* *******************************************************************************
 body.is-touch {
 }
