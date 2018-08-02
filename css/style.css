@@ -568,8 +568,7 @@ body {
 
 #footer {
   position: relative;
-  height: 400px;
-  padding-top: 20px;
+  padding: 5px 10px 5px 10px;
   background: #39454b;
   color: yellow; /* color: rgba(185,186,187,0.5); */
   overflow: hidden;
