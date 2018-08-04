@@ -6,7 +6,6 @@
  * Correct `block` display not defined in IE 6/7/8/9 and Firefox 3.
  */
 
-
 article,
 aside,
 details,
@@ -19,7 +18,7 @@ main,
 nav,
 section,
 summary {
-    display: block;
+  display: block;
 }
 
 /**
@@ -29,9 +28,9 @@ summary {
 audio,
 canvas,
 video {
-    display: inline-block;
-    *display: inline;
-    *zoom: 1;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
 }
 
 /**
@@ -40,8 +39,8 @@ video {
  */
 
 audio:not([controls]) {
-    display: none;
-    height: 0;
+  display: none;
+  height: 0;
 }
 
 /**
@@ -50,88 +49,79 @@ audio:not([controls]) {
  */
 
 [hidden] {
-    display: none;
+  display: none;
 }
 
 section#top {
-	position:			relative;
-	width:				100%;
+  position: relative;
+  width: 100%;
 
-	background-attachment:fixed;
-	height:				600px;
-
-
+  background-attachment: fixed;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
 .box {
-	position:			absolute;
-	top:				0;
-	left:				0;
-	width:				100%;
-	background:			transparent url(../eye2.png) no-repeat center center;
-	height:				100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: transparent url(../eye2.png) no-repeat center center;
+  height: 100%;
 }
 
 .box2 {
-	position:			absolute;
-	top:				0;
-	left:				0;
-	width:				100%;
-	background:			transparent url(../eye2S.png) no-repeat center center;
-	height:				100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: transparent url(../eye2S.png) no-repeat center center;
+  height: 100%;
 }
 
 .facepiece {
-	position: absolute;
+  position: absolute;
 }
 
 .gurprit {
-	width: 30%;
-	margin: auto;
-	pointer-events: none;
-	transform: translateZ(0);
-	transform-style: preserve-3d;
-	backface-visibility: hidden;
-	position: relative;
-	top: 120px;
+  width: 20%;
+  pointer-events: none;
+  transform: translateZ(0);
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  top: 120px;
 }
 
 .gurprit svg {
-	width: 100%;
-}
-
-.content {
-	margin: auto;
-	text-align: center;
-	transform-style: preserve-3d;
+  width: 100%;
 }
 
 .facepiece {
-	webkit-animation: squiggly-anim 0.3s infinite;
-	animation: squiggly-anim 0.3s infinite;
+  webkit-animation: squiggly-anim 0.3s infinite;
+  animation: squiggly-anim 0.3s infinite;
 }
 
 @keyframes squiggly-anim {
-      0% {
-        -webkit-filter: url("#squiggly-0");
-        filter: url("#squiggly-0");
-      }
-      25% {
-        -webkit-filter: url("#squiggly-1");
-        filter: url("#squiggly-1");
-      }
-      50% {
-        -webkit-filter: url("#squiggly-2");
-        filter: url("#squiggly-2");
-      }
-      75% {
-        -webkit-filter: url("#squiggly-3");
-        filter: url("#squiggly-3");
-      }
-      100% {
-        -webkit-filter: url("#squiggly-4");
-        filter: url("#squiggly-4");
-      }
-    }
-
+  0% {
+    -webkit-filter: url("#squiggly-0");
+    filter: url("#squiggly-0");
+  }
+  25% {
+    -webkit-filter: url("#squiggly-1");
+    filter: url("#squiggly-1");
+  }
+  50% {
+    -webkit-filter: url("#squiggly-2");
+    filter: url("#squiggly-2");
+  }
+  75% {
+    -webkit-filter: url("#squiggly-3");
+    filter: url("#squiggly-3");
+  }
+  100% {
+    -webkit-filter: url("#squiggly-4");
+    filter: url("#squiggly-4");
+  }
+}
