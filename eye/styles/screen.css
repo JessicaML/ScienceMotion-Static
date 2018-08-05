@@ -6,7 +6,6 @@
  * Correct `block` display not defined in IE 6/7/8/9 and Firefox 3.
  */
 
-
 article,
 aside,
 details,
@@ -19,7 +18,7 @@ main,
 nav,
 section,
 summary {
-    display: block;
+  display: block;
 }
 
 /**
@@ -29,9 +28,9 @@ summary {
 audio,
 canvas,
 video {
-    display: inline-block;
-    *display: inline;
-    *zoom: 1;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
 }
 
 /**
@@ -40,8 +39,8 @@ video {
  */
 
 audio:not([controls]) {
-    display: none;
-    height: 0;
+  display: none;
+  height: 0;
 }
 
 /**
@@ -50,149 +49,129 @@ audio:not([controls]) {
  */
 
 [hidden] {
-    display: none;
+  display: none;
 }
 
 section#top {
-	position:			relative;
-	width:				100%;
-	background:			#ffffff;
-	background-attachment:fixed;
-/*	opacity:            0.1;
-*/	height:				1100px;
-	overflow:			hidden;
-	margin-left: 20px;
+  width: 100%;
+  background: #ffffff;
+  background-attachment: fixed;
+  height: 1100px;
+  overflow: hidden;
+  margin-left: 20px;
 }
-
-
 
 section#top #pupil1 {
-	position:			absolute;
-	left:				-32px;
-	width:				100%;
-	background:			transparent url(eye/pupil.png) no-repeat center center;
-	height:             100%;
+  position: absolute;
+  left: -32px;
+  width: 100%;
+  background: transparent url(eye/pupil.png) no-repeat center center;
+  height: 100%;
 }
 
-
 section#top #pupil2 {
-	position:			absolute;
-	bottom: -10px;
-	left:				-32px;
-	width:				100%;
-	background:			transparent url(eye/pupil.png) no-repeat center center;
-	height:				100%;
+  position: absolute;
+  bottom: -10px;
+  left: -32px;
+  width: 100%;
+  background: transparent url(eye/pupil.png) no-repeat center center;
+  height: 100%;
 }
 
 section#top #cornea {
-	position:			absolute;
-	top:				0;
-	left:				-75px;
-	width:				100%;
-	background:			transparent url(eye/cornea.png) no-repeat center center;
-	height:				100%;
+  position: absolute;
+  top: 0;
+  left: -75px;
+  width: 100%;
+  background: transparent url(eye/cornea.png) no-repeat center center;
+  height: 100%;
 }
 
 section#top #fovea {
-	position:			absolute;
-	top:				0;
-	left:				0;
-	width:				100%;
-	background:			transparent url(eye/fovea.png) no-repeat center center;
-	height:				100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: transparent url(eye/fovea.png) no-repeat center center;
+  height: 100%;
 }
 
 section#top #cillary_muscle {
-	position:			absolute;
-	top:				0;
-	left:				0;
-	width:				100%;
-	background:			transparent url(eye/cillary_muscle.png) no-repeat center center;
-	height:				100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: transparent url(eye/cillary_muscle.png) no-repeat center center;
+  height: 100%;
 }
 
 section#top #lens {
-	position:			absolute;
-	top:				0;
-	left:				0;
-	width:				100%;
-	background:			transparent url(eye/lens.png) no-repeat center center;
-	height:				100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: transparent url(eye/lens.png) no-repeat center center;
+  height: 100%;
 }
 
 section#top #conjunctiva {
-	position:			absolute;
-	top:				0;
-	left:				0;
-	width:				100%;
-	background:			transparent url(eye/conjunctiva.png) no-repeat center center;
-	height:				100%;
-
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: transparent url(eye/conjunctiva.png) no-repeat center center;
+  height: 100%;
 }
 
 section#top #cornea_label {
-	position:			absolute;
-	top:				0;
-	left:				0;
-	width:				100%;
-	height:				100%;
-	opacity:            0.1;
-
-
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
 }
 
 section#top #pupil_label {
-	position:			absolute;
-	top:				0;
-	left:				0;
-	width:				100%;
-	height:				100%;
-	opacity:            0.1;
-
-
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
 }
 section#top #fovea_label {
-	position:			absolute;
-	top:				0;
-	left:				0;
-	width:				100%;
-	height:				100%;
-	opacity:            0.1;
-
-
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
 }
 
 section#top #cillary_muscle_label {
-	position:			absolute;
-	top:				0;
-	left:				0;
-	width:				100%;
-	height:				100%;
-	opacity:            0.1;
-
-
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
 }
 
 section#top #lens_label {
-	position:			absolute;
-	top:				0;
-	left:				0;
-	width:				100%;
-	height:				100%;
-	opacity:            0.1;
-
-
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
 }
 
 section#top #conjunctiva_label {
-	position:			absolute;
-	top:				0;
-	left:				0;
-	width:				100%;
-	height:				100%;
-	opacity:            0.1;
-
-
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
 }
-
-
