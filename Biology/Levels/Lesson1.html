@@ -8,8 +8,7 @@
 <head>
     <meta charset="utf-8">
     <title>Cells, Tissues &amp; Organs</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
-    <link href='http://fonts.googleapis.com/css?family=Nova+Round' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css">
     <link rel="stylesheet" href="assets/style.css">
     <script src="scripts/lib/modernizr-2.6.2.min.js"></script>
     <link rel='apple-touch-icon' sizes='57x57' href='/images/favicons/apple-icon-57x57.png'>
@@ -25,17 +24,11 @@
     <link rel='icon' type='image/png' , sizes='32x32' , href='/images/favicons/favicon-32x32.png'>
     <link rel='icon' type='image/png' , sizes='96x96' , href='/images/favicons/favicon-96x96.png'>
     <link rel='icon' type='image/png' , sizes='16x16' , href='/images/favicons/favicon-16x16.png'>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="scripts/lib/jquery-1.9.1.min.js"><\/script>')</script>
-    <script src="scripts/oakley.js"></script>
-
 </head>
 
 <body>
     <!--[if lt IE 7]>
-    <![endif]-->
-
-
+        <![endif]-->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -50,88 +43,99 @@
         </div>
     </nav>
 
-    <section id="top">
-        <p>Visual element here, no text. Background color dependent on content.</p>
-        <div class="container">
-            <div id="cell-clone" class="col-xs-1 col-lg-6">
-                <div id="click" class="cell">
+    <div class="container-fluid">
+
+        <div class="fond">
+            <div id="forb" style="float:left;" class="style_prevu_kit"></div>
+            <div id="button" style="float:left;" class="button-flip">
+                <a id="button" class="active" href="#text">
+                    <button style="color: #fff; margin-top: 50px;" type="button" class="btn" href="#text">More info</button>
+                </a>
+            </div>
+            <div id="forb" style="float:right;" class="style_prevu_kit"></div>
+        </div>
+
+
+        <section id="top">
+            <div class="cell">
+                <div class="organelle-container">
+
                     <div class="nucleus">
                         <div class="nucleulus"></div>
                     </div>
-                    <div class="organelle-container">
-                        <div class="mitochondria" id="mito1">
-                            <svg width="60" height="60" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M10,50 Q10,35 20,30 T30,35 t10,5 10,5 t5,5 15,5" fill="none" stroke=#EE7600 stroke-width="4" />
-                            </svg>
-                        </div>
 
-                        <div class="mitochondria" id="mito2">
-                                <svg width="60" height="60" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M10,50 Q10,35 20,30 T30,35 t10,5 10,5 t5,5 15,5" fill="none" stroke=#EE7600 stroke-width="4" />
-                                </svg>
-                            </div>
-
-                        <div class="mitochondria" id="mito3">
-                                <svg width="60" height="60" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M10,50 Q10,35 20,30 T30,35 t10,5 10,5 t5,5 15,5" fill="none" stroke=#EE7600 stroke-width="4" />
-                                </svg>
-                            </div>
-
-                        <div class="lysosome-box">
-                            <div class="lysosome"></div>    
-                        </div>
-
-                        <div class="lysosome-box" id="box1">
-                            <div class="lysosome"></div>    
-                        </div>
-                        <div class="lysosome-box" id="box2">
-                            <div class="lysosome"></div>    
-                        </div>
-
-                        <div class="cytoskeleton-green">
-                            <svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
-                                <path class="cytogreen1" d="M65 180 H 130" stroke="green" fill="transparent" stroke-width="3" />
-                                <path class="cytogreen1" d="M65 185 H 130" stroke="green" fill="transparent" stroke-width="3" />
-                                <path class="cytogreen2" d="M200 250 H 280" stroke="green" fill="transparent" stroke-width="3" />
-                                <path class="cytogreen2" d="M200 255 H 280" stroke="green" fill="transparent" stroke-width="3" />
-                                <path class="cytogreen3" d="M260 90 V 150" stroke="green" fill="transparent" stroke-width="3" />
-                                <path class="cytogreen3" d="M265 90 V 150" stroke="green" fill="transparent" stroke-width="3" />
-                            </svg>
-                        </div>
-
-                        <div class="cytoskeleton-blue">
-                            <svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M40 30 Q 52.5 10, 95 50 T 130 80" stroke="blue" fill="transparent" stroke-width="4" />
-                                <path d="M30 50 Q 42.5 30, 85 60 T 120 100" stroke="blue" fill="transparent" stroke-width="4" />
-                            </svg>
-                        </div>
-
-                        <div class="cytoskeleton-blue2">
-                                <svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M40 30 Q 52.5 10, 95 50 T 130 80" stroke="blue" fill="transparent" stroke-width="4" />
-                                    <path d="M30 50 Q 42.5 30, 85 60 T 120 100" stroke="blue" fill="transparent" stroke-width="4" />
-                                </svg>
-                            </div>
-                        <div class="golgi"></div>
+                    <div class="mitochondria" id="mito1">
+                        <svg width="60" height="60" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10,50 Q10,35 20,30 T30,35 t10,5 10,5 t5,5 15,5" fill="none" stroke=#EE7600 stroke-width="4" />
+                        </svg>
                     </div>
-                </div>
-            
-                <div class="tissue-container">
-                    <div class="tissue"></div>
-                </div>
-                <div class="organ-container">
-                    <div class="organ"></div>
-                </div>
-                <div class="organ-system-container">
-                    <div class="organ-system"></div>
+
+                    <div class="mitochondria" id="mito2">
+                        <svg width="60" height="60" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10,50 Q10,35 20,30 T30,35 t10,5 10,5 t5,5 15,5" fill="none" stroke=#EE7600 stroke-width="4" />
+                        </svg>
+                    </div>
+
+                    <div class="mitochondria" id="mito3">
+                        <svg width="60" height="60" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10,50 Q10,35 20,30 T30,35 t10,5 10,5 t5,5 15,5" fill="none" stroke=#EE7600 stroke-width="4" />
+                        </svg>
+                    </div>
+
+                    <div class="lysosome-box">
+                        <div class="lysosome"></div>
+                    </div>
+
+                    <div class="lysosome-box" id="box1">
+                        <div class="lysosome"></div>
+                    </div>
+
+                    <div class="lysosome-box" id="box2">
+                        <div class="lysosome"></div>
+                    </div>
+
+                    <div class="cytoskeleton-green">
+                        <svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+                            <path class="cytogreen1" d="M65 180 H 130" stroke="green" fill="transparent" stroke-width="3" />
+                            <path class="cytogreen1" d="M65 185 H 130" stroke="green" fill="transparent" stroke-width="3" />
+                            <path class="cytogreen2" d="M200 250 H 280" stroke="green" fill="transparent" stroke-width="3" />
+                            <path class="cytogreen2" d="M200 255 H 280" stroke="green" fill="transparent" stroke-width="3" />
+                            <path class="cytogreen3" d="M260 90 V 150" stroke="green" fill="transparent" stroke-width="3" />
+                            <path class="cytogreen3" d="M265 90 V 150" stroke="green" fill="transparent" stroke-width="3" />
+                        </svg>
+                    </div>
+
+                    <div class="cytoskeleton-blue">
+                        <svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M40 30 Q 52.5 10, 95 50 T 130 80" stroke="blue" fill="transparent" stroke-width="4" />
+                            <path d="M30 50 Q 42.5 30, 85 60 T 120 100" stroke="blue" fill="transparent" stroke-width="4" />
+                        </svg>
+                    </div>
+
+                    <div class="cytoskeleton-blue2">
+                        <svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M40 30 Q 52.5 10, 95 50 T 130 80" stroke="blue" fill="transparent" stroke-width="4" />
+                            <path d="M30 50 Q 42.5 30, 85 60 T 120 100" stroke="blue" fill="transparent" stroke-width="4" />
+                        </svg>
+                    </div>
+
+                    <div class="golgi"></div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <section id="info">
-        <div>
-            <h1>Levels of Organization</h1>
+            <div class="tissue-container">
+                <div class="tissue"></div>
+            </div>
+
+            <div class="organ-system-container">
+                <div class="organ"></div>
+                <div class="organ-system"></div>
+            </div>
+
+        </section>
+
+        <section id="text">
+            <h1 id="content">Levels of Organization</h1>
             <p>Cells, Tissues and Organs</p>
             <h2 style="color:#0ff004;">Organelles</h2>
             <p>Cell structure that is specialised to carry out a particular function or job</p>
@@ -143,15 +147,14 @@
             <p>Structure made up of a group of tissues, working together to perform specific functions</p>
             <h2 style="color:#ffff00;">Organ System</h2>
             <p>Group of organs with related functions, working together to perform body functions</p>
-
-        </div>
-    </section>
-
-    <script>
-    </script>
+        </section>
+    </div>
 
     <!-- End Site Content -->
-<script src="assets/main.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="scripts/lib/jquery-1.9.1.min.js"><\/script>')</script>
+    <script src="assets/main.js"></script>
+    <script src="scripts/oakley.js"></script>
 </body>
 
 </html>

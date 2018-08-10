@@ -1,17 +1,25 @@
-body {
-  display: block;
-}
-
-#cell-clone {
+#top {
+  padding-top:50px;
+  height: 700px;
+  max-width: 800px;
   position: relative;
-  height: 400px;
-  width: 400px;
-  left: 20px;
+  left: 30%;
+  }
+
+.cell-clone {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #A49480;
+  background: blue;
+  background: -webkit-radial-gradient(#73a4ee75, #0742996c);
+  background: radial-gradient(#73a4ee75, #0742996c), radial-gradient(transparent, rgba(0, 0, 0, 0.4));
 }
 
 .cell {
   position: absolute;
-  margin: 0 auto;
+  margin: 50px auto;
   background: transparent;
   width: 400px;
   height: 400px;
@@ -22,20 +30,54 @@ body {
   position: absolute;
   border-radius: 50%;
   border: 5px solid #A49480;
-  animation: fadeIn 5s forwards;
-  animation-delay: 3s;
+  animation: fadeIn 7s forwards;
+  animation-delay: 5s;
   background: blue;
   background: -webkit-radial-gradient(#73a4ee75, #0742996c);
   background: radial-gradient(#73a4ee75, #0742996c), radial-gradient(transparent, rgba(0, 0, 0, 0.4));
   height: 400px;
   width: 400px;
-  z-index: 1;
   opacity: 0;
+  z-index: -1;
 }
 
 @keyframes fadeIn {
-  100% {
+  50% {
+    transform: scale(1);
+  }
+
+  80% {
+    transform: scale(.1);
+  }
+  98% {
     opacity: 1;
+  }
+  100% {
+    transform: scale(.1);
+    opacity: 0;
+  }
+}
+.organelle-container {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  animation: scale 7s forwards;
+  animation-delay: 5s;
+}
+
+@keyframes scale {
+  50% {
+    transform: scale(1);
+  }
+
+  80% {
+    transform: scale(.1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(.1);
+    opacity: 0;
   }
 }
 
@@ -83,20 +125,18 @@ body {
 #mito1 {
   top: 200px;
   left: 90px;
-  animation: float1 35s ease-in-out infinite;
-  animation-direction: alternate;
+  animation: float1 25s linear infinite alternate;  
 }
 
 @keyframes float1 {
   from { transform: rotate(60deg) translateX(60px) rotate(60deg); }
-  to   { transform: rotate(300deg) translateX(60px) rotate(-360deg); }
+  to   { transform: rotate(300deg) translateX(60px) rotate(360deg); }
 }
 
 #mito2 {
   top: 170px;
   left: 200px;
-  animation: float2 30s ease-in-out infinite;
-  animation-direction: alternate-reverse;
+  animation: float2 20s linear infinite alternate;  
 }
 
 @keyframes float2 {
@@ -107,13 +147,12 @@ body {
 #mito3 {
   top: 198px;
   left: 230px;
-  animation: float3 38s ease-in-out infinite;
-  animation-direction: alternate;
+  animation: float3 28s linear infinite alternate-reverse;
 }
 
 @keyframes float3 {
-  from { transform: rotate(30deg) translateX(100px) rotate(40deg); }
-  to   { transform: rotate(200deg) translateX(100px) rotate(-360deg); }
+  from { transform: rotate(30deg) translateX(100px) rotate(20deg); }
+  to   { transform: rotate(50deg) translateX(100px) rotate(300deg); }
 }
 
 .mitochondria, .lysosome-box, .cytoskeleton-green svg, .cytoskeleton-blue svg, .cytoskeleton-blue2 svg, .nucleus, .golgi {
@@ -128,28 +167,29 @@ body {
   height: 80px;
   top: 108px;
   left: 123px;
-  animation: float3 15s ease-in-out infinite;
-  animation-direction: alternate-reverse;
+  animation: float3 15s linear infinite alternate-reverse;  
 }
 
 #box1 {
   top: 100px;
   left: 150px;
-  animation: float2 25s ease-in-out infinite;
-  animation-direction: alternate-reverse;
+  animation: float2 18s linear infinite alternate-reverse;
 }
 
 #box2 {
   top: 250px;
   left: 150px;
-  animation: float1 20s ease-in-out infinite;
-  animation-direction: alternate;
+  animation: float1 17s linear infinite alternate;
 }
 
 .cytoskeleton-green svg {
   position: absolute;
   margin: 0 auto;
+  animation: float1 27s linear infinite normal;
+  top: -120px;
+  left: 55px;
 }
+
 
 .cytogreen1 {
   transform: rotate(15deg);
@@ -160,17 +200,19 @@ body {
 }
 
 .cytoskeleton-blue svg {
+  animation: float3 35s linear infinite normal;
   position: absolute;
   margin: 0 auto;
-  top: 150px;
-  left: 220px;
+  top: 1px;
+  left: -170px;
 }
 
 .cytoskeleton-blue2 svg {
+  animation: float2 35s linear infinite normal;
   position: absolute;
   margin: 0 auto;
-  top: 230px;
-  left: 0px;
+  top: 150;
+  left: -70px;
   transform: scale(.6);
 }
 
@@ -194,23 +236,28 @@ body {
   width: 2px;
   height: 2px;
   background: red;
-  box-shadow: -7px 5px 0 0 red, 0px 8px 0 0 red, 15px -1px 0 0 red, -9px 12px 0 0 red, 5px -1px 0 0 red, 2px 15px 0 0 red, 11px 8px 0 0 red, 2px -8px 0 0 red;
+  box-shadow: 
+  -7px 5px 0 0 red, 
+  0px 8px 0 0 red, 
+  15px -1px 0 0 red, 
+  -9px 12px 0 0 red, 
+  5px -1px 0 0 red, 
+  2px 15px 0 0 red, 
+  11px 8px 0 0 red, 
+  2px -8px 0 0 red;
   left: 13px;
-  animation-name: floating;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
+  animation-name: floating 3s infinite alternate;
 }
 
 @keyframes floating {
   100% {
-    box-shadow: 55px 10px 0 0 red, 5px 5px 0 0 red, 15px 22px 0 0 red, -10px 18px 0 0 red, 35px 34px 0 0 red,
+    box-shadow: 12px 5px 0 0 red, 9px 14px 0 0 red, 17px 9px 0 0 red, 13px 11px 0 0 red, 15px 9px 0 0 red, 7px 11px 0 0 red;
   }
   20% {
     box-shadow: 8px 10px 0 0 red, 7px 5px 0 0 red, 10px 2px 0 0 red, -10px 8px 0 0 red, 8px 6px 0 0 red, 4px 5px 0 0 red;
   }
   0% {
-    box-shadow: 8px 10px 0 0 red, 8px 5px 0 0 red, 7px 9px 0 0 red, 2px 3px 0 0 red, 6px 5px 0 0 red, 12px 7px 0 0 red;
-    ;
+    box-shadow: 8px 10px 0 0 red, 8px 5px 0 0 red, 7px 9px 0 0 red, 2px 3px 0 0 red, 6px 5px 0 0 red, 12px 7px 0 0 red;    
   }
 }
 
@@ -219,20 +266,362 @@ body {
   margin: 0 auto;
   border-radius: 50%;
   background: rgb(100, 100, 100);
-  width: 2%;
-  height: 2%;
-  left: 25%;
-  top: 25%;
+  width: 1%;
+  height: 1%;
   box-shadow: 4px 15px 0 0 rgb(100, 100, 100), 
-  120px 120px 0 0 rgb(100, 100, 100), 
-  150px 15px 0 0 rgb(100, 100, 100), 
-  150px 40px 0 0 rgb(100, 100, 100), 
-  200px 150px 0 0 rgb(100, 100, 100), 
-  2px 80px 0 0 rgb(100, 100, 100), 
-  100px 190px 0 0 rgb(100, 100, 100), 
-  170px 10px 0 0 rgb(100, 100, 100);
-  animation: bobble 5s ease-in-out infinite;
-  animation-direction: alternate;
-
+  90px 200px 0 0 rgb(100, 100, 100), 
+  70px 85px 0 0 rgb(100, 100, 100), 
+  60px 140px 0 0 rgb(100, 100, 100), 
+  95px 170px 0 0 rgb(100, 100, 100), 
+  170px 180px 0 0 rgb(100, 100, 100), 
+  120px 150px 0 0 rgb(100, 100, 100), 
+  105px 200px 0 0 rgb(100, 100, 100), 
+  115px 85px 0 0 rgb(100, 100, 100), 
+  200px 140px 0 0 rgb(100, 100, 100), 
+  185px 180px 0 0 rgb(100, 100, 100), 
+  140px 150px 0 0 rgb(100, 100, 100), 
+  195px 10px 0 0 rgb(100, 100, 100);
+  animation: golgiFloat 25s linear infinite alternate;
+  
 }
+
+@keyframes golgiFloat {
+    from { transform: rotate(15deg) translateX(250px) rotate(40deg); }
+    to   { transform: rotate(40deg) translateX(320px) rotate(60deg); }
+  }
+
+  .tissue-container {
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  width: 500px;
+  height: 300px;
+  background: transparent;
+  animation: tissue-color 7s forwards;
+  animation-delay: 14s;
+}
+
+
+@keyframes tissue-color {
+  70% {
+    transform: scale(1);
+    -moz-transform: scale(1);
+  }
+  
+  90% {
+    background-color:lightblue; 
+    left: 50px;
+    top: 100px;
+  }
+    
+  100% {  
+    opacity: 1;
+    left: 20px; 
+    top: 130px; 
+    transform: scale(0.03,0.03);
+    -moz-transform: scale(0.03,0.03);
+    transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+  }
+}
+
+.organ-system-container {
+  position: relative;
+  top: -3px;
+  left: 200px;
+}
+
+.organ-system {
+  position: absolute;
+  top: -80px;
+  left: -318px;
+}
+
+.organ {
+  position: absolute;
+  top: -80px;
+  left: -317px;
+}
+
+
+/* Lesson Template css starts here */
+
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+
+/**
+ * Correct `block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+
+ @charset 'UTF-8';
+ @import url('http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900');
+ @import url('font-awesome.min.css');
+ @import url('https://fonts.googleapis.com/css?family=Fugaz+One');
+ @import url('https://fonts.googleapis.com/css?family=Space+Mono');
+ 
+ body {
+     margin: 0;
+     padding: 0;
+     font-family: arial;
+ }
+ 
+ 
+ article,
+ aside,
+ details,
+ figcaption,
+ figure,
+ footer,
+ header,
+ hgroup,
+ main,
+ nav,
+ section,
+ summary {
+     display: block;
+ }
+ 
+ /**
+  * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+  */
+ 
+ audio,
+ canvas,
+ video {
+     display: inline-block;
+     *display: inline;
+     *zoom: 1;
+ }
+ 
+ 
+ audio:not([controls]) {
+     display: none;
+     height: 0;
+ }
+ 
+ [hidden] {
+     display: none;
+ }
+ 
+ section#visual {
+     width: 100%;
+     height: 1100px;
+     overflow: hidden;
+     padding-top: 75px;
+ }
+ 
+ section#visual button {
+     overflow: hidden;
+     margin-left: 15px;
+ }
+ 
+ section#visual p {
+     padding-top: 1.5em;
+     font-size: 1.5em;
+     font-family: 'Space mono', sans-serif;
+     width: 80%;
+     text-align: justify;
+     margin-left: : 20px;
+     padding-left: 20px;
+ }
+ 
+ section#visual h1 {
+     font-family: 'Fugaz One', monospace, sans-serif;
+     font-size: 30px;
+     font-style: oblique;
+     font-weight: 900;
+     font-size: 3em;
+     color: #444444;
+     width: 80%;
+     text-align: justify;
+ }
+ 
+ section#text {
+     position: relative;
+     background-color: #39454A;
+     color: #fff;
+     width: 100%;
+     padding-top: 1.6em;
+     padding-bottom: 1.6em;
+     /*    height: 1100px;
+ */
+ }
+ 
+ 
+ section#text h1 {
+     font-size: 3.2em;
+     font-family: 'Fugaz One', monospace, sans-serif;
+     font-style: oblique;
+     font-weight: 900;
+     width: 80%;
+     text-align: justify;
+     margin-left: : 20px;
+     padding-left: 20px;
+ }
+ 
+ section#text h2 {
+     font-size: 2.5em;
+     font-family: 'Fugaz One', monospace, sans-serif;
+     font-style: oblique;
+ 
+     font-weight: 900;
+     width: 80%;
+     text-align: justify;
+     line-height: 1.8em;
+     margin-left: : 20px;
+     padding-left: 20px;
+ }
+ 
+ section#text p {
+     font-size: 1.3em;
+     font-family: 'Space mono', sans-serif;
+     width: 80%;
+     text-align: justify;
+     margin-left: : 20px;
+     padding-left: 20px;
+ }
+ 
+ section#text a {
+     text-decoration: none;
+ }
+ 
+ 
+ section#text a:hover {
+     color: #fff;
+     text-decoration: none;
+     cursor: pointer;
+ }
+ 
+ nav ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     overflow: hidden;
+ }
+ 
+ nav li {
+     float: left;
+     font-family: "Courier New";
+     font-size: 14pt;
+     font-style: oblique;
+     font-weight: 900;
+ }
+ 
+ 
+ nav li a {
+     display: block;
+     text-align: center;
+     padding: 14px 16px;
+     text-decoration: none;
+ }
+ 
+ a {
+     color: #00ff00;
+     text-decoration: none;
+     margin-left: 15px;
+     margin-right: 30px;
+ }
+ 
+ a:hover {
+     color: #5FC3E4;
+     text-decoration: none;
+ }
+ 
+ .fond {
+     padding-top: 45px;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+ }
+ 
+ .style_prevu_kit {
+     color: #00ff00;
+     display: inline-block;
+     border: 0;
+     font-size: 85pt;
+     font-family: "Courier New";
+     font-style: oblique;
+     font-weight: 900;
+     /*width:196px;
+     height:210px;*/
+     position: relative;
+     -webkit-transition: all 200ms ease-in;
+     -webkit-transform: scale(1);
+     -ms-transition: all 200ms ease-in;
+     -ms-transform: scale(1);
+     -moz-transition: all 200ms ease-in;
+     -moz-transform: scale(1);
+     transition: all 200ms ease-in;
+     transform: scale(1);
+ }
+ 
+ .style_prevu_kit:hover {
+     /*box-shadow: 0px 0px 150px #000000;*/
+     color: #5FC3E4;
+     text-decoration: none;
+     font-family: "Courier New";
+     font-style: oblique;
+     font-weight: 900;
+     z-index: 2;
+     -webkit-transition: all 200ms ease-in;
+     -webkit-transform: scale(1.2);
+     -ms-transition: all 200ms ease-in;
+     -ms-transform: scale(1.2);
+     -moz-transition: all 200ms ease-in;
+     -moz-transform: scale(1.2);
+     transition: all 200ms ease-in;
+     transform: scale(1.2);
+ }
+ 
+ .button-flip {
+     color: #fff;
+     font-family: "Courier New";
+     font-style: oblique;
+     font-weight: 900;
+ }
+ 
+ @-webkit-keyframes bounce {
+     0% {
+         transform: scale(1, 1) translate(0px, 0px);
+     }
+ 
+     30% {
+         transform: scale(1, 0.8) translate(0px, 3px);
+     }
+ 
+     75% {
+         transform: scale(1, 1.1) translate(0px, -7px);
+     }
+ 
+     100% {
+         transform: scale(1, 1) translate(0px, 0px);
+     }
+ }
+ 
+ 
+ .button-flip:hover button {
+     z-index: 55;
+     color: #fff;
+     font-family: 'Courier New', serif;
+     font-style: oblique;
+     font-weight: 900;
+     background-color: #E55D87;
+ 
+     -webkit-animation: bounce 0.75s infinite;
+ }
+ 
+ .button-flip button {
+     color: #fff;
+     font-family: 'Courier New', serif;
+     font-style: oblique;
+     font-weight: 900;
+     background-color: #00ff00;
+ }
+
+ /* Lesson Template ends here */
+
+
 
