@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<body>
+    <!--[if lt IE 7]>
+        <![endif]-->
+    <html>
+    <title>Energy</title>
+
+    <head>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- Custom CSS -->
+        <link href="../css/bootstrap.css" rel="stylesheet">
+        <link href="../css/lesson_template.css" rel="stylesheet">
+        <link rel='apple-touch-icon' sizes='57x57' href='../images/favicons/apple-icon-57x57.png'>
+        <link rel='icon' type='image/png' , sizes='192x192' , href='../images/favicons/android-icon-192x192.png'>
+        <link rel='icon' type='image/png' , sizes='96x96' , href='../images/favicons/favicon-96x96.png'>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="../navigation.html">All lessons</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="fond" id="smoothscroll">
+            <div id="forb" style="float:left;" class="style_prevu_kit">
+            </div>
+            <div id="button" style="float:left;" class="button-flip">
+                <a id="button" class="active" href="#text">
+                    <button style="color: #fff; margin-top: 50px;" type="button" class="btn" href="#text">More info</button>
+                </a>
+            </div>
+            <div id="forb" style="float:right;" class="style_prevu_kit">
+            </div>
+        </div>
+        <br><br><br><br><br>
+        <section id="top">
+            <!-- slower diffusion
+ -->
+            <div id="nav-one" class="nav" style="margin: auto; width: 50%;">
+                <audio id="beep-one">
+                    <source src="https://cdn.rawgit.com/JessicaML/ScienceMotion-Static/aa82537e/sound_waves/wouldnt_say.mp3" controls></source>
+                    <source src="https://cdn.rawgit.com/JessicaML/ScienceMotion-Static/aa82537e/sound_waves/wouldnt_say.ogg" controls></source>
+                    Your browser isn't invited for super fun time.
+                </audio>
+                
+                <a href="#" id="miami_1">
+                    <video src="images/energy.mp4" controls loop autoplay></video>
+                </a>
+            </div>
+        </section>
+        <br><br><br>
+        <section id="text">
+            <div>
+                <h1>Kinetic energy vs. Potential energy
+                </h1>
+                <p><span id="text-1">Energy</span>  is the abilityto do work. Objects can have stored, or potential, 
+                    energy when work has been done (such as raising an object in the air) or 
+                    by virtue of their position (such as sitting at the top of a hill). 
+                    Potential energy changes to kinetic energy when the object moves. 
+                    Examples include holding a stretched spring (potential energy) and then 
+                    releasing it (kinetic energy) or holding a box above the ground 
+                    (potential energy) and then dropping it (kinetic energy).</p>
+                <p><span id="text-1">Kinetic energy</span> is a form of energy that results from an object's motion.
+                     There are many types of motion that use kinetic energy: translation 
+                     (moving from one place to another), rotation, and vibration. The 
+                     measurement of kinetic energy in an object is calculated based on the 
+                     object's mass and velocity. It is measured in Joules.</p>
+
+                <p><span id="text-1">Potential energy</span>is a form of energy that results from an object's position 
+                    or arrangement of parts. It is stored energy that can become kinetic energy. 
+                    It includes potential electrical, chemical, and nuclear energy. The 
+                    measurement of potential energy in an object is calculated based on the 
+                    object's mass and its height or distance. It is measured in Joules.</p>
+            </div>
+        </section>
+        <!-- End Site Content -->
+        <script type="text/javascript" src="../js/jquery.min.js"></script>
+        <script>
+            $("#nav-one a")
+                .each(function (i) {
+                    if (i != 0) {
+                        $("#beep-one")
+                            .clone()
+                            .attr("id", "beep-one" + i)
+                            .appendTo($(this).parent());
+                    }
+                    $(this).data("beeper", i);
+                })
+                .mouseenter(function () {
+                    $("#beep-one" + $(this).data("beeper"))[0].play();
+                });
+            $("#beep-one").attr("id", "beep-one0");
+        </script>
+        <script type="text/javascript" src="../js/smoothscroll.js"></script>
+
+    </body>
+
+    </html>
