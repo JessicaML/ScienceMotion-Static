@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="scripts/d3.v2.js"></script>
+
+
+  <meta charset="utf-8">
+  <link href="../css/bootstrap.css" rel="stylesheet">
+  <link href="../css/lesson_template.css" rel="stylesheet">
+  <link href="modification.css" rel="stylesheet">
+  <!-- <link href='reflection.jpg'>
+  <link href='refraction.jpg'>
+  <link href='diffraction.png'> -->
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+
+        <li>
+          <a href="../index.html">Home</a>
+        </li>
+
+        <li>
+          <a href="../navigation.html">All lessons</a>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+
+
+  <div class="fond" id="smoothscroll">
+    <div id="forb" style="float:left;" class="style_prevu_kit">
+    </div>
+    <div id="button" style="float:left;" class="button-flip">
+      <a id="button" class="active" href="#text">
+        <button style="color: #fff; margin-top: 50px;" type="button" class="btn" href="#text">More info</button>
+      </a>
+    </div>
+    <div id="forb" style="float:right;" class="style_prevu_kit">
+    </div>
+  </div>
+
+  <section id="visual">
+    <br>
+    <div class="buttons">
+      <button id="reflection" onclick="changeState(500)">REFLECTION</button>
+      <button id="refraction" onclick="changeState(200)">REFRACTION</button>
+      <button id="diffraction" onclick="changeState(50)">DIFFRACTION</button>
+    </div>
+   <!-- <canvas id="myCanvas" width="1000" height="1000" style="border:0px solid #000000;">
+
+    </canvas> -->
+    <!-- <style>
+      canvas {
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: 800px;
+      }
+    </style> -->
+    <br><br><br>
+    <div style="display: flex; justify-content: center;">
+     
+      <img src="reflection.jpg";width: 40px; height: 40px;"> 
+    </div>
+    <br><br><br>
+    <div style="display: flex; justify-content: center;">
+   <img src="refraction.jpg";width: 40px; height: 60px;"> 
+    </div>
+
+    
+    <script type="text/javascript" src="./lesson1.js"></script>
+
+  </section>
+
+  <section id="text" style="color: white ; background-color : #39454A">
+
+    <h1> Comparison chart of reflection,refraction and diffraction </h1>
+
+    <table border="0" align="center" class="table">
+
+      <tr>
+        <th scope="col"> </th>
+        <th scope="col" > Reflection </th>
+        <th scope="col"> Refraction </th>
+        <th scope="col"> Diffraction </th>
+      </tr>
+
+      <tr>
+        <th scope="row" style=" font-size : 18px">
+          <span id="text-1"  style="color: aqua">Definition</span>
+          </td>
+          <td> Reflection is the phenomenon wherein a beam of light incident on an object bounces off, i.e., reflects of its surface.  </td>
+          <td>Refraction occurs when light passes from one medium into another one with a different density. </td>
+          <td> Phenomenon where a single beam of light, when passed through a narrow slit, was able to split into different directions creating an interference pattern. </td>
+      </tr>
+      <tr>
+        <th scope="row" style=" font-size : 18px">
+          <span id="text-2" style="color: aqua">Medium</span>
+          </td>
+          <td> Can take place in same medium </td>
+          <td> Change of medium is required </td>
+          <td> Can take place in same medium </td>
+      </tr>
+      <tr>
+        <th scope="row" style=" font-size : 18px">
+          <span id="text-3"  style="color: aqua">Laws</span>
+          </td>
+          <td> Angle of incidence is equal to the angle of reflection </td>
+          <td> Snell's Law is valid </td>
+          <td> Specific equations are valid for calculating conditions and positions of interference bands. </td>
+      </tr>
+      <tr>
+        <th scope="row" style=" font-size : 18px">
+          <span id="text-1"  style="color: aqua">Calculations</span>
+          </td>
+          <td> theta i=theta r </td>
+          <td> n1/n2=sin (theta1)/sin (theta2) </td>
+          <td>a * λ = d * sin(Θₐ) </td>
+      </tr>
+    </table>
+
+  </section>
+  <script type="text/javascript" src="../js/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/smoothscroll.js"></script>
+
+</body>
+
+</html>
