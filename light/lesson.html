@@ -49,11 +49,23 @@
 
   <section id="visual">
     <br>
-    <div class="buttons">
-      <button id="reflection" onclick="changeState(500)">REFLECTION</button>
-      <button id="refraction" onclick="changeState(200)">REFRACTION</button>
-      <button id="diffraction" onclick="changeState(50)">DIFFRACTION</button>
-    </div>
+      <!-- <div class="buttons">
+      <button id="reflection" onclick="changeState(500)">LIGHT</button> -->
+      <!-- <button id="refraction" onclick="changeState(200)">REFRACTION</button>
+      <button id="diffraction" onclick="changeState(50)">DIFFRACTION</button>  -->
+    </div>  
+    <br><br><br><br>
+    <!-- <div class="container">
+			<div class="row">
+				<div class=" col-xs-12  col-sm-12 col-md-12  col-lg-12">
+						<div class="fadein" style="height:43vw;  text-align: center;  width:100%">
+      
+								<video id="f2" src="gif.mp4" controls autoplay >
+								<video id="f1" src="reflectionjif.mp4" controls autoplay>
+						</div>
+				</div>
+      </div> -->
+  
    <!-- <canvas id="myCanvas" width="1000" height="1000" style="border:0px solid #000000;">
 
     </canvas> -->
@@ -67,16 +79,29 @@
         width: 800px;
       }
     </style> -->
-    <br><br><br>
-    <div style="display: flex; justify-content: center;">
-     
-      <img src="reflection.jpg";width: 40px; height: 40px;"> 
-    </div>
-    <br><br><br>
-    <div style="display: flex; justify-content: center;">
-   <img src="refraction.jpg";width: 40px; height: 60px;"> 
-    </div>
+    <br><br><br><br><br><br><br>
 
+     
+      
+       <div class="container">
+			<div class="row">
+				<div class=" col-xs-6  col-sm-6 col-md-6  col-lg-6">
+						<div class="fadein" style="height:43vw;  text-align: center;  width:100%">
+      
+								<img id="f2" src="reflection1.jpg" height="350px" width="450px" >
+								<img id="f1" src="reflect.jpg"  height="350px" width="450px">
+            </div>
+            </div>
+
+          
+            <div class=" col-xs-6  col-sm-6 col-md-6  col-lg-6">
+            <video autoplay muted loop  >
+              <source src="gif.mp4" >
+              </video>
+        
+        </div>
+      </div> 
+      </div>
     
     <script type="text/javascript" src="./lesson1.js"></script>
 
@@ -84,9 +109,10 @@
 
   <section id="text" style="color: white ; background-color : #39454A">
 
+
     <h1> Comparison chart of reflection,refraction and diffraction </h1>
 
-    <table border="0" align="center" class="table">
+    <table border="0" align="center" class="table" >
 
       <tr>
         <th scope="col"> </th>
@@ -96,32 +122,32 @@
       </tr>
 
       <tr>
-        <th scope="row" style=" font-size : 18px">
-          <span id="text-1"  style="color: aqua">Definition</span>
+        <th scope="row" style=" font-size : 25px">
+          <span id="text-1" >Definition</span>
           </td>
           <td> Reflection is the phenomenon wherein a beam of light incident on an object bounces off, i.e., reflects of its surface.  </td>
           <td>Refraction occurs when light passes from one medium into another one with a different density. </td>
           <td> Phenomenon where a single beam of light, when passed through a narrow slit, was able to split into different directions creating an interference pattern. </td>
       </tr>
       <tr>
-        <th scope="row" style=" font-size : 18px">
-          <span id="text-2" style="color: aqua">Medium</span>
+        <th scope="row" style=" font-size : 25px">
+          <span id="text-2">Medium</span>
           </td>
           <td> Can take place in same medium </td>
           <td> Change of medium is required </td>
           <td> Can take place in same medium </td>
       </tr>
       <tr>
-        <th scope="row" style=" font-size : 18px">
-          <span id="text-3"  style="color: aqua">Laws</span>
+        <th scope="row" style=" font-size : 25px">
+          <span id="text-3" >Laws</span>
           </td>
           <td> Angle of incidence is equal to the angle of reflection </td>
           <td> Snell's Law is valid </td>
           <td> Specific equations are valid for calculating conditions and positions of interference bands. </td>
       </tr>
       <tr>
-        <th scope="row" style=" font-size : 18px">
-          <span id="text-1"  style="color: aqua">Calculations</span>
+        <th scope="row" style=" font-size : 25px">
+          <span id="text-1"  >Calculations</span>
           </td>
           <td> theta i=theta r </td>
           <td> n1/n2=sin (theta1)/sin (theta2) </td>
