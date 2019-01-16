@@ -1,0 +1,143 @@
+button#reflection {
+    background-color: #fff;
+    color: #E376C4;
+    border: none;
+    font-size: 1.2em;
+    font-family: 'Courier new', monospace, sans-serif;
+    font-weight: bold;
+    font-style: oblique;
+}
+
+button#refraction {
+    background-color: #fff;
+    color: #6EF5DE;
+    border: none;
+    font-size: 1.2em;
+    font-family: 'Courier new', monospace, sans-serif;
+    font-weight: bold;
+    font-style: oblique;
+}
+
+button#diffraction {
+    background-color: #fff;
+    color: #E7932E;
+    border: none;
+    font-size: 1.2em;
+    font-family: 'Courier new', monospace, sans-serif;
+    font-weight: bold;
+    font-style: oblique;
+}
+
+
+body {
+    padding: 2em;
+    border-top: none;
+}
+
+table.table {
+    width: 100%;
+    border-top: none;
+}
+
+.table th,
+.table td {
+    text-align: left;
+    padding: 0.25em;
+}
+
+.table tr {
+    border-bottom: none;
+        border-top: none;
+}
+
+.table > tbody > tr > th, {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: none;
+}
+
+td.edit-buttons {
+    text-align: right;
+}
+
+button {
+    border: none;
+    margin: 0 0.25em;
+    transition: all 0.3s;
+}
+
+button:hover {
+    box-shadow: 0 0 4px rgba(3, 3, 3, 0.8);
+    opacity: 0.9;
+}
+
+button.edit {
+    background: #6F9;
+}
+
+button.delete {
+    background: #F69;
+}
+
+@media screen and (max-width: 800px) {
+    tr {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0.5em 0;
+        border: none;
+    }
+    td,
+    th {
+        flex: 1 1 150px;
+        border: none;
+    }
+    td.edit-buttons,
+    td.empty {
+        /*flex: 1 0 90%;
+    text-align: center;*/
+    }
+}
+
+* {
+    box-model: border-box;
+    font-family: 'Space Mono';
+}
+
+
+.fadein img {
+    position:absolute;
+    left:-65px;
+    top:0;
+    -webkit-animation-name: fade;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 6s;
+    animation-name: fade;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+}
+
+@-webkit-keyframes fade {
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    33% {opacity: 1;}
+    53% {opacity: 0;}
+    100% {opacity: 0;}
+}
+@keyframes fade {
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    33% {opacity: 1;}
+    53% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+#f1 {
+    background-color: lightblue;
+}
+#f2 {
+    -webkit-animation-delay: -4s;
+    background-color: yellow;
+}
+
