@@ -4,6 +4,9 @@ section#top {
   height: 1000px;
 }
 
+.main{
+  margin-top: 0;
+}
 div#header {
   font-family: "Fugaz One";
   font-weight: 300;
