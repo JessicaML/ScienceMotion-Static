@@ -179,7 +179,7 @@ function init() {
     var vector = new THREE.Vector3();
     for ( var i = 0; i < objects.length; i ++ ) {
         var theta = i*1.01;
-        var y = - ( i*2 ) + 600;
+        var y = - ( i*12 ) + 500;
         var x = - ( i*30 ) + 1000;
         var object = new THREE.Object3D();
         object.position.setFromCylindricalCoords( x, theta, y );
@@ -251,4 +251,15 @@ function animate() {
 }
 function render() {
     renderer.render( scene, camera );
+}
+
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("to-ammend").style.top = "45px";
+  } else {
+    document.getElementById("to-ammend").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
 }
