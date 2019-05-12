@@ -40,3 +40,9 @@ Choose one to illustrate and create a pull request!
 ## Other ideas for the project?
 
 Email me here! jessicamaryleach@gmail.com
+
+## Support us on Patreon!
+
+We love you!! <3
+https://www.patreon.com/ScienceMotions
+
