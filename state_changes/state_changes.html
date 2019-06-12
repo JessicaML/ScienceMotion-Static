@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/javascript" src="../js/jquery.js"></script>
+<link href="../css/bootstrap.css" rel="stylesheet">
+<link href="screen.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+
+                  <li>
+                      <a href="../navigation.html">All lessons</a>
+                  </li>
+               </ul>
+
+          </div>
+</nav>
+<div class="fond">
+      <div id="forb"style="float:left;" class="style_prevu_kit">
+      <a id="forb" class="active" href="">|</a></div>
+      <div id="button"style="float:left;" class="button-flip">
+      <a id="button" class="active" href="#text">  <button style="color: #fff; margin-top: 50px;" type="button" class="btn" href="#text" >More info</button>
+  </a></div>
+      <div id="forb" style="float:right;" class="style_prevu_kit">
+      <a id="forb" class="active" href="#">></a></div>
+  </div>
+  <section id="visual">
+		<svg width="600" height="600" viewBox="0 0 400 400"
+    aria-describedby="mainDesc">
+<g systemLanguage="en">
+  <title>Heating ice to steam</title>
+  <desc id="mainDesc">A simple scientific exercise to explain how water heats.</desc>
+
+<text role="heading" aria-level="1" x="50" y="30" font-size="150%">Heating ice to steam</text>
+</g>
+
+<g aria-live="polite">
+
+<g >
+  <text x="230" y="100">Status:</text>
+  <text id="idle" x="230" y="120">Idle
+    <set attributeName="visibility" to="hidden" begin="heat.click" dur="30s"/>
+  </text>
+  <text id="heating-ice" visibility="hidden" x="230" y="120">Heating ice
+    <set attributeName="visibility" to="visible" begin="heat.click" dur="2s"/>
+  </text>
+  <text id="melting-ice" visibility="hidden" x="230" y="120">Melting ice
+    <set attributeName="visibility" to="visible" begin="heat.click+2s" dur="5s"/>
+  </text>
+  <text id="heating-ice" visibility="hidden" x="230" y="120">Heating water
+    <set attributeName="visibility" to="visible" begin="heat.click+7s" dur="5s"/>
+  </text>
+  <text id="heating-ice" visibility="hidden" x="230" y="120">Boiling water
+    <set attributeName="visibility" to="visible" begin="heat.click+12s" dur="5s"/>
+  </text>
+  <text id="heating-ice" visibility="hidden" x="230" y="120">Uh oh!!!
+    <set attributeName="visibility" to="visible" begin="heat.click+17s" dur="13s"/>
+  </text>
+</g>
+
+
+<g id="thermometer" aria-labelledby="thermo-title" aria-describedby="thermo-desc">
+ <title id="thermo-title">A thermometer</title>
+ <desc> id="thermo-desc"A grey thermometer with a red indicator fluid, marked at 0 and 100 degrees Celsius, initally showing a few degrees below zero</desc>
+ <g class="glass">
+  <circle cx="300" cy="350" r="10"/>
+  <line x1="300" x2="300" y1="150" y2="350" stroke-width="7"/></g>
+ <g class="red">
+  <circle cx="300" cy="350" r="7.5"/>
+  <line x1="300" x2="300" y1="310" y2="350">
+    <animate attributeName="y1" to="320" dur="2s" begin="heat.click" fill="freeze"/>
+    <animate attributeName="y1" from="280" to="200" dur="5s" begin="heat.click+7s" fill="freeze" end="30s"/>
+  </line>
+ </g>
+  <text x="300" y="280">_ 0 ºC</text>
+  <text x="300" y="200">_ 100 ºC</text>
+</g>
+
+<g id="burner" aria-labelledby="burner-title" class="ironblock" role="img">
+  <title id="burner-title">A bunsen burner, with the oxygen inlet open</title>
+  <path d="M70,400v-10c0,0 80,-30 160,0v10z"/>
+  <rect x="130" y="240" width="40" height="175"/>
+  <rect x="128" y="240" width="44" height="25"/>
+  <rect x="128" y="320" width="44" height="50"/>
+  <circle cx="150" cy="345" r="15" fill="white"/>
+  <polygon points="135,370 149,350 151,350 165,370"/>
+</g>
+
+<g role="img" visibility="hidden">
+  <path fill="#00f" opacity=".8" d="M133,238c0,0 -5,-10 0,-25c0,0 0,-11 -30,-9c0,0 -1,-2 -1,-2h94c0,0 -1,2 -1,2c-30,0 -30,9 -30,9c0,0 5,10 0,25c-2,0 -2,-20 -15,-20c-2,0 -10,0 -15,20 z"/>
+    <title id="burner-on-title">The burner is producing a hot blue flame</title>
+    <set attributeName="visibility" to="visible" begin="heat.click"/>
+</g>
+
+<g id="beaker-stand" aria-labelledby="beaker-stand-label" class="ironbar">
+  <title id="beaker-stand-label">Beaker Stand</title>
+  <path id="leg1" d="M50,400 L60,370 65,200"/>
+  <path id="leg2" d="M250,400 L240,370 235,200"/>
+  <path id="support" d="M30,200 h240"/>  
+</g>
+
+<g id="beaker" aria-labelledby="beaker-label" role="img">
+  <title>A glass beaker</title>
+  <path d="M100,50h100c0,1 0,2 0,2c-5,1 -5,2 -5,2v138c0,2 -2,3 -5,5h-80c-2,0 -2,-3 -5,-5v-138c-5,-1 -5,-2 -5,-2c0,-1 0,-2 0,-2" class="glass"/>
+</g>
+
+<g id="water" class="water" visibility="hidden" aria-live="polite" role="img">
+  <set attributeName="visibility" to="visible" begin="heat.click+1.8s"/>
+  <title>Water is created as the ice melts</title>
+  <polygon points="106,75 194,75 194,193 189,196 111,196 106,193">
+    <animate attributeName="points" to="106,193 194,193 194,193 189,196 111,196 106,193"
+      fill="freeze" dur="5s" begin="heat.click+12s"/>
+  </polygon>
+</g>
+
+<g id="ice" aria-labelledby="iceLabel" class="ice" role="img">
+  <title id="iceLabel">An ice block</title>
+  <rect id="main-ice-block" x="106" y="75" width="88" height="118">
+    <animate attributeName="x" to="150" fill="freeze" dur="5s" begin="heat.click+2s"/>
+    <animate attributeName="rx" to="40" fill="freeze" dur="5s" begin="heat.click+2s"/>
+    <animate attributeName="width" to="0" fill="freeze" dur="5s" begin="heat.click+2s"/>
+    <animate attributeName="height" to="0" fill="freeze" dur="5s" begin="heat.click+2s"/>
+  </rect>
+  <polygon id="bottom-ice-block" points="194,193 189,196 111,196 106,193">
+    <animate attributeName="points" to="150,78 150,78 150,78 150,78" fill="freeze"
+      dur="1.5s" begin="heat.click+1.8s"/>
+  </polygon>
+  <set attributeName="visibility" to="hidden" begin="heat.click+7s"/>
+</g>
+
+<g id="heat" tabindex="0" role="button">
+  <title>Turn on the heat</title>
+  <rect x="20" y="70" width="50" height="30" rx="2" glass="glass"/>
+  <rect x="22" y="72" width="46" height="26" rx="2" fill="white"/>
+  <text x="24" y="92" systemLanguage="en">Heat</text>
+</g>
+</svg>
+		</section>
+<br><br><br>
+
+
+<section id="text">
+			<div>
+        <h1>STATE CHANGES</h1>
+        <p>Substances can exist as a solid, liquid or gas. Converting from one state to another usually involves heating or cooling.</p>
+	<p>Solids melt to become liquid, and liquids freeze to become solid. Liquids evaporate or boil to become gas, and gases condense to become liquid.</p>
+<p>Heat must be supplied to a substance for it to melt, evaporate or boil. For example, you need to heat ice to melt it, and you need to heat water to make steam.Heat must be removed from a substance to condense or freeze it. In other words, the substance must be cooled down.</p>
+<p>Under certain conditions, some solids turn straight into a gas when heated. This process is called sublimation. A good example is solid carbon dioxide, also called ‘dry ice’. At atmospheric pressure, it turns straight into gaseous carbon dioxide.</p>
+<p>Liquid carbon dioxide can only exist under high pressure, such as in fire extinguishers. Iodine also sublimes - it turns directly from shiny purple-black crystals to a purple vapour when warmed up.</p>
+
+<h2>Changing the pressure</h2>
+<p>A gas will also liquefy (turn into a liquid) if its pressure is increased enough. This is because the particles are moved close enough for bonds to form between the particles.</p>
+<p>Gas cylinders used for camping stoves and barbecues contain liquefied petroleum gas (LPG) under high pressure. As soon as the pressure is released, the liquid turns back to a gas."</p>
+<h2>Solubility of gases</h2>
+<p>Can of drink being opened.</p>
+<p>The solubility of a gas in a particular solvent depends on pressure and temperature.</p>
+<p>As the pressure increases, more gas molecules dissolve into the solvent. Carbonated drinks are bottled under pressure. When the lid of the bottle is removed, the pressure inside the air space at the top of the bottle is reduced. This causes some of the carbon dioxide to come out of solution, causing the familiar bubbles in the drink that rise to the top.</p>
+<p>In general, gases tend to become less soluble as the temperature of the solvent increases. This explains why fizzy drinks go ‘flat’ more quickly on a hot day than when they are stored in the fridge."</p>		
+</div>
+		</section>
+		<!-- End Site Content -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="scripts/lib/jquery-1.9.1.min.js"><\/script>')</script>
+
+</body>
+</html> 
+
